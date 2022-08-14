@@ -54,15 +54,47 @@ body, html {
   -webkit-tap-highlight-color:transparent;
 }
 
+/* width */
+::-webkit-scrollbar {
+  
+  background: transparent;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--b-alpha-15); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--b-alpha-40); 
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--main-color); 
+}
+
+
+
 .bgimg-1 {
   position: relative;
-  background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   transition: margin-left .5s;
   background-image: url("../wallhaven-x127wl_2560x1440.png");
   min-height: 100%;
+  -webkit-animation: fade-in-bck 4s ;
+	animation: fade-in-bck 4s ;
+  display: fixed;
+  opacity: 0.85;
+}
+
+.bgimg-2 {
+  position: relative;
+  background-size: cover;
+  transition: margin-left .5s;
+  background-image: url("../Resources/wallhaven-3k77vy_1920x1080.png");
+  height: 20vh;
   -webkit-animation: fade-in-bck 4s ;
 	animation: fade-in-bck 4s ;
   display: fixed;
@@ -108,7 +140,7 @@ body, html {
   background-color: #fff;
   color: #111;
   padding: 18px;
-  font-size: 25px;
+  font-size: 12px;
   letter-spacing: 10px;
 }
 
@@ -207,9 +239,9 @@ h3 {
     text-align: center;
     transition: .25s;
     background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 marquee{
@@ -287,6 +319,7 @@ margin: 50px 0 20px ;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
+
 
 .a {
   display: block;
