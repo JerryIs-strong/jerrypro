@@ -1,5 +1,6 @@
 :root{
 --main-color: #5d7fa2;
+--theme-color: #fff
 --b-alpha-5: rgba(0,0,0,.05); /*Background color : dark*/
 --b-alpha-10: rgba(0,0,0,.1);
 --b-alpha-15: rgba(0,0,0,.15);
@@ -74,20 +75,16 @@ body, html {
   background: var(--main-color); 
 }
 
-
-
-.bgimg-1 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  transition: margin-left .5s;
-  background-image: url("../wallhaven-x127wl_2560x1440.png");
-  min-height: 100%;
-  -webkit-animation: fade-in-bck 4s ;
-	animation: fade-in-bck 4s ;
-  display: fixed;
-  opacity: 0.85;
-}
+.topBG {
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   transition: margin-left .5s;
+   background-image: url("../Resource/20210119_175715.jpg");
+   min-height: 100%;
+   -webkit-animation: fade-in-bck 4s ;
+   animation: fade-in-bck 4s ;
+ }
 
 .bgimg-2 {
   position: relative;
@@ -126,6 +123,42 @@ body, html {
   }
 }
 
+.underlineTop {
+    position: absolute;
+    left: calc(50% - 25px);
+    margin-top: -35px;
+    width: 50px;
+    height: 3px;
+    background-color: var(--theme--color);
+}
+
+#topTitle {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #topTitle h1{
+      font-weight: 400;
+      font-size: 76px;
+      color: #fff;
+      display: block;
+    margin-block-start: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  #topTitle h2{
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  #topTitle h2 span{
+    color: rgba(255,255,255,.6);
+  }
 
 .caption {
   position: absolute;
