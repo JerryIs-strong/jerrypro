@@ -80,7 +80,7 @@ body, html {
    background-position: center;
    background-size: cover;
    transition: margin-left .5s;
-   background-image: url("../Resource/20210119_175715.jpg");
+   background-image: url("../Resources/20210119_175715.jpg");
    min-height: 100%;
    -webkit-animation: fade-in-bck 4s ;
    animation: fade-in-bck 4s ;
