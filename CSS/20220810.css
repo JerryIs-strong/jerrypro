@@ -183,6 +183,10 @@
     font: 20px "Lato", sans-serif;
     color: #111;
   }
+
+  .PartTitle{
+    text-align:center;
+  }
   
   .PartTitle::after{
     content: "#";
@@ -734,6 +738,11 @@
   .logText3{
   color:rgba(0,0,0,.2);
   }
+
+  .AboutP{
+    width: 60vw;
+    text-align: center;
+  } 
   
   .Ltree{
     position: relative;
@@ -751,28 +760,52 @@
   color: var(--b-alpha-50);
   font-size: 15px;
   }
-  
-  .Ltree a{
-  color: black;
-  text-align: center;
-  display: block;
-  font-family:'Roboto', sans-serif;
-  border: 2px solid black;
-  padding: 10px;
-  border-radius: 10px 20px;
-  margin-bottom: 15px;
-  height: 100%;
+
+  .Ltree {
+    color: black;
+    text-align: center;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    background-color: #EBEEF1;
+    width: 100%;
+    cursor: pointer;
   }
-  
-  .Ltree a:hover{
-  background-color: var(--main-color);
-  color: #fff;
-  transition: 0.5s;
+
+  .Ltree a {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    color: #000;
   }
+
+  .Ltree a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .Ltree:hover a {
+    padding-right: 25px;
+  }
+
+  .Ltree:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
   
   .LTreeP{
    width: 13vm;
    margin: 20px 0 20px;
+   text-align: center;
   }
   
   section {
@@ -1146,4 +1179,12 @@
   font-family: 'DynaPuff', cursive;
   font-size: 20px;
   color: rgb(243, 217, 22);
+}
+
+.FootCard{
+  color:black;
+  background-color:var(--bg-w-245);
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
 }
