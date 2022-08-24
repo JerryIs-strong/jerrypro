@@ -9,392 +9,391 @@
 <link rel="stylesheet" href="./CSS/20220810.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-<div id="Sidebar" class="sidebar">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-   <a href="#Goabout" class="navLink" onclick="closeNav()">About</a>
-   <a href="#Goproject" class="navLink" onclick="closeNav()">Project</a>
-   <a href="#Golinktree" class="navLink" onclick="closeNav()">Link Tree</a>
-   <a href="#Gocontact" class="navLink" onclick="closeNav()">Contact</a>
-   <!--<a href="./myfile/mywife.html" class="navLink">🤐</a>-->
-   <a onclick="DarkMode()" class="navLink">Dark Mode🌓</a>
-</div>
-
-
-
-<div class="topBG" id="topBG">
-
-  <div class="navbar" id="navbar">
-    <img class="logo" src="icon.png" alt="logo" style="width: 50px;" />
-    <nav>
-      <ul class="navLinkBox" id="navLinkBox">
-        <li><a href="#Goabout" class="navLink">About</a></li>
-        <li><a href="#Goproject" class="navLink" id="navLinkHide">Project</a></li>
-        <li><a href="#Golinktree" class="navLink" id="navLinkHide">Link Tree</a></li>
-        <li><a href="#Gocontact" class="navLink">Contact</a></li>
-        <!--<li><a href="./myfile/mywife.html" class="navLink" id="navLinkHide">🤐</a></li>-->
-        <li><a onclick="DarkMode" class="navLink">Dark Mode🌓</a></li>
-      </ul>
-    </nav>
-    <button class="openbtn" onclick="openNav()">☰</button> 
-    <a><button onclick="Snackbar()" class="button">靜水流深</button></a>
-    <div id="snackbar">青出於藍，而勝於藍！</div>
+  <div id="Sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#Goabout" class="navLink" onclick="closeNav()">About</a>
+    <a href="#Goproject" class="navLink" onclick="closeNav()">Project</a>
+    <a href="#Golinktree" class="navLink" onclick="closeNav()">Link Tree</a>
+    <a href="#Gocontact" class="navLink" onclick="closeNav()">Contact</a>
+    <!--<a href="./myfile/mywife.html" class="navLink">🤐</a>-->
+    <a onclick="setTheme()" class="navLink">Dark Mode🌓</a>
   </div>
-
   
-<script>
-function DarkMode() {
-   var element = document.body;
-   element.classList.toggle("about");
-}
-</script>
   
-  <script>
-    function Snackbar() {
-       var x = document.getElementById("snackbar");
-       x.className = "show";
-       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-     }
+  
+  <div class="topBG" id="topBG">
+  
+    <div class="navbar" id="navbar">
+      <img class="logo" src="icon.png" alt="logo" id="logo" />
+      <nav>
+        <ul class="navLinkBox" id="navLinkBox">
+          <li><a href="#Goabout" class="navLink">About</a></li>
+          <li><a href="#Goproject" class="navLink" id="navLinkHide">Project</a></li>
+          <li><a href="#Golinktree" class="navLink" id="navLinkHide">Link Tree</a></li>
+          <li><a href="#Gocontact" class="navLink">Contact</a></li>
+          <!--<li><a href="./myfile/mywife.html" class="navLink" id="navLinkHide">🤐</a></li>-->
+          <li><a onclick="setTheme()" class="navLink">Dark Mode🌓</a></li>
+        </ul>
+      </nav>
+      <button class="openbtn" onclick="openNav()">☰</button> 
+      <a><button onclick="Snackbar()" class="button">靜水流深</button></a>
+      <div id="snackbar">青出於藍，而勝於藍！</div>
+    </div>
+  
+    
+    <script>
+      function Snackbar() {
+         var x = document.getElementById("snackbar");
+         x.className = "show";
+         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+       }
+    </script>
+  
+    <script>
+  function openNav() {
+    document.getElementById("Sidebar").style.width = "250px";
+    document.getElementById("topBG").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("Sidebar").style.width = "0";
+    document.getElementById("topBG").style.marginLeft= "0";
+  }
   </script>
-
-  <script>
-function openNav() {
-  document.getElementById("Sidebar").style.width = "250px";
-  document.getElementById("topBG").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("Sidebar").style.width = "0";
-  document.getElementById("topBG").style.marginLeft= "0";
-}
-</script>
-
-    <!--<div class="image-container">
+  
+      <!--<div class="image-container">
           <div class="text">JERRY'S <span class="Typingtext"></span></div>
       </div>-->
 
-    <div id="topTitle">
+      <div id="topTitle" class="topTitle">
         <h1>JERRY PRO</h1>
         <span class="underlineTop"></span><h2><span>/*</span> 這是關於JERRY的個人主頁; Hello World ! <span>*/</span></h2>
+      </div>
+  
+      <div class="container">
+        <a href="#Goabout"><div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div></a>
+      </div>
+</div>
+ 
+<div id="Goabout"></div>
+  <div class="Bg001" id="dark-01">
+    <h3 style="text-align:center;" class="PartTitle">About</h3>
+    <span class="underline1"></span>
+    <div class="tagBox">
+      <span>科技宅</span>
+      <span>香港</span>
+      <span>二次元</span>
     </div>
-							    
-    <div class="container">
-      <a href="#Goabout"><div class="chevron"></div>
-      <div class="chevron"></div>
-      <div class="chevron"></div></a>
+
+    <div class="aboutTyping">
+      <div class="fixedText">JERRY的<span class="TypingText"></span></div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<script>
-  var typed = new Typed(".Typingtext", {
-    strings: ["PRO", "Blog", "Life", "Feeling", "Project"],
-    typeSpeed: 150,
-    backSpeed: 150,
-    loop: true
-  })
-</script>
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;" class="about" id="Goabout">
-  <h3 style="text-align:center;" class="PartTitle">About</h3>
-  <span class="underline1"></span>
-  <div class="tagBox">
-    <span>科技宅</span>
-    <span>香港</span>
-    <span>二次元</span>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+    <script>
+      var typed = new Typed(".TypingText", {
+        strings: ["夢想：成爲小米工程師", "日常：打code", "老婆：和泉紗霧", "學校：PLK83", "電腦：ASUS"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true
+      })
+    </script>
+    <div class="textContent">
+    <font style="line-height: 3;">我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br/>
+    <font style="line-height: 3;">JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。我的目標是打造一個全能的“工具箱”，為使用者提高工作效率，事半功倍。基本功，對編程尤為重要，由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習 。</font><br/>
+    <font style="line-height: 3;">JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br/>
+    </div>
+  <div class="Scrolltext">
+  <marquee behavior="scroll" direction="left" scrollamount="20">和泉紗霧❤️</marquee><br/>
+  <marquee behavior="scroll" direction="right" scrollamount="20">官方吐槽最為致命</marquee><br/>
+  <marquee behavior="scroll" direction="left" scrollamount="15">妹在屋裏坐，(Green)帽從天上降</marquee><br/>
   </div>
-  <font style="line-height: 3;">我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br/>
-  <font style="line-height: 3;">JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。我的目標是打造一個全能的“工具箱”，為使用者提高工作效率，事半功倍。基本功，對編程尤為重要，由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習 。</font><br/>
-  <font style="line-height: 3;">JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br/>
-<div class="Scrolltext">
-<marquee behavior="scroll" direction="left" scrollamount="20">和泉紗霧❤️</marquee><br/>
-<marquee behavior="scroll" direction="right" scrollamount="20">官方吐槽最為致命</marquee><br/>
-<marquee behavior="scroll" direction="left" scrollamount="15">妹在屋裏坐，(Green)帽從天上降</marquee><br/>
-</div>
-</div>
-</div>
-
-<div style="color: #777;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;" class="about" id="Goproject">
-  <h3 style="text-align:center;" class="PartTitle">Project</h3>
-  <span class="underline1"></span>
-  <div class="tagBox">
-    <span>JERRY Tool</span>
-    <span>前端</span>
   </div>
-  <font style="line-height: 3;">JERRY Tool 是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google Site協作平臺，簡單的寫了一個JERRY Tool-State，查看網站的狀態。</font><br/>
-  <font style="line-height: 3;">目前，JERRY Tool-State以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font><br/>
-  <font style="line-height: 3;">不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br/>
-<div class="Scrolltext">
-<center><img src="./Resources/Background-removebg-preview.png" style="width: 60vw;"/></center>
-</div>
-</div>
+  </div>
+  </div>
 
-
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="about" id="Golinktree">
-  <h3 style="text-align:center;" class="PartTitle">My Link Tree</h3>
-  <span class="underline1"></span>
-<div class="Ltree">
-  <h6 class="LinkTitle">JERRY://Website | In development</h6>
-    <a href="https://jerrytool.w3spaces.com/" class="Link">JERRY://Tool</a>
-    <a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0" class="Link">Tool://State</a>
-  <h6 class="LinkTitle">JERRY://Project | Fact Studio</h6>
-    <a href="https://www.youtube.com/ldzmusic_studio">LDZ Music</a>
-  <h6 class="LinkTitle">JERRY://Music</h6>
-    <a href="https://www.youtube.com/watch?v=kiSYRbMn67I">Click</a>
-</div>
-<center><img src="./1555557032155.gif" class="LTreeP" /></center>
-</div>
-
-
-
-<div style="color: #777;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;" class="about" id="Gocontact">
-  <h3 style="text-align:center;" class="PartTitle">Contact</h3>
-  <span class="underline1"></span>
-  <svg class="svg--source" width="0" height="0" aria-hidden="true">
-
-  <symbol id="svg--twitter" viewbox="0 -7 15 30">
-    <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
-    />
-  </symbol>
-
-  <symbol id="svg--google" viewbox="-13 -13 72 72">
-    <path d="M48,22h-5v-5h-4v5h-5v4h5v5h4v-5h5 M16,21v6.24h8.72c-0.67,3.76-3.93,6.5-8.72,6.5c-5.28,0-9.57-4.47-9.57-9.75
-s4.29-9.74,9.57-9.74c2.38,0,4.51,0.82,6.19,2.42v0.01l4.51-4.51C23.93,9.59,20.32,8,16,8C7.16,8,0,15.16,0,24s7.16,16,16,16
-c9.24,0,15.36-6.5,15.36-15.64c0-1.17-0.11-2.29-0.31-3.36C31.05,21,16,21,16,21z" />
-  </symbol>
-
-  <symbol id="svg--facebook" viewbox="0 -7 16 30">
-    <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
-  </symbol>
-
-  <symbol id="svg--github" viewbox="-30 -30 150 150">
-    <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
-		c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
-		c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
-		c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
-		c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
-		C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
-		c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
-		c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
-		C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
-		c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
-  </symbol>
-
-  <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
-    <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
-				C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
-				c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
-				c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
-				c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
-				c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
-  </symbol>
-
-  <symbol id="svg--youtube" viewbox="-150 -150 800 800">
-    <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
-			C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
-			L357,255L204,369.75z" />
-  </symbol>
-
-</svg>
-
-<div class="wrapper">
-<div class="connect">
-
-  <a href="mailto: Heyajerry@gmail.com" rel="author" class="share google">
-    <svg role="presentation" class="svg--icon">
-      <use xlink:href="#svg--google" />
-      <span class="clip" >GOOGLE +</span>
-    </svg>
-  </a>
-
-  <a href="www.facebook.com/heyajerry07" rel="author" class="share facebook">
-    <svg role="presentation" class="svg--icon">
-      <use xlink:href="#svg--facebook" />
-      <span class="clip">FACEBOOK</span>
-    </svg>
-  </a>
-
-  <a href="https://github.com/Jerrylikelam" class="share github">
-    <svg role="presentation" class="svg--icon">
-      <use xlink:href="#svg--github" />
-      <span class="clip">GITHUB</span>
-    </svg>
-  </a>
-
-  <a href="https://www.youtube.com/channel/UCucaX_8aCUdEBBa6jiwbQgw?sub_confirmation=1" class="share  youtube">
-    <svg role="presentation" class="svg--icon">
-      <use xlink:href="#svg--youtube" />
-      <span class="clip">YOU-TUBE</span>
-    </svg>
-  </a>
-
-</div>
-</div>
-</div>
-
-
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="about" id="Goproject">
-  <h3 style="text-align:center;" class="PartTitle">2022 雷軍年度演講(BiliBili)同步直播</h3>
-  <span class="underline1"></span>
-  <!--<center><iframe style="width: 700px;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=545342&quality=0" frameborder="no"    framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center>--> <!--Code form Bilibili-->
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 4</div>
-  <img src="./Resources/pic20220811.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext" style="color: black;">2 / 4</div>
-  <img src="./Resources/Slideshowimg/01.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 4</div>
-  <img src="./Resources/Slideshowimg/02.png" style="width:100%">
-</div>
-
-
-<div class="mySlides fade">
-  <div class="numbertext">4 / 4</div>
-  <img src="./Resources/Slideshowimg/03.png" style="width:100%">
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-</div>
-</div>
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+  <div class="Bg002" id="Goproject">
+    <h3 style="text-align:center;" class="PartTitle">Project</h3>
+    <span class="underline1"></span>
+    <div class="tagBox">
+      <span>JERRY Tool</span>
+      <span>前端</span>
+    </div>
+    <div class="textContent">
+    <font style="line-height: 3;">JERRY Tool 是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google Site協作平臺，簡單的寫了一個JERRY Tool-State，查看網站的狀態。</font><br/>
+    <font style="line-height: 3;">目前，JERRY Tool-State以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font><br/>
+    <font style="line-height: 3;">不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br/>
+    </div>
+  <div class="Scrolltext">
+  <center><img src="./Resources/Background-removebg-preview.png" style="width: 60vw;"/></center>
+  </div>
+  </div>
+  
+<div class="Bg001" id="dark-01">
+  <div id="Golinktree">
+    <h3 style="text-align:center;" class="PartTitle">My Link Tree</h3>
+    <span class="underline1"></span>
+  <div class="Ltree">
+    <h6 class="LinkTitle">JERRY://Website | In development</h6>
+      <a href="https://jerrytool.w3spaces.com/" class="Link">JERRY://Tool</a>
+      <a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0" class="Link">Tool://State</a>
+    <h6 class="LinkTitle">JERRY://Project | Fact Studio</h6>
+      <a href="https://www.youtube.com/ldzmusic_studio">LDZ Music</a>
+    <h6 class="LinkTitle">JERRY://Music</h6>
+      <a href="https://www.youtube.com/watch?v=kiSYRbMn67I">Click</a>
+  </div>
+  <center><img src="./1555557032155.gif" class="LTreeP" /></center>
+  </div>
+</div>  
+  
+  
+  <div class="Bg002" id="Gocontact">
+    <h3 style="text-align:center;" class="PartTitle">Contact</h3>
+    <span class="underline1"></span>
+    <svg class="svg--source" width="0" height="0" aria-hidden="true">
+  
+    <symbol id="svg--twitter" viewbox="0 -7 15 30">
+      <path d="M15.36 3.434c-0.542 0.241-1.124 0.402-1.735 0.476 0.624-0.374 1.103-0.966 1.328-1.67-0.583 0.346-1.23 0.598-1.917 0.733-0.551-0.587-1.336-0.954-2.205-0.954-1.668 0-3.020 1.352-3.020 3.019 0 0.237 0.026 0.467 0.078 0.688-2.51-0.126-4.735-1.328-6.224-3.155-0.261 0.446-0.41 0.965-0.41 1.518 0 1.048 0.534 1.972 1.344 2.514-0.495-0.016-0.961-0.151-1.368-0.378 0 0.013 0 0.025 0 0.038 0 1.463 1.042 2.683 2.422 2.962-0.253 0.069-0.52 0.106-0.796 0.106-0.194 0-0.383-0.018-0.568-0.054 0.384 1.2 1.5 2.073 2.821 2.097-1.034 0.81-2.335 1.293-3.75 1.293-0.244 0-0.484-0.014-0.72-0.042 1.336 0.857 2.923 1.357 4.63 1.357 5.554 0 8.592-4.602 8.592-8.593 0-0.13-0.002-0.261-0.009-0.39 0.59-0.426 1.102-0.958 1.507-1.563z"
+      />
+    </symbol>
+  
+    <symbol id="svg--google" viewbox="-13 -13 72 72">
+      <path d="M48,22h-5v-5h-4v5h-5v4h5v5h4v-5h5 M16,21v6.24h8.72c-0.67,3.76-3.93,6.5-8.72,6.5c-5.28,0-9.57-4.47-9.57-9.75
+  s4.29-9.74,9.57-9.74c2.38,0,4.51,0.82,6.19,2.42v0.01l4.51-4.51C23.93,9.59,20.32,8,16,8C7.16,8,0,15.16,0,24s7.16,16,16,16
+  c9.24,0,15.36-6.5,15.36-15.64c0-1.17-0.11-2.29-0.31-3.36C31.05,21,16,21,16,21z" />
+    </symbol>
+  
+    <symbol id="svg--facebook" viewbox="0 -7 16 30">
+      <path d="M12 3.303h-2.285c-0.27 0-0.572 0.355-0.572 0.831v1.65h2.857v2.352h-2.857v7.064h-2.698v-7.063h-2.446v-2.353h2.446v-1.384c0-1.985 1.378-3.6 3.269-3.6h2.286v2.503z" />
+    </symbol>
+  
+    <symbol id="svg--github" viewbox="-30 -30 150 150">
+      <path d="M61.896,52.548c-3.59,0-6.502,4.026-6.502,8.996c0,4.971,2.912,8.999,6.502,8.999
+      c3.588,0,6.498-4.028,6.498-8.999C68.395,56.574,65.484,52.548,61.896,52.548z M84.527,29.132c0.74-1.826,0.777-12.201-3.17-22.132
+      c0,0-9.057,0.993-22.76,10.396c-2.872-0.793-7.736-1.19-12.597-1.19s-9.723,0.396-12.598,1.189C19.699,7.993,10.645,7,10.645,7
+      c-3.948,9.931-3.913,20.306-3.172,22.132C2.834,34.169,0,40.218,0,48.483c0,35.932,29.809,36.508,37.334,36.508
+      c1.703,0,5.088,0.004,8.666,0.009c3.578-0.005,6.965-0.009,8.666-0.009C62.191,84.991,92,84.415,92,48.483
+      C92,40.218,89.166,34.169,84.527,29.132z M46.141,80.574H45.86c-18.859,0-33.545-2.252-33.545-20.58
+      c0-4.389,1.549-8.465,5.229-11.847c6.141-5.636,16.527-2.651,28.316-2.651c0.045,0,0.093-0.001,0.141-0.003
+      c0.049,0.002,0.096,0.003,0.141,0.003c11.789,0,22.178-2.984,28.316,2.651c3.68,3.382,5.229,7.458,5.229,11.847
+      C79.686,78.322,65,80.574,46.141,80.574z M30.104,52.548c-3.588,0-6.498,4.026-6.498,8.996c0,4.971,2.91,8.999,6.498,8.999
+      c3.592,0,6.502-4.028,6.502-8.999C36.605,56.574,33.695,52.548,30.104,52.548z" />
+    </symbol>
+  
+    <symbol id="svg--pinterest" viewbox="-180 -180 850 850">
+      <path d="M430.149,135.248C416.865,39.125,321.076-9.818,218.873,1.642
+          C138.071,10.701,57.512,76.03,54.168,169.447c-2.037,57.029,14.136,99.801,68.399,111.84
+          c23.499-41.586-7.569-50.676-12.433-80.802C90.222,77.367,252.16-6.718,336.975,79.313c58.732,59.583,20.033,242.77-74.57,223.71
+          c-90.621-18.179,44.383-164.005-27.937-192.611c-58.793-23.286-90.013,71.135-62.137,118.072
+          c-16.355,80.711-51.557,156.709-37.3,257.909c46.207-33.561,61.802-97.734,74.57-164.704
+          c23.225,14.136,35.659,28.758,65.268,31.038C384.064,361.207,445.136,243.713,430.149,135.248z" />
+    </symbol>
+  
+    <symbol id="svg--youtube" viewbox="-150 -150 800 800">
+      <path d="M459,61.2C443.7,56.1,349.35,51,255,51c-94.35,0-188.7,5.1-204,10.2C10.2,73.95,0,163.2,0,255s10.2,181.05,51,193.8
+        C66.3,453.9,160.65,459,255,459c94.35,0,188.7-5.1,204-10.2c40.8-12.75,51-102,51-193.8S499.8,73.95,459,61.2z M204,369.75v-229.5
+        L357,255L204,369.75z" />
+    </symbol>
+  
+  </svg>
+  
+  <div class="wrapper">
+  <div class="connect">
+  
+    <a href="mailto: Heyajerry@gmail.com" rel="author" class="share google">
+      <svg role="presentation" class="svg--icon">
+        <use xlink:href="#svg--google" />
+        <span class="clip" >GOOGLE +</span>
+      </svg>
+    </a>
+  
+    <a href="www.facebook.com/heyajerry07" rel="author" class="share facebook">
+      <svg role="presentation" class="svg--icon">
+        <use xlink:href="#svg--facebook" />
+        <span class="clip">FACEBOOK</span>
+      </svg>
+    </a>
+  
+    <a href="https://github.com/Jerrylikelam" class="share github">
+      <svg role="presentation" class="svg--icon">
+        <use xlink:href="#svg--github" />
+        <span class="clip">GITHUB</span>
+      </svg>
+    </a>
+  
+    <a href="https://www.youtube.com/channel/UCucaX_8aCUdEBBa6jiwbQgw?sub_confirmation=1" class="share  youtube">
+      <svg role="presentation" class="svg--icon">
+        <use xlink:href="#svg--youtube" />
+        <span class="clip">YOU-TUBE</span>
+      </svg>
+    </a>
+  
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  <div class="Bg001" id="Goproject">
+    <h3 style="text-align:center;" class="PartTitle">2022 雷軍年度演講(BiliBili)同步直播</h3>
+    <span class="underline1"></span>
+    <!--<center><iframe style="width: 700px;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=545342&quality=0" frameborder="no"    framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center>--> <!--Code form Bilibili-->
+  <div class="slideshow-container">
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="./Resources/pic20220811.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext" style="color: black;">2 / 4</div>
+    <img src="./Resources/Slideshowimg/01.png" style="width:100%">
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="./Resources/Slideshowimg/02.png" style="width:100%">
+  </div>
+  
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="./Resources/Slideshowimg/03.png" style="width:100%">
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
-<section id="timeline">
-	<div class="section-wrapper">
-		<div class="line">
-			<div data-mobiletext="Quarter 4" data-index="1" class="quarter q4 y2016 dot complete"></div>
-			<div data-mobiletext="August" data-timelinelabel="雷軍年度演講✅" data-index="2" class="year y2017 dot complete"></div>
-			<div data-mobiletext="Quarter 1" data-index="2" class="quarter q1 y2017 dot complete js-mobile-default"></div>		
-			<div data-mobiletext="Quarter 2" data-index="3" class="quarter q2 y2017 dot"></div>
-			<div data-mobiletext="Quarter 3" data-index="4" class="quarter q3 y2017 dot"></div>
-			<div data-mobiletext="Quarter 4" data-index="5" class="quarter q4 y2017 dot"></div>
-			<div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="6" class="year y2018 dot"></div>
-			<div data-mobiletext="Quarter 1" data-index="6" class="quarter q1 y2018 dot"></div>			
-			<div data-mobiletext="Quarter 2" data-index="7" class="quarter q2 y2018 dot"></div>
-			<div data-mobiletext="Quarter 3" data-index="8" class="quarter q3 y2018 dot"></div>
-			<div data-mobiletext="Quarter 4" data-index="9" class="quarter q4 y2018 dot"></div>
-			<div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="10" class="year y2019 dot"></div>
-			<div data-mobiletext="Quarter 1" data-index="10" class="quarter q1 y2019 dot"></div>			
-			<div data-mobiletext="Quarter 2" data-index="11" class="quarter q2 y2019 dot"></div>
-			<div data-mobiletext="Quarter 3" data-index="12" class="quarter q3 y2019 dot"></div>
-			<div data-mobiletext="Quarter 4" data-index="13" class="quarter q4 y2019 dot"></div>
-			<div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="14" class="year y2020 dot"></div>
-			<div data-mobiletext="Quarter 1" data-index="14" class="quarter q1 y2020 dot"></div>
-			<div data-mobiletext="Quarter 2" data-index="15" class="quarter q2 y2020 dot"></div>
-			<div data-mobiletext="Quarter 3" data-index="16" class="quarter q3 y2020 dot"></div>
-			<div data-mobiletext="Quarter 4" data-index="17" class="quarter q4 y2020 dot"></div>
-	</div>
-</section>
-<center><div class="illustrate">
-        <p id="illustrate">✅= 完滿結束&nbsp;</p>
-        <p id="illustrate">🛠️= 即將舉行</p>
-	</div></center>
-</div>
-
-
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="about" id="Goproject">
- <div id="log">
-   <center><b><h3 style="font-size: 30px;">小站"大"記</b></h3>
-   <span class="underline1"></span>
-   <p class="tip">Swipe left or right to view more</p></center>
-  <div class="logBoxOuter">
-    <div id="logBox"> 
-      <div>
-        <p class="logText1">2022.08.03</p>
-        <p class="logText2">JERRY PRO 托管至 W3Spaces</p>
-      </div>
-      <div>
-        <p class="logText1">2022.08.14</p>
-        <p class="logText2">JERRY PRO 托管至 Github 並完全開源</p>
-      </div>
-      <div>
-        <p class="logText3">TO BE</p>
-        <p class="logText3">CONTINUED...</p>
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+  
+  <section id="timeline">
+    <div class="section-wrapper">
+      <div class="line">
+        <div data-mobiletext="Quarter 4" data-index="1" class="quarter q4 y2016 dot complete"></div>
+        <div data-mobiletext="August" data-timelinelabel="雷軍年度演講✅" data-index="2" class="year y2017 dot complete"></div>
+        <div data-mobiletext="Quarter 1" data-index="2" class="quarter q1 y2017 dot complete js-mobile-default"></div>		
+        <div data-mobiletext="Quarter 2" data-index="3" class="quarter q2 y2017 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="4" class="quarter q3 y2017 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="5" class="quarter q4 y2017 dot"></div>
+        <div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="6" class="year y2018 dot"></div>
+        <div data-mobiletext="Quarter 1" data-index="6" class="quarter q1 y2018 dot"></div>			
+        <div data-mobiletext="Quarter 2" data-index="7" class="quarter q2 y2018 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="8" class="quarter q3 y2018 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="9" class="quarter q4 y2018 dot"></div>
+        <div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="10" class="year y2019 dot"></div>
+        <div data-mobiletext="Quarter 1" data-index="10" class="quarter q1 y2019 dot"></div>			
+        <div data-mobiletext="Quarter 2" data-index="11" class="quarter q2 y2019 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="12" class="quarter q3 y2019 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="13" class="quarter q4 y2019 dot"></div>
+        <div data-mobiletext="NEXT" data-timelinelabel="期待..." data-index="14" class="year y2020 dot"></div>
+        <div data-mobiletext="Quarter 1" data-index="14" class="quarter q1 y2020 dot"></div>
+        <div data-mobiletext="Quarter 2" data-index="15" class="quarter q2 y2020 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="16" class="quarter q3 y2020 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="17" class="quarter q4 y2020 dot"></div>
+    </div>
+  </section>
+  <center><div class="illustrate">
+          <p id="illustrate">✅= 完滿結束&nbsp;</p>
+          <p id="illustrate">🛠️= 即將舉行</p>
+    </div></center>
+  </div>
+  
+  
+  <div class="Bg001" id="Goproject">
+   <div id="log">
+     <center><b><h3 style="font-size: 30px;">小站"大"記</b></h3>
+     <span class="underline1"></span>
+     <p class="tip">Swipe left or right to view more</p></center>
+    <div class="logBoxOuter">
+      <div id="logBox"> 
+        <div>
+          <p class="logText1">2022.08.03</p>
+          <p class="logText2">JERRY PRO 托管至 W3Spaces</p>
+        </div>
+        <div>
+          <p class="logText1">2022.08.14</p>
+          <p class="logText2">JERRY PRO 托管至 Github 並完全開源</p>
+        </div>
+        <div>
+          <p class="logText3">TO BE</p>
+          <p class="logText3">CONTINUED...</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-
-
-
-<!--<div style="position:relative;" class="famousCard">
-  <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
-  <p class="famousText">「相信自己，一往無前。」</p>
-  <p class="author">- 雷軍（小米）</p>
   </div>
-</div>
-
-<div style="position:relative;" class="famousCard">
-  <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
-  <p class="famousText">「沒有任何一個成功不冒風險，直面風險，豁出去干。」</p>
-  <p class="author">- 雷軍（小米）</p>
+  
+  
+  
+  <!--<div style="position:relative;" class="famousCard">
+    <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
+    <p class="famousText">「相信自己，一往無前。」</p>
+    <p class="author">- 雷軍（小米）</p>
+    </div>
   </div>
-</div>
-
-<div style="position:relative;" class="famousCard">
-  <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
-  <p class="famousText">「成功往往不是規劃出來的，危機是你想不到的機會。」</p>
-  <p class="author">- 雷軍（小米）</p>
+  <div style="position:relative;" class="famousCard">
+    <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
+    <p class="famousText">「沒有任何一個成功不冒風險，直面風險，豁出去干。」</p>
+    <p class="author">- 雷軍（小米）</p>
+    </div>
   </div>
-</div>-->
-
-<div style="position:relative;" class="famousCard">
-  <div style="color:black;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;">
-  <p class="famousText">「當你的前途一片黑暗時，你該意識到是你在發光。」<a style="color:#5d7fa2;font-weight: bolder;">!</a></p>
-  <p class="author">- 雷軍（小米）</p>
+  <div style="position:relative;" class="famousCard">
+    <div style="color:#ddd;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;margin-bottom: 10px;">
+    <p class="famousText">「成功往往不是規劃出來的，危機是你想不到的機會。」</p>
+    <p class="author">- 雷軍（小米）</p>
+    </div>
+  </div>-->
+  
+  <div style="position:relative;" class="famousCard">
+    <div style="color:black;background-color:var(--bg-w-245);text-align:center;padding:50px 80px;text-align: justify;">
+    <p class="famousText">「當你的前途一片黑暗時，你該意識到是你在發光。」<a style="color:#5d7fa2;font-weight: bolder;">!</a></p>
+    <p class="author">- 雷軍（小米）</p>
+    </div>
   </div>
-</div>
-
-
-<div class="bgimg-2">
-  <div class="caption">
-  <span class="border">JERRY PRO :: Powered by JERRY, Copyright © 2022 JERRY 版權所有</span>
+  
+<footer>
+  <div class="bgimg-2">
+    <div class="caption">
+    <span class="border">JERRY PRO :: Powered by JERRY, Copyright © 2022 JERRY 版權所有</span>
+    </div>
   </div>
-</div>
+</footer>
 
-</body>
-</html>
+  </body>
+  </html>
