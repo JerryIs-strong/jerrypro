@@ -1116,13 +1116,15 @@
 
 .TypingText{
   font-family: 'Poppins', sans-serif;
-  color: #ecc800;
+  color: #6e8fb0;
   font-weight: bolder;
   font-size: large;
 }
 
 .aboutTyping{
-  background-color: #6e8fb02d;
-  margin-top: 50px;
+  background-color: #6e8fb01d;
+  margin: 10px 0 10px;
   border-radius: 30px;
+  width: 40%;
+  margin-left: 30%;
 }
