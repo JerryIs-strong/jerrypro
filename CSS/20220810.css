@@ -194,9 +194,11 @@
   .textContent{
    border: dashed 3px var(--main-color);
    border-radius: 30px;
-   width: 100%;
+   width: 90%;
    padding: 20px;
-   margin-top: 30px;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: auto;
   }
   
   
@@ -1056,7 +1058,7 @@
   margin-left: 30%;
 }
 
-.wrapper{
+.wrapper{  /*Social media button*/
  margin: 100px 0 100px;
 }
 
