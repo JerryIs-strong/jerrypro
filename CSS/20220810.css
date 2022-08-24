@@ -744,7 +744,7 @@
     text-align: center;
   } 
   
-  .Ltree{
+  .LtreeAll{
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -753,7 +753,7 @@
     min-height: 100%;
   }
   
-  .Ltree h6{
+  .LtreeAll h6{
   text-align: center;
   display:block;
   font-family: 'Caveat', cursive;
