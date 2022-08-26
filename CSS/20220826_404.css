@@ -15,6 +15,12 @@ h1{
     font-size: 120px;
     font-weight: 100;
     margin: 50px 0 0;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 h2{
@@ -23,6 +29,12 @@ h2{
     font-size: 40px;
     text-shadow: 0 0 50px #fff,0 0 50px #fff;
     animation: fontFlicker 1.5s ease-in-out infinite alternate;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 @keyframes fontFlicker {
