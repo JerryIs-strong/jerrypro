@@ -89,7 +89,7 @@
     background-position: center;
     background-size: cover;
     transition: margin-left .5s;
-    background-image: url("../Resources/20210119_175715.jpg");
+    background-image: url("../Resources/small.jpg");
     min-height: 100%;
     -webkit-animation: fade-in-bck 4s ;
     animation: fade-in-bck 4s ;
@@ -149,6 +149,7 @@
     margin-inline-end: 0px;
     font-weight: bold;
   }
+  
 
   #topTitle h2{
     font-weight: 400;
@@ -466,10 +467,10 @@
     visibility: hidden;
     min-width: 250px;
     margin-left: -125px;
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--main-light);
+    color: var(--main-dark);
     text-align: center;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 16px;
     position: fixed;
     z-index: 1;
@@ -694,19 +695,16 @@
   #logBox::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,.1); 
     border-radius: 10px;
-    width: 20px;
   }
   
   #logBox::-webkit-scrollbar-thumb:hover {
     background: rgba(0,0,0,.3); 
     border-radius: 10px;
-    width: 20px;
   }
   
   #logBox::-webkit-scrollbar-thumb:active {
     background: var(--main-color); 
     border-radius: 10px;
-    width: 20px;
   }
   
   #logBox div{
@@ -766,12 +764,13 @@
     text-align: center;
     display: block;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
+    border: none;
     padding: 12px;
     border-radius: 12px;
     margin-bottom: 15px;
     background-color: #EBEEF1;
     width: 100%;
+    height: 55px;
     cursor: pointer;
   }
 
@@ -868,13 +867,8 @@
     .line .complete {
       background-color: var(--main-color); 
       transition: 0.5s;}
-    .line .dot.active {
-      background-color: var(--main-color);
-      cursor: pointer; 
-      transition: 0.5s;}
   
   #timeline {
-    padding-top: 50px;
     padding-bottom: 50px;
     background-color: #fff;
     color: #34495E; 
@@ -894,68 +888,6 @@
       #description .section-wrapper > div.text-default {
         display: block; }
   
-  @media all and (max-width: 760px) {
-    .line .year {
-      width: 20px;
-      height: 20px;
-      margin-right: calc(2.65% - 10px);
-      margin-left: calc(2.65% - 10px);
-      top: -8px; }
-    .line .quarter {
-      width: 10px;
-      height: 10px;
-      margin-right: calc(2.65% - 5px);
-      margin-left: calc(2.65% - 5px);
-      top: -3px; } }
-  
-  @media all and (min-width: 481px) {
-    .quarter.q1 {
-      display: none; }
-    .dot:hover {
-      background-color: #34495E;
-      cursor: pointer; 
-      transition: 0.5s;} }
-  
-  @media all and (max-width: 480px) {
-    #timeline {
-      padding-bottom: 20px;
-      padding-top: 0; }
-    .line {
-      height: auto;
-      background: transparent;
-      margin-top: 20px; }
-      .line .year, .line .quarter {
-        border-radius: 0;
-        float: none;
-        position: static;
-        margin-right: 0;
-        margin-left: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 42px;
-        text-align: center;
-        transition: background-color 500ms; }
-        .line .year::after, .line .quarter::after {
-          content: attr(data-mobiletext);
-          display: block;
-          padding-top: 12px; }
-        .line .year.complete, .line .quarter.complete {
-          background-color: #34495E;
-          color: var(--b-alpha-70);
-          transition: 0.5s; }
-        .line .year.active, .line .year.complete.active, .line .quarter.active, .line .quarter.complete.active {
-          background-color: var(--main-color);
-          color: var(--b-alpha-70); }
-      .line .year {
-        display: block; }
-        .line .year::before {
-          display: none; }
-        .line .year::after {
-          position: static; }
-      .line .quarter {
-        display: none; }
-        .line .quarter.y2017 {
-          display: block; } }
   
   #illustrate{
     display: inline-block;
@@ -1051,9 +983,14 @@
 
 .Bg001-dark{
   color: rgb(255, 255, 255);
-  background-color: var(--main-dark);
+  background-color: var(--b-alpha-70);
   text-align:center;
   padding:50px 80px;
+}
+
+.titleDark{
+  color: rgb(255, 255, 255);
+  text-align:center;
 }
 
 .PartTitle-dark {
