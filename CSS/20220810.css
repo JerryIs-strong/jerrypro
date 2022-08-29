@@ -89,7 +89,7 @@
     background-position: center;
     background-size: cover;
     transition: margin-left .5s;
-    background-image: url("../Resources/small.jpg");
+    background-image: url("../Resources/headerBg/small.jpg");
     min-height: 100%;
     -webkit-animation: fade-in-bck 4s ;
     animation: fade-in-bck 4s ;
@@ -99,7 +99,7 @@
     position: relative;
     background-size: cover;
     transition: margin-left .5s;
-    background-image: url("../Resources/wallhaven-3k77vy_1920x1080.png");
+    background-image: url("../Resources/footerBg/wallhaven-3k77vy_1920x1080.png");
     height: 20vh;
     -webkit-animation: fade-in-bck 4s ;
     animation: fade-in-bck 4s ;
