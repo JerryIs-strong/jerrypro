@@ -626,6 +626,10 @@
   color:#fff;
   font-size:15px
   }
+
+  font{
+    font-family: 'Shippori Antique B1', sans-serif;
+  }
   
   font::before {
    content: '👻';
@@ -764,7 +768,7 @@
     color: black;
     text-align: center;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
     border: none;
     padding: 12px;
     border-radius: 12px;
