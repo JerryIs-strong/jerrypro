@@ -141,13 +141,14 @@
 
   #topTitle h1{
     font-weight: 400;
-    font-size: 76px;
+    font-size: 80px;
     color: #fff;
     display: block;
     margin-block-start: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    font-family: 'Palanquin Dark', sans-serif;
   }
   
 
@@ -974,6 +975,13 @@
   padding:50px 80px;
 }
 
+.Bg001-dark{
+  color: var(--main-light);
+  background-color: var(--b-alpha-90);
+  text-align:center;
+  padding:50px 80px;
+}
+
 .Bg002{
   color: #777;
   background-color:var(--bg-w-245);
@@ -981,17 +989,12 @@
   padding:50px 80px;
 }
 
-.Bg001-dark{
+/*.Bg001-dark{
   color: rgb(255, 255, 255);
   background-color: var(--b-alpha-70);
   text-align:center;
   padding:50px 80px;
-}
-
-.titleDark{
-  color: rgb(255, 255, 255);
-  text-align:center;
-}
+}*/
 
 .PartTitle-dark {
   letter-spacing: 5px;
@@ -1012,6 +1015,7 @@
   background-color:var(--w-alpha-5);
   text-align:center;
 }
+
 
 .TypingText{
   font-family: 'Poppins', sans-serif;
