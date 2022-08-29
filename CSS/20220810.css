@@ -904,8 +904,10 @@
     display: none;
     margin-top: 20px;
   }
+
   img {
     vertical-align: middle;
+    pointer-events: none;
   }
   
   /* Slideshow container */
