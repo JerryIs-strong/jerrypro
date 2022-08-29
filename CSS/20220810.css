@@ -807,7 +807,7 @@
   
   
   .LTreeP{
-   width: 13vm;
+   width: 42vw;
    margin: 20px 0 20px;
    text-align: center;
   }
@@ -891,7 +891,8 @@
     #description .section-wrapper > div {
       display: none; }
       #description .section-wrapper > div.text-default {
-        display: block; }
+        display: block; 
+      }
   
   
   #illustrate{
