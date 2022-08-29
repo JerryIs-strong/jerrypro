@@ -7,23 +7,21 @@
 <link rel="apple-touch-icon" href="./icon.png"> <!--Favicon for Safari-->
 <script type="application/javascript" src="./JS/mJudger.js"></script>
 <script type="application/javascript" src="./JS/console.js"></script>
-<script type="application/javascript" src="./JS/wallpaper.js"></script>
+<script type="application/javascript" src="./JS/main.js"></script>
 <link rel="stylesheet" href="./CSS/20220810.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="" id="HW">
   <div id="Sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="#Goabout" class="navLink" onclick="closeNav()">About</a>
     <a href="#Goproject" class="navLink" onclick="closeNav()">Project</a>
     <a href="#Golinktree" class="navLink" onclick="closeNav()">Link Tree</a>
     <a href="#Gocontact" class="navLink" onclick="closeNav()">Contact</a>
-    <!--<a href="./myfile/mywife.html" class="navLink">🤐</a>-->
-    <!--<a onclick="setTheme()" class="navLink">Dark Mode🌓</a>-->
   </div>
   
   
@@ -38,8 +36,6 @@
           <li><a href="#Goproject" class="navLink" id="navLinkHide">Project</a></li>
           <li><a href="#Golinktree" class="navLink" id="navLinkHide">Link Tree</a></li>
           <li><a href="#Gocontact" class="navLink">Contact</a></li>
-          <!--<li><a href="./myfile/mywife.html" class="navLink" id="navLinkHide">🤐</a></li>-->
-          <!--<li><a onclick="setTheme()" class="navLink">Dark Mode🌓</a></li>-->
         </ul>
       </nav>
       <button class="openbtn" onclick="openNav()">☰</button> 
@@ -47,26 +43,7 @@
       <div id="snackbar">青出於藍，而勝於藍！</div>
     </div>
   
-    
-    <script>
-      function Snackbar() {
-         var x = document.getElementById("snackbar");
-         x.className = "show";
-         setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-       }
-    </script>
   
-    <script>
-  function openNav() {
-    document.getElementById("Sidebar").style.width = "250px";
-    document.getElementById("topBG").style.marginLeft = "250px";
-  }
-  
-  function closeNav() {
-    document.getElementById("Sidebar").style.width = "0";
-    document.getElementById("topBG").style.marginLeft= "0";
-  }
-  </script>
   
       <!--<div class="image-container">
           <div class="text">JERRY'S <span class="Typingtext"></span></div>
@@ -85,8 +62,8 @@
 </div>
  
 <div id="Goabout"></div>
-  <div class="Bg001" id="dark-01">
-    <h3 class="PartTitle">About</h3>
+  <div class="Bg001" id="01">
+    <h3 class="PartTitle" id="PT">About</h3>
     <span class="underline1"></span>
     <div class="tagBox">
       <span>科技宅</span>
@@ -129,7 +106,7 @@
   </div>
   </div>
   
-<div class="Bg001" id="dark-01">
+<div class="Bg001" id="001">
   <div id="Golinktree">
     <h3 class="PartTitle">My Link Tree</h3>
     <span class="underline1"></span>
@@ -324,5 +301,5 @@
   </div>
 </footer>
 
-  </body>
-  </html>
+</body>
+</html>
