@@ -55,6 +55,11 @@
     cursor:default;
     -webkit-tap-highlight-color:transparent;
   }
+
+  ::selection{
+    color: var(--main-light);
+    background-color: var(--main-color);
+  }
   
   /* width */
   ::-webkit-scrollbar {
@@ -763,9 +768,36 @@
   color:rgba(0,0,0,.2);
   }
 
-  .AboutP{
-    width: 60vw;
+  .Check{
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    color: var(--main-color);
+    height: 40px;
+    width: 180px;
+    transition: 0.3s;
+    margin: 40px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flow-root;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
     text-align: center;
+  }
+
+  .Check:hover{
+    border: 2px solid var(--main-light);
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: var(--main-light);
+    height: 40px;
+    width: 180px;
+  }
+
+  .AboutP{
+    width: 50vw;
+    text-align: center;
+    margin: 20px 0 0;
   } 
   
   .LtreeAll{
@@ -1023,13 +1055,6 @@
   text-align:center;
   padding:50px 80px 0;
 }
-
-/*.Bg001-dark{
-  color: rgb(255, 255, 255);
-  background-color: var(--b-alpha-70);
-  text-align:center;
-  padding:50px 80px;
-}*/
 
 .PartTitle-dark {
   letter-spacing: 5px;
