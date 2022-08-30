@@ -80,11 +80,12 @@
       <font style="line-height: 3;">JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。我的目標是打造一個全能的“工具箱”，為使用者提高工作效率，事半功倍。基本功，對編程尤為重要，由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習 。</font><br/>
       <font style="line-height: 3;">JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br/>
     </div>
-  <div class="Scrolltext">
+  <!--<div class="Scrolltext">
   <marquee behavior="scroll" direction="left" scrollamount="20">和泉紗霧❤️</marquee><br/>
   <marquee behavior="scroll" direction="right" scrollamount="20">官方吐槽最為致命</marquee><br/>
   <marquee behavior="scroll" direction="left" scrollamount="15">妹在屋裏坐，(Green)帽從天上降</marquee><br/>
-  </div>
+  </div>-->
+  <img class="Bgimg01" src="./Resources/Bgimg/01.jpg" />
   </div>
   </div>
   </div>
@@ -100,10 +101,9 @@
     <font style="line-height: 3;">JERRY Tool 是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google Site協作平臺，簡單的寫了一個JERRY Tool-State，查看網站的狀態。</font><br/>
     <font style="line-height: 3;">目前，JERRY Tool-State以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font><br/>
     <font style="line-height: 3;">不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br/>
+    <img src="./Resources/Background-removebg-preview.png" class="AboutP" alt="background"/>
     </div>
-  <div class="Scrolltext">
-  <img src="./Resources/Background-removebg-preview.png" class="AboutP" alt="background"/>
-  </div>
+    <img src="./Resources/Bgimg/02.png" class="Bgimgh02" />
   </div>
   
 <div class="Bg001" id="001">
@@ -165,9 +165,8 @@
          <span>YouTube</span></a>
       </div>
    </div>
-
    <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
-
+   <img src="./Resources/Bgimg/03.png" class="Bgimgh03" />
   </div>
   
   <div class="Bg001" id="Goproject">
@@ -202,34 +201,7 @@
   </div>
   </div>
   
-  <script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}    
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-  }
-  </script>
+
   
   <section id="timeline">
     <div class="section-wrapper">
@@ -261,7 +233,7 @@
   </div>
   
   
-  <div class="Bg001" id="Goproject">
+  <div class="Bg001foot" id="Goproject">
    <div id="log">
      <center><b><h3 style="font-size: 30px;">小站"大"記</b></h3>
      <span class="underline1"></span>
