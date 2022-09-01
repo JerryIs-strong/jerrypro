@@ -505,8 +505,39 @@
     bottom: 30px;
     font-size: 17px;
   }
-  
+
   #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  #snackbarerror {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -180px;
+    background-color: rgb(235, 41, 41);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+  }
+
+  #snackbarerror::before{
+    content: "\00d7";
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+    font-weight: bolder;
+  }
+
+  #snackbarerror.show {
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -595,6 +626,7 @@
   .sidebar a:hover {
     color: var(--main-color);
     background-color: rgba(0,0,0,.05);
+    
   }
   
   
@@ -655,6 +687,31 @@
 
   font{
     font-family: 'Shippori Antique B1', sans-serif;
+    line-height: 3;
+  }
+
+  font .highlight{
+    color: var(--main-color);
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #55a2e12a;
+    width: auto;
+  }
+
+  font .highlightldz{
+    color: #f0ce0f;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #e2d8191d;
+    width: auto;
+  }
+
+  font .highlightldzs{
+    color: #14ab2d;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: #14ab2d1d;
+    width: auto;
   }
   
   font::before {
@@ -692,6 +749,21 @@
   color: white;
   }
   
+  .projecttag{
+    color:transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--main-color);
+    font-size: 40px;
+    margin: 0;
+  }
+
+  #projecttagse{
+     margin-top: 40px;
+  }
+
+  .projecttag::before{
+    content: '#';
+  }
   
   .tip{
   padding-top:10px;
@@ -783,6 +855,7 @@
     transform: translate(-50%, -50%);
     position: relative;
     text-align: center;
+    background-color: transparent;
   }
 
   .Check:hover{
