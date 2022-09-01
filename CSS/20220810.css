@@ -931,7 +931,6 @@
   }
 
   
-  
   .LTreeP{
    width: 42vw;
    margin: 20px 0 20px;
@@ -945,7 +944,8 @@
     section .section-wrapper {
       padding: 10px;
       box-sizing: border-box;
-      height: 100%; }
+      height: 100%; 
+    }
   
   .line {
     width: 90%;
