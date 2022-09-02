@@ -96,6 +96,7 @@
     background-position-x: center;  /*position center for safari*/
     background-position-y: center;
     background-size: cover;
+    background-repeat: no-repeat;
     transition: margin-left .5s;
     background-image: url("../Resources/headerBg/small.jpg");
     min-height: 100%;
