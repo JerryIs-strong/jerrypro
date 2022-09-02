@@ -1,0 +1,172 @@
+:root{
+    --theme-color: #0078D7;
+    --main-color: #fff;
+}
+
+html{
+    background-color: var(--theme-color);
+    margin: 0;
+    padding: 0 10%;
+    color: var(--main-color);
+    position: relative;
+}
+
+h1{
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-size: 170px;
+    font-weight: 100;
+    margin: 290px 0 0;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+h2{
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    margin-top: 50px;
+    font-size: 66px;
+    text-shadow: 0 0 50px #fff,0 0 50px #fff;
+    animation: fontFlicker 1.5s ease-in-out infinite alternate;
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@keyframes fontFlicker {
+    0%,
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 100px #fff, 0 0 20px #fff;
+    }
+    50% {
+      text-shadow: 0 0 50px #fff, 0 0 150px #fff, 0 0 50px #fff;
+    }
+  }
+
+.text{
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-weight: 100;
+    font-size: 27px;
+    line-height: 50px;
+    margin: 0 0 0 0;
+}
+
+.last{
+  margin-bottom: 40px;
+}
+
+.complete{
+    padding-top: 20px;
+}
+
+img{
+    height: 80px;
+    float: left; 
+    margin-right: 8px;
+    cursor: context-menu;
+}
+
+.footer{
+    margin-top: 55%;
+    position: absolute;
+    font-size: smaller;
+    padding-bottom: 90px;
+}
+
+.p{
+    display: inline-block;
+    margin-top: 0;
+    white-space: nowrap;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-weight: 600;
+    
+}
+
+.ep{
+    display: inline-block;
+    margin-top: 0;
+    white-space: nowrap;
+    margin-top: 13px;
+    line-height: 1px;
+    font-weight: 400;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -180px;
+    background-color: rgb(235, 41, 41);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+  }
+
+  #snackbar::before{
+    content: "\00d7";
+    color: #fff;
+    font-size: 26px;
+    margin-right: 10px;
+    font-weight: bolder;
+  }
+
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  .completetext{
+    display: inline-block;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 12px;
+  }
+
+  .timer{
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+    font-weight: 100;
+    line-height: 12px;
+  }
+
+  .maintext{
+    margin-top: 200px;
+    font-size: 20px;
+  }
+
+
