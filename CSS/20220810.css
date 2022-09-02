@@ -54,6 +54,7 @@
     cursor:default;
     -webkit-tap-highlight-color:transparent;
   }
+  
 
   ::selection{
     color: var(--main-light);
@@ -92,6 +93,8 @@
     background-attachment: fixed;
     position: relative;
     background-position: center;
+    background-position-x: center;  /*position center for safari*/
+    background-position-y: center;
     background-size: cover;
     transition: margin-left .5s;
     background-image: url("../Resources/headerBg/small.jpg");
