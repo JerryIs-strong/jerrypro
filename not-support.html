@@ -4,101 +4,34 @@
 <title>JERRY PRO :: 靜水流深</title>
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="10;url=https://linktr.ee/myplanet_jerry"/>
+<script type="application/javascript" src="./JS/Judger.js"></script>
 <link rel="shortcut icon" type="image/ico" href="./icon.ico"> <!--Favicon for Chrome-->
 <link rel="apple-touch-icon" href="./icon.ico"> <!--Favicon for Safari-->
+<link rel="stylesheet" href="./CSS/20220902_nosupport.css">
 </head>
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 50px "Lato", sans-serif;
-  color: #fff;
-  scroll-behavior: smooth;
-  background-image: url(./wallhaven-8x88vo_1920x1080.png);
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-#Message{
-  display: inline-block; 
-  text-align: center;
-  font-size: 40px;
-  font-weight: bolder;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-.Link{
-    color: rgb(207, 220, 237);
-    text-align: center;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.Timejump{
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  position: absolute;
-  line-height: 1.2;
-}
-
-#contect{
-  display: inline-block; 
-  text-align: center;
-}
-
-.contect{
-  top: 96%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0 auto;
-  padding: 10px;
-  width: 50%;
-  font-size: 30px;
-  text-align: center;
-  position: absolute;
-}
-
-a{
-  color:#A8C4B3;
-}
-
-a:hover{
-  color:#CFF2DD;
-}
-
-
-</style>
-
 <body>
-    <div class="Timejump">
-      <center><h1>&lt;/&gt;ERROR</h1></center>
-        <div id="Message">Sorry, we are temporarily unable to support your device，You will go to </div>
-          <div class="Link">"https://linktr.ee/myplanet_jerry"</div> 
-          <div id="Message">&nbsp;after &nbsp;</div>
-          <div class="timer" id="Message"></div>
-          <div id="Message">&nbsp;second</div>
-    </div>
-   <div class="contect">
-     <div id="contect">Something wrong?</div>
-     <a href="./index.html#Gocontact"><div id="contect">&nbsp;Contact me!</div></a>
-   </div>
+   <h1>:(</h1>
+        <h2>&lt;/&gt;HTTPS Error</h2>
+        <div class="maintext"><p class="text">Opps!Something went wrong</p>
+        <p class="text">Sorry, we are temporarily unable to support your device.</p>
+        <p class="text last">You will go to "https://linktr.ee/myplanet_jerry"</p></div>
+        <p class="completetext"><a class="timer" id="Message"></a>0% complete</p>
+        <div class="footer">
+        <a href="https://jerryis-strong.github.io/jerrypro.github.io/"><img src="https://jerryis-strong.github.io/jerrypro.github.io/Resources/error/error_qr.png"/></a>
+        <p class="p">It seems that you have some problems, you can go back to the home page to find solutions</p><br/>
+        <p class="ep">If you call a support person, give them this info:</p><br/>
+        <p class="ep">ERROR code: HTTPS ERROR Not Support</p>
+        </div>
 
 <script>
-//timer開始倒數到到 0
+//timer開始倒數到到 0。 
   var timer = document.querySelector(".timer");
-  var number = 10;
+  var number = 0;
   setInterval(function(){
-    number -- ;
-    if(number <= 0 )
-      number = 0;
+    number ++ ;
+    if(number > 10 )
+      number = 10;
     timer.innerText = number + 0 }, 1000);
 </script>
 
