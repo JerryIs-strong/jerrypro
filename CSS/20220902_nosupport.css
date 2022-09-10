@@ -72,10 +72,10 @@ img{
 }
 
 .footer{
-    margin-top: 55%;
     position: absolute;
     font-size: smaller;
     padding-bottom: 90px;
+    top: 87vh;
 }
 
 .p{
@@ -168,5 +168,3 @@ img{
     margin-top: 200px;
     font-size: 20px;
   }
-
-
