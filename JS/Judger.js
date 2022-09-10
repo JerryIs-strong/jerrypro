@@ -22,7 +22,7 @@ var browser={
   if(browser.versions.mobile || browser.versions.android || browser.versions.iPhone){  	
    		window.location = "#";	
   }else{
-    window.location.href="./jerrypro.html";
+    window.location.href="./index.html";
   }
 
 /*code from : https://bit.ly/3eB0LQ6*/
