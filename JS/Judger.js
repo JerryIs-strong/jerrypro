@@ -20,7 +20,7 @@ var browser={
 } 
  
   if(browser.versions.mobile || browser.versions.android || browser.versions.iPhone){  	
-   		window.location = "#";	
+   	window.location.href="#";	
   }else{
     window.location.href="./index.html";
   }
