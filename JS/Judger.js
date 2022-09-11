@@ -20,7 +20,7 @@ var browser={
 } 
  
   if(browser.versions.mobile || browser.versions.android || browser.versions.iPhone){  	
-   	window.location.href="#";	
+   	window.location.href="#ture";	
   }else{
     window.location.href="./index.html";
   }
