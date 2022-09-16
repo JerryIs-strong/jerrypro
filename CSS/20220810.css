@@ -625,14 +625,14 @@
       color: #777;
       background-color: var(--main-light);
       text-align: center;
-      padding: 50px 30px 0;
+      padding: 50px 30px 0 15px;
     }
 
     #Bg02{
         color: #777;
         background-color:var(--bg-w-245);
         text-align:center;
-        padding: 50px 30px 0;
+        padding: 50px 30px 0 15px;
     }
 
     #Bgimg01 {
