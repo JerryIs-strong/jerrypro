@@ -34,7 +34,7 @@ var browser={
 if(browser.versions.iPad){  	
   window.location.href="#ture";
 }else{
-  window.location.href="./jerrypro.html";
+  window.location.href="./index.html";
 }
 
 /*code from : https://bit.ly/3eB0LQ6*/
