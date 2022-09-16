@@ -9,10 +9,11 @@
 <script type="application/javascript" src="./JS/console.js"></script>
 <script type="application/javascript" src="./JS/main.js"></script>
 <link rel="stylesheet" href="./CSS/20220810.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&family=Silkscreen&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&Roboto:wght@500&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
 <body class="" id="HW">
@@ -62,8 +63,8 @@
       </div>
 </div>
  
-<div id="Goabout"></div>
-  <div class="Bg001" id="01">
+<div id="Goabout">
+  <div class="Bg001" id="Bg01">
     <h3 class="PartTitle" id="PT">About</h3>
     <span class="underline1"></span>
     <div class="tagBox">
@@ -81,12 +82,14 @@
       <font>JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。我的目標是打造一個全能的“工具箱”，為使用者提高工作效率，事半功倍。基本功，對編程尤為重要，由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習 。</font><br/>
       <font>JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br/>
     </div>
-    <img class="Bgimg01" src="./Resources/Bgimg/01.png" />
+    <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/01.png" />
   </div>
   </div>
   </div>
+ </div>
 
-  <div class="Bg002" id="Goproject">
+  <div id="Goproject">
+   <div class="Bg002" id="Bg02">
     <h3 class="PartTitle">Project</h3>
     <span class="underline1"></span>
     <div class="tagBox">
@@ -106,11 +109,12 @@
     <font><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a class="highlightldzs">“LDZ Music safer”</a>的重重保護。</font><br/>
     <a href="https://ldzmusic.wixsite.com/ldz-music" target="_blank"><button class="Check">Try Now</button></a>
     </div>
-    <img src="./Resources/Bgimg/02.png" class="Bgimgh02" />
+    <img src="./Resources/Bgimg/02.png" class="Bgimgh02" id="Bgimgh02" />
+   </div>
   </div>
   
-<div class="Bg001" id="001">
-  <div id="Golinktree">
+<div id="Golinktree">
+  <div class="Bg001" id="Bg01">
     <h3 class="PartTitle">My Link Tree</h3>
     <span class="underline1"></span>
   <div class="LtreeAll">
@@ -122,12 +126,13 @@
     <h6 class="LinkTitle">JERRY://Music</h6>
       <button class="Ltree"><a href="https://www.youtube.com/watch?v=kiSYRbMn67I">Click</a></button>
   </div>
-  <img class="Bgimg01" src="./Resources/Bgimg/04.png" />
+  <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/04.png" />
   </div>
 </div>  
   
   
-  <div class="Bg002" id="Gocontact">
+  <div id="Gocontact">
+   <div class="Bg002" id="Bg02">
     <h3 class="PartTitle">Contact</h3>
     <span class="underline1"></span>
 
@@ -168,16 +173,17 @@
          <span>YouTube</span></a>
       </div>
    </div>
-   <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
-   <img src="./Resources/Bgimg/03.png" class="Bgimgh03" />
+      <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
+      <img src="./Resources/Bgimg/03.png" class="Bgimgh02" id="Bgimgh02" />
+   </div>
   </div>
   
-  <div class="Bg001" id="Goproject">
+  <div id="Goproject">
+   <div class="Bg001" id="Bg001">
     <h3 class="PartTitle">2022 雷軍年度演講(BiliBili)同步直播</h3>
     <span class="underline1"></span>
     <!--<center><iframe style="width: 700px;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=545342&quality=0" frameborder="no"    framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center>--> <!--Code form Bilibili-->
-  <div class="slideshow-container">
-  
+  <div class="slideshow-container" id="slideshow-container">
   <div class="mySlides fade">
     <div class="numbertext">1 / 4</div>
     <img src="./Resources/pic20220811.png" style="width:100%" alt="永遠相信美好的事情，即將發生">
@@ -201,6 +207,7 @@
   
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
+  </div>
   </div>
   </div>
   
@@ -229,7 +236,6 @@
       dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
   }
   </script>
   
@@ -263,7 +269,7 @@
   </div>
   
   
-  <div class="Bg001foot" id="Goproject">
+  <div class="Bg001foot" id="Bg001foot">
    <div id="log">
      <center><b><h3 style="font-size: 30px;">小站"大"記</b></h3>
      <span class="underline1"></span>
@@ -286,7 +292,18 @@
     </div>
   </div>
   </div>
+
+  <div class="moreabout" id="moreabout">
+    <details>
+      <summary>More About 1</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
   
+    <details class="haa2">
+      <summary>More About 2</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+  </div>
   
   <div style="position:relative;" class="famousCard">
     <div class="FootCard">
