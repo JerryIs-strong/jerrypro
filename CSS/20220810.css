@@ -376,7 +376,7 @@
   
   .chevron:before,
   .chevron:after {
-    content: ' ';
+    content: '';
     position: absolute;
     top: 0;
     height: 100%;
@@ -707,7 +707,6 @@
     background-color: rgba(0,0,0,.05);
     
   }
-  
   
   .sidebar .closebtn {
     position: absolute;
