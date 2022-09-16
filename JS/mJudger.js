@@ -1,10 +1,10 @@
 //判斷設備是否為移動終端
 !function () {
-    var devices = ["iPhone","Android","Windows Phone"]
+    var devices = ["iPad"]
     var ua = window.navigator.userAgent
     for (var i = 0; i < devices.length; i++) {
     if (ua.indexOf(devices[i]) != -1) {
-       window.location.href = 'https://jerryis-strong.github.io/jerrypro/not-support.html'
+       window.location.href = './ipad.html'
       }
     }
     }()
@@ -15,6 +15,7 @@
       x.className = "show";
       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
       e.preventDefault(); 
+      document.documentElement.style.setProperty('--main-light:', 'black');
     }, false);
   
-
+/*https://jerryis-strong.github.io/jerrypro.github.io/not-support.html*/
