@@ -990,6 +990,7 @@
     position: relative;
     transition: 0.5s;
     color: #000;
+    cursor: pointer;
   }
 
   .Ltree a:after {
