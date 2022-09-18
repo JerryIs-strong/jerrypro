@@ -376,7 +376,7 @@
   
   .chevron:before,
   .chevron:after {
-    content: '';
+    content: ' ';
     position: absolute;
     top: 0;
     height: 100%;
@@ -708,6 +708,7 @@
     
   }
   
+  
   .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -1009,11 +1010,14 @@
     right: 0;
   }
 
-  
   .LTreeP{
    width: 42vw;
    margin: 20px 0 20px;
    text-align: center;
+  }
+
+  .ngl{
+    width: 40px;
   }
   
   section {
