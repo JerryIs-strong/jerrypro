@@ -59,8 +59,8 @@
     height:100%;
     max-width:100%;
     font-family:"PingFang SC","Microsoft Yahei","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
-    cursor:default;
     -webkit-tap-highlight-color:transparent;
+    cursor: url('../Resources/cusor/normal.cur'),default;
   }
   
 
@@ -300,6 +300,7 @@
       top: 50%;
       bottom: 20%;
       margin-bottom: 20px;
+      cursor: url('../Resources/cusor/normal.cur'),default;
   }
   
   
@@ -310,7 +311,6 @@
       background-color: rgba(0,0,0,.05);
       color: rgba(0,0,0,.6);
       transition: .25s;
-      cursor: context-menu;
   }
   
   .tagBox span:hover{
@@ -382,7 +382,7 @@
     opacity: 0;
     transform: scale3d(0.5, 0.5, 0.5);
     animation: move 3s ease-out infinite;
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
   }
   
   .chevron:first-child {
@@ -458,7 +458,7 @@
     font-size: 16px;
     color: #fff;
     text-decoration: none;
-    cursor: default;
+    cursor: url('../Resources/cusor/normal.cur'),default;
   }
   
   .navbar{
@@ -469,7 +469,7 @@
   }
   
   .logo{
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
   }
   
   .navLinkBox{
@@ -485,6 +485,7 @@
   .navLinkBox li a{
     transform: all 0.3s ease 0s;
     font-family: 'LXGWWenKaiMono',sans-serif;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
   }
   
   .nav li a:hover{
@@ -496,9 +497,8 @@
     background-color: var(--main-color);
     border: none;
     border-radius: 50px;
-    cursor: pointer;
     transform: all 0.3s ese 0s;
-    cursor: context-menu;
+    cursor: url('../Resources/cusor/normal.cur'),default;
     font-weight: bold;
   }
   
@@ -766,7 +766,7 @@
   
   .openbtn {
     font-size: 20px;
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
     background-color: Transparent;
     color: white;
     padding: 6px 15px;
@@ -799,7 +799,7 @@
   
   .navLink{
   position:relative;
-  cursor:pointer;
+  cursor:url('../Resources/cusor/pointer.cur'),pointer;
   transition:.25s;
   }
   
@@ -1029,7 +1029,7 @@
     background-color: #EBEEF1;
     width: 100%;
     height: 55px;
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
   }
 
   .Ltree a {
@@ -1037,7 +1037,7 @@
     position: relative;
     transition: 0.5s;
     color: #000;
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
     font-family: 'LXGWWenKaiMono',sans-serif;
     font-weight: 500;
   }
@@ -1087,7 +1087,7 @@
     margin-top: 20vh;
     margin-left: 5%; }
     .line:hover {
-      cursor: pointer; }
+      cursor:url('../Resources/cusor/normal.cur'),default; }
     .line .year {
       background-color: #FBFCFC;
       border-radius: 50%;
@@ -1180,7 +1180,7 @@
   
   /* Next & previous buttons */
   .prev, .next {
-    cursor: pointer;
+    cursor:url('../Resources/cusor/pointer.cur'),pointer;
     position: absolute;
     top: 40%;
     width: auto;
@@ -1313,7 +1313,7 @@
   overflow: hidden;
   background: #fff;
   border-radius: 50px;
-  cursor: pointer;
+  cursor:url('../Resources/cusor/pointer.cur'),pointer;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
   transition: all 0.3s ease-out;
 }
@@ -1357,6 +1357,7 @@
 }
 .wrapper .button:hover .icon i{
   color: #fff;
+  cursor:url('../Resources/cusor/pointer.cur'),pointer;
 }
 .wrapper .button span{
   font-size: 20px;
@@ -1425,7 +1426,7 @@ details > summary::after{
 details > summary {
   padding: 4px;
   border: none;
-  cursor: pointer;
+  cursor:url('../Resources/cusor/pointer.cur'),pointer;
   font-weight:bolder;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
