@@ -29,6 +29,14 @@
   --bg-w-pure: white;
   --bg-w-245: rgb(245,245,245);
   }
+
+  @font-face {
+    font-family: 'LXGWWenKaiMono';
+    src: url('../Resources/font/LXGWWenKaiMono-Regular.woff2') format('woff2'),
+         url('../Resources/font/LXGWWenKaiMono-Regular.woff') format('woff'),
+         url('../Resources/font/LXGWWenKaiMono-Regular.svg') format('svg'),
+         url('../Resources/font/LXGWWenKaiMono-Regular.ttf') format('truetype');
+  }
   
   body, html {
     height: 100%;
@@ -120,9 +128,10 @@
   
   .bgimg-2 {
     position: relative;
+    background-position: center;
     background-size: cover;
     transition: margin-left .5s;
-    background-image: url("../Resources/footerBg/wallhaven-3k77vy_1920x1080.png");
+    background-image: url("../Resources/footerBg/3C10DB36-8B2E-4040-806D-B233281A5364.jpeg");
     height: 20vh;
     -webkit-animation: fade-in-bck 4s ;
     animation: fade-in-bck 4s ;
@@ -465,6 +474,7 @@
   
   .navLinkBox li a{
     transform: all 0.3s ease 0s;
+    font-family: 'LXGWWenKaiMono',sans-serif;
   }
   
   .nav li a:hover{
@@ -669,6 +679,31 @@
     #moreabout{
       padding: 70px 20px;
     }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 20%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+      line-height: 40px;
+      opacity: 0.9;
+    }
+
+    .bgimg-2 {
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      transition: margin-left .5s;
+      background-image: url(../Resources/footerBg/3C10DB36-8B2E-4040-806D-B233281A5364.jpeg);
+      height: 20vh;
+      -webkit-animation: fade-in-bck 4s;
+      animation: fade-in-bck 4s;
+      display: fixed;
+      opacity: 0.85;
+      padding: 20px 20px;
+    }
   }
 
   
@@ -700,6 +735,7 @@
     display: block;
     transition: 0.3s;
     position: relative;
+    font-family: 'LXGWWenKaiMono',sans-serif;
   }
   
   .sidebar a:hover {
@@ -766,7 +802,8 @@
   }
 
   font{
-    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'LXGWWenKaiMono', sans-serif;
+    font-weight: 300;
     line-height: 3;
   }
 
@@ -991,6 +1028,8 @@
     transition: 0.5s;
     color: #000;
     cursor: pointer;
+    font-family: 'LXGWWenKaiMono',sans-serif;
+    font-weight: 500;
   }
 
   .Ltree a:after {
