@@ -1272,9 +1272,12 @@
   text-align:center;
 }
 
+.fixedText{
+  font-family: 'LXGWWenKaiMono', sans-serif;
+}
 
 .TypingText{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LXGWWenKaiMono', sans-serif;
   color: #6e8fb0;
   font-weight: bolder;
   font-size: large;
@@ -1351,6 +1354,7 @@
   line-height: 60px;
   margin-left: 10px;
   transition: all 0.3s ease-out;
+  font-family: 'LXGWWenKaiMono', sans-serif;
 }
 .wrapper .button:nth-child(1) span{
   color: #4267B2;
