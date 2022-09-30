@@ -25,9 +25,7 @@
     <a href="#Gocontact" class="navLink" onclick="closeNav()">Contact</a>
   </div>
   
-
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
   
   <div class="topBG" id="topBG">
   
@@ -41,7 +39,7 @@
           <li><a href="#Gocontact" class="navLink">Contact</a></li>
         </ul>
       </nav>
-      <button class="openbtn" onclick="openNav()">☰</button> 
+      <button class="openbtn" onclick="openNav()" id="closeNav">☰</button> 
       <a><button onclick="Snackbar()" class="buttonTop">靜水流深</button></a>
       <div id="snackbar">青出於藍，而勝於藍！</div>
       <div id="snackbarerror">Error: You cannot use right click on this site</div>
@@ -110,7 +108,7 @@
     <font>我們與各大社交媒體均開設了官方賬號，發揮出我們的“愛”與力量，致力宣傳劉大壯的音樂力量。<a class="highlightldz">LDZ Music</a>在Wix與webnode分別設立了官方網站與部落格(Blog)。其中，我們在官方網站中提供了在綫音樂串流的功能，用戶能夠通過我們的官方網站過的“鎖屏聽歌”的功能。我們承諾我們所提供的服務絕對不會包含任何隱藏收費。</font><br/>
     <font><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a class="highlightldzs">“LDZ Music safer”</a>的重重保護。</font><br/>
     <a href="https://ldzmusic.wixsite.com/ldz-music" target="_blank"><button class="Check">Try Now</button></a>
-      
+
     <h2 class="projecttag" id="projecttagse">3</h2>
     <font><a class="highlight">JERRY Virus</a> 搜集了新型和各種臭名昭著的電腦病毒提供測試。</font><br/>
     <a href="https://jerryis-strong.github.io/jerryvirus/" target="_blank"><button class="Check">Test</button></a>
@@ -131,6 +129,8 @@
       <button class="Ltree"><a href="https://www.youtube.com/ldzmusic_studio">LDZ Music</a></button>
     <h6 class="LinkTitle">JERRY://More</h6>
       <button class="Ltree" id="ltreengl"><a href="https://ngl.link/heyajerry"><img class="ngl" src="./Resources/icon/ngl.png"/> Link</a></button>
+      <button class="Ltree" id="ltreeng2" onclick="MusicOpen()"><a> Music</a></button>
+      <div class="musicinfo" id="musicinfo" onclick="MusicOpen()"><div class="music-inline"><img src="./Resources/audio/cover.jpg"/><audio controls src="./Resources/audio/Leaving You.mp3" ></audio><p class="musictitle" id="musictitle">離開你以後</p></div></div>
   </div>
   <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/04.png" />
   </div>
@@ -302,6 +302,18 @@
     </div>
   </div>
   </div>
+
+  <!--<div class="moreabout" id="moreabout">
+    <details>
+      <summary>More About 1</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+  
+    <details class="haa2">
+      <summary>More About 2</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+  </div>-->
   
   <div style="position:relative;" class="famousCard">
     <div class="FootCard">
