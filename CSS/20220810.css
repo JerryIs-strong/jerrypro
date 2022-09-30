@@ -714,7 +714,7 @@
       opacity: 0.85;
       padding: 20px 20px;
     }
-    
+
     #snackbar {
       visibility: hidden;
       min-width: 250px;
@@ -729,6 +729,16 @@
       left: 47%;
       bottom: 30px;
       font-size: 17px;
+   }
+
+   #musicinfo img {
+      width: 90px;
+      margin: 0 0 20px;
+   }
+
+   #musictitle{
+    visibility: hidden;
+    display: none;
    }
   }
 
@@ -1084,6 +1094,70 @@
 
   .ngl{
     width: 40px;
+  }
+
+  #ltreeng2{
+    transition: height 1s;
+  }
+
+  .musicinfo{
+    padding: 20px;
+    position: absolute;
+    top: 86%;
+    visibility: hidden;
+    display: none;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .music-inline{
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .musicinfo img{
+    width:140px;
+    margin-right: 40px;
+  }
+
+  .musicinfo audio{
+    vertical-align: middle;
+  }
+
+  .musictitle{
+    position: absolute;
+    font-size: 90px;
+    bottom: 2;
+    top: 0px;
+    left: 70px;
+    z-index: -2;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--main-color);
+    /* font-size: 40px; */
+    margin: 0;
+    font-family: "PingFang SC","Microsoft Yahei","Helvetica Neue",Helvetica,"Segoe UI",Arial,sans-serif;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
   }
   
   section {
