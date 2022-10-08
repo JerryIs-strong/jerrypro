@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW" class="theme-blue">
 <head>
 <title>JERRY PRO :: 靜水流深</title>
 <meta charset="UTF-8">
@@ -23,6 +23,7 @@
     <a href="#Goproject" class="navLink" onclick="closeNav()">Project</a>
     <a href="#Golinktree" class="navLink" onclick="closeNav()">Link Tree</a>
     <a href="#Gocontact" class="navLink" onclick="closeNav()">Contact</a>
+    <a class="navLink" onclick="closeNav(),changeTheme()">Change Theme</a>
   </div>
   
   
@@ -37,6 +38,7 @@
           <li><a href="#Goproject" class="navLink" id="navLinkHide">Project</a></li>
           <li><a href="#Golinktree" class="navLink" id="navLinkHide">Link Tree</a></li>
           <li><a href="#Gocontact" class="navLink">Contact</a></li>
+          <li><a onclick="changeTheme()" class="navLink">Theme</a></li>
         </ul>
       </nav>
       <button class="openbtn" onclick="openNav()" id="closeNav">☰</button> 
@@ -73,13 +75,14 @@
       <span>二次元</span>
     </div>
     <div class="textContent">
-      <div class="aboutTyping">
+      <div class="aboutTyping" id="aboutTyping">
         <div class="fixedText">JERRY的<span class="TypingText"></span></div>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script type="application/javascript" src="./JS/typing.js"></script>
       </div>
       <font>我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br/>
-      <font>JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。我的目標是打造一個全能的“工具箱”，為使用者提高工作效率，事半功倍。基本功，對編程尤為重要，由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習 。</font><br/>
+      <font>JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習。</font><br/>
+      <font>我的夢想是成為軟件工程師，一名小米工程師。「讓每個人都能享受科技的樂趣」這是小米對產品的價值觀，也是我對小米的第一印象。我與小米的“緣分”始於“小米手環2”，憑著對小米的印象和雷軍的經歷，就有了一種說不出來的“好感”，因此我也入坑了小米，成了一個小小的米粉（？😂在二十一世紀，編程不應只是專業領域的知識，而是每個人都掌握的基本能力，在未來，我們要由我們控制AI，而不是AI取代我們。此外，網絡安全也是我感興趣的一個範疇，如今科技發展的成熟，隨之帶來的是重重的安全隱患。</font><br/>
       <font>JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br/>
     </div>
     <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/01.png" />
@@ -123,12 +126,12 @@
     <span class="underline1"></span>
   <div class="LtreeAll">
     <h6 class="LinkTitle">JERRY://Website | In development</h6>
-      <button class="Ltree"><a href="https://jerrytool.w3spaces.com/" class="Link">JERRY://Tool</a></button>
-      <button class="Ltree"><a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0" class="Link">Tool://State</a></button>
+      <button class="Ltree" onclick="link1()"><a href="https://jerrytool.w3spaces.com/" class="Link">JERRY://Tool</a></button>
+      <button class="Ltree" onclick="link2()"><a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0" class="Link">Tool://State</a></button>
     <h6 class="LinkTitle">JERRY://Project | Fact Studio</h6>
-      <button class="Ltree"><a href="https://www.youtube.com/ldzmusic_studio">LDZ Music</a></button>
+      <button class="Ltree" onclick="link3()"><a href="https://www.youtube.com/ldzmusic_studio">LDZ Music</a></button>
     <h6 class="LinkTitle">JERRY://More</h6>
-      <button class="Ltree" id="ltreengl"><a href="https://ngl.link/heyajerry23446"><img class="ngl" src="./Resources/icon/ngl.png"/> Link</a></button>
+      <button class="Ltree" id="ltreengl" onclick="link4()"><a href="https://ngl.link/heyajerry23446"><img class="ngl" src="./Resources/icon/ngl.png"/> Link</a></button>
       <button class="Ltree" id="ltreeng2" onclick="MusicOpen()"><a> Music</a></button>
       <div class="musicinfo" id="musicinfo" onclick="MusicOpen()"><div class="music-inline"><img src="./Resources/audio/cover.jpg"/><audio controls src="./Resources/audio/Leaving You.mp3" ></audio><p class="musictitle" id="musictitle">離開你以後</p></div></div>
   </div>
@@ -293,6 +296,10 @@
         <div>
           <p class="logText1">2022.09.16</p>
           <p class="logText2">網站加入自適應框架</p>
+        </div>
+        <div>
+          <p class="logText1">2022.10.08</p>
+          <p class="logText2">加入<a class="themeby">Theme By Cookies</a></p>
         </div>
         <div>
           <p class="logText3">TO BE</p>
