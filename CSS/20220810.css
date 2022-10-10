@@ -48,6 +48,11 @@
   --bg-transform: #d6b8c629;
 }
 
+.theme-green {
+  --main-color: #c2d6b8fa;
+  --bg-transform: #c2d6b82e;
+}
+
 body,
 html {
   height: 100%;
@@ -1468,7 +1473,7 @@ img {
   border-radius: 50px;
   cursor: url("../Resources/cusor/pointer.cur"), pointer;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
 }
 .wrapper .button:hover {
   width: 200px;
@@ -1481,7 +1486,8 @@ img {
   border-radius: 50px;
   box-sizing: border-box;
   line-height: 60px;
-  transition: all 0.3s ease-out;
+  transition-property: opacity, right;
+  transition-duration: 3s, 5s;
 }
 .wrapper .button:nth-child(1):hover .icon {
   background: #4267b2;
@@ -1503,6 +1509,10 @@ img {
   background: #ff0000;
   float: left;
 }
+.wrapper .button:nth-child(6):hover .icon {
+  background: #b0def4;
+  float: left;
+}
 .wrapper .button .icon i {
   font-size: 25px;
   line-height: 60px;
@@ -1517,11 +1527,12 @@ img {
   font-weight: 500;
   line-height: 60px;
   margin-left: 10px;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in-out;
   font-family: "LXGWWenKaiMono", sans-serif;
 }
 .wrapper .button:nth-child(1) span {
   color: #4267b2;
+  transition: all 0.3s ease-in-out;
 }
 .wrapper .button:nth-child(2) span {
   color: #1da1f2;
@@ -1534,6 +1545,9 @@ img {
 }
 .wrapper .button:nth-child(5) span {
   color: #ff0000;
+}
+.wrapper .button:nth-child(6) span {
+  color: #b0def4;
 }
 
 .ContactTag {
