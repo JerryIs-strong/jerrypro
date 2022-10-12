@@ -1,5 +1,6 @@
 function openNav() {
   document.getElementById("Sidebar").style.width = "250px";
+  /*document.getElementById("topBG").style.marginLeft = "250px";*/
 }
 
 function closeNav() {
@@ -71,3 +72,22 @@ function changeTheme() {
     setTheme("theme-blue");
   }
 })();
+
+function Themebgloder() {
+  var x = document.getElementById("topBG");
+  var randomNumber = Math.floor(Math.random() * 4);;
+
+  if (randomNumber == "1") {
+    x.style.backgroundImage =
+      "url('https://jerrypro.xyz/Resources/headerBg/small.jpg')";
+    console.log("Theme: 1");
+  } else if (randomNumber == "2") {
+    x.style.backgroundImage =
+      "url('https://jerrypro.xyz/Resources/headerBg/small2.jpg')";
+    console.log("Theme: 2");
+  } else {
+    x.style.backgroundImage =
+      "url('https://jerrypro.xyz/Resources/headerBg/small3.jpg')";
+    console.log("Theme: 3");
+  }
+};
