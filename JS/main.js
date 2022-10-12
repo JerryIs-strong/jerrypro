@@ -43,8 +43,7 @@ function appleBg() {
     if (window.location.href.indexOf("?mobile") < 0) {
       try {
         if (/iPad|iPhone|iPod|iOS|ipadOS/i.test(navigator.userAgent)) {
-          document.getElementById("topBG").style.backgroundAttachment =
-            "inherit";
+          document.getElementById("topBG").className = "topBGsafari";
           console.log("Done");
         }
       } catch (e) {}
