@@ -136,7 +136,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   transition: margin-left 0.5s;
-  background-image: url("../Resources/headerBg/small.jpg");
+  background-image: url("");
   min-height: 100%;
   -webkit-animation: fade-in-bck 4s;
   animation: fade-in-bck 4s;
