@@ -28,12 +28,6 @@ function MusicOpen() {
   }
 }
 
-/*function Snackbar() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }*/
-
 if (
   /AppleWebKit.*mobile/i.test(navigator.userAgent) ||
   /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
