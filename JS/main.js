@@ -28,20 +28,27 @@ function MusicOpen() {
   }
 }
 
-if (
-  /AppleWebKit.*mobile/i.test(navigator.userAgent) ||
-  /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
-    navigator.userAgent
-  )
-) {
-  if (window.location.href.indexOf("?mobile") < 0) {
-    try {
-      if (/iPad|iPhone|iPod|iOS|ipadOS/i.test(navigator.userAgent)) {
-        const browser = document.getElementById("topBG");
-        browser.className = "topBGsafari";
-        console.log("Done");
-      }
-    } catch (e) {}
+/*function Snackbar() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+  }*/
+function appleBg() {
+  if (
+    /AppleWebKit.*mobile/i.test(navigator.userAgent) ||
+    /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
+      navigator.userAgent
+    )
+  ) {
+    if (window.location.href.indexOf("?mobile") < 0) {
+      try {
+        if (/iPad|iPhone|iPod|iOS|ipadOS/i.test(navigator.userAgent)) {
+          document.getElementById("topBG").style.backgroundAttachment =
+            "inherit";
+          console.log("Done");
+        }
+      } catch (e) {}
+    }
   }
 }
 
@@ -69,7 +76,7 @@ function changeTheme() {
 
 function Themebgloder() {
   var x = document.getElementById("topBG");
-  var randomNumber = Math.floor(Math.random() * 4);;
+  var randomNumber = Math.floor(Math.random() * 4);
 
   if (randomNumber == "1") {
     x.style.backgroundImage =
@@ -84,4 +91,4 @@ function Themebgloder() {
       "url('https://jerrypro.xyz/Resources/headerBg/small3.jpg')";
     console.log("Theme: 3");
   }
-};
+}
