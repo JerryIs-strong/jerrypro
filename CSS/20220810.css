@@ -778,9 +778,9 @@ button {
 
   #logBoxOuter {
     position: relative;
-    left: 0; 
+    left: 0;
     margin-top: 30px;
-    width: 100%; 
+    width: 100%;
     overflow: hidden;
   }
 }
@@ -888,27 +888,96 @@ font {
 }
 
 font .highlight {
+  text-decoration: none;
   color: var(--main-text);
-  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  transition: all 0.24s ease;
+  padding: 0 0.2rem;
+  line-height: 1.4em;
   font-weight: bold;
-  background-color: #55a2e12a;
-  width: auto;
+}
+
+font .highlight::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  border-radius: 30px;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  background-color: rgba(85, 162, 225, 0.165);
+  z-index: -1;
+  transition: all 0.24s ease;
+}
+
+font .highlight:hover::after {
+  height: 100%;
+  background-color: rgba(85, 162, 225, 0.39);
 }
 
 font .highlightldz {
+  text-decoration: none;
   color: #f0ce0f;
-  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  transition: all 0.24s ease;
+  padding: 0 0.2rem;
+  line-height: 1.4em;
   font-weight: bold;
+}
+
+font .highlightldz::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  border-radius: 30px;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
   background-color: #e2d8191d;
-  width: auto;
+  z-index: -1;
+  transition: all 0.24s ease;
+}
+
+font .highlightldz:hover::after {
+  height: 100%;
+  background-color: #e2d8193c;
 }
 
 font .highlightldzs {
+  text-decoration: none;
   color: #14ab2d;
-  border-radius: 30px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  transition: all 0.24s ease;
+  padding: 0 0.2rem;
+  line-height: 1.4em;
   font-weight: bold;
+}
+
+font .highlightldzs::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  border-radius: 30px;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
   background-color: #14ab2d1d;
-  width: auto;
+  z-index: -1;
+  transition: all 0.24s ease;
+}
+
+font .highlightldzs:hover::after {
+  height: 100%;
+  background-color: #14ab2d3c;
 }
 
 font::before {
