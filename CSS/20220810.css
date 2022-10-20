@@ -844,7 +844,7 @@ button {
   transition: 0.3s;
 }
 
-#Sidebar {
+#main {
   transition: margin-left 0.5s;
   padding: 16px;
 }
