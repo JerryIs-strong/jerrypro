@@ -181,10 +181,8 @@ html {
 }
 
 #topTitle {
-  position: absolute;
-  top: 28%;
-  width: 100%;
   text-align: center;
+  padding: 10% 0;
 }
 
 #topTitle h1 {
