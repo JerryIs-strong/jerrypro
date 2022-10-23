@@ -1,11 +1,14 @@
 function openNav() {
   document.getElementById("Sidebar").style.width = "250px";
+  document.getElementById("Sidebar-mask").style.width = "100%";
+  document.body.style.overflowY = "hidden";
   /*document.getElementById("topBG").style.marginLeft = "250px";*/
 }
 
 function closeNav() {
   document.getElementById("Sidebar").style.width = "0";
-  document.getElementById("topBG").style.marginLeft = "0";
+  document.getElementById("Sidebar-mask").style.width = "0";
+  document.body.style.overflowY = "visible";
 }
 
 function MusicOpen() {
