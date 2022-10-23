@@ -356,15 +356,15 @@ marquee {
 }
 
 .Bgimg01 {
-  width: 35vh;
-  left: 42%;
+  width: 28vh;
+  left: 46%;
   position: relative;
   margin: 45px 0 0;
 }
 
 .Bgimgh02 {
-  width: 35vh;
-  right: 42%;
+  width: 28vh;
+  right: 46%;
   position: relative;
   margin: 50px 0 0;
 }
@@ -666,7 +666,7 @@ button {
   }
 }
 
-.Jerry-sound{
+.Jerry-sound {
   width: 80%;
   padding: 0 14%;
   position: absolute;
