@@ -808,6 +808,7 @@ button {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  background-image: url("../Resources/Bgimg/sidebarbg2.jpeg");
 }
 
 .Sidebar-mask {
