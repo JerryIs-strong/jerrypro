@@ -666,7 +666,14 @@ button {
   }
 }
 
-@media screen and (max-width: 490px) {
+.Jerry-sound{
+  width: 80%;
+  padding: 0 14%;
+  position: absolute;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 590px) {
   #topTitle {
     top: 15%;
     position: absolute;
@@ -794,10 +801,23 @@ button {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.Sidebar-mask {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.327);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
