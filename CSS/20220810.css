@@ -808,7 +808,8 @@ button {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  background-image: url("../Resources/Bgimg/sidebarbg2.jpeg");
+  background-position: center;
+  background-image: url('../Resources/Bgimg/1258.png');
 }
 
 .Sidebar-mask {
@@ -828,7 +829,7 @@ button {
   padding: 15px 30px;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  color: var(--main-light);
   display: block;
   transition: 0.3s;
   position: relative;
