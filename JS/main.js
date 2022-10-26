@@ -57,6 +57,14 @@ function appleBg() {
   }
 }
 
+function error(){
+  var xxxy = document.getElementById("Ltree-music");
+  var error = document.getElementById("ltreeng2");
+  xxxy.innerHTML = "❌ERROR: No Resoueces";
+  error.style.transition = "0.5s";
+  error.style.backgroundColor = "rgb(241 235 237)"
+}
+
 // function to set a given theme/color-scheme
 function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
