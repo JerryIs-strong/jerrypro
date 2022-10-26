@@ -60,7 +60,7 @@ function appleBg() {
 function error(){
   var xxxy = document.getElementById("Ltree-music");
   var error = document.getElementById("ltreeng2");
-  xxxy.innerHTML = "❌ERROR: No Resoueces";
+  xxxy.innerHTML = "❌ERROR: No Resources";
   error.style.transition = "0.5s";
   error.style.backgroundColor = "rgb(241 235 237)"
 }
