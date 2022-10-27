@@ -726,10 +726,6 @@ button {
     padding: 50px 20px;
   }
 
-  #moreabout {
-    padding: 70px 20px;
-  }
-
   .caption {
     position: absolute;
     left: 0;
@@ -788,6 +784,13 @@ button {
     width: 100%;
     overflow: hidden;
   }
+
+  #Bg001-iframe{
+    color: rgb(119, 119, 119);
+    background-color: var(--main-light);
+    text-align: center;
+    padding: 50px 30px 0px;
+  }
 }
 
 @media screen and (min-width: 1226px) {
@@ -814,16 +817,32 @@ button {
 
 .Sidebar-mask {
   height: 100%;
-  width: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.263);
   overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  
+  transition: visibility 0s linear 400ms, opacity 400ms;
+  opacity: 0;
+  backdrop-filter: blur(3px);
+  visibility: hidden;
+}
+
+.Sidebar-mask-active {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.263);
+  overflow-x: hidden;
+  transition: visibility 0s linear 0s, opacity 400ms;
+  opacity: 1;
+  backdrop-filter: blur(3px);
+  visibility: visible;
 }
 
 .sidebar a {
@@ -1200,7 +1219,7 @@ font::before {
   cursor: url("../Resources/cusor/pointer.cur"), pointer;
 }
 
-.Ltree a {
+.Link {
   display: inline-block;
   position: relative;
   transition: 0.5s;
@@ -1210,7 +1229,7 @@ font::before {
   font-weight: 500;
 }
 
-.Ltree a:after {
+.Link:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -1219,11 +1238,11 @@ font::before {
   transition: 0.5s;
 }
 
-.Ltree:hover a {
+.Ltree:hover .Link {
   padding-right: 25px;
 }
 
-.Ltree:hover a:after {
+.Ltree:hover .Link:after {
   opacity: 1;
   right: 0;
 }
@@ -1504,38 +1523,11 @@ img {
   padding: 50px 80px;
 }
 
-.Bg001-dark {
-  color: var(--main-light);
-  background-color: var(--b-alpha-90);
-  text-align: center;
-  padding: 50px 80px;
-}
-
 .Bg002 {
   color: #777;
   background-color: var(--bg-w-245);
   text-align: center;
   padding: 50px 80px 0;
-}
-
-.PartTitle-dark {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: rgb(255, 255, 255);
-}
-
-.PartTitle-dark::after {
-  content: "#";
-  font-size: 17px;
-  color: #5d7fa2;
-  font-weight: bold;
-}
-
-.Bg002-dark {
-  color: rgb(255, 255, 255);
-  background-color: var(--w-alpha-5);
-  text-align: center;
 }
 
 .fixedText {
@@ -1669,53 +1661,4 @@ img {
   text-align: center;
   padding: 50px 80px;
   text-align: justify;
-}
-
-details {
-  border: solid 3px;
-  border-radius: 10px;
-  padding: 10px;
-  user-select: none;
-}
-
-details > summary::marker {
-  content: "";
-}
-
-details > summary::after {
-  content: "➕";
-  display: inline-block;
-  position: absolute;
-  right: 110px;
-}
-
-details > summary {
-  padding: 4px;
-  border: none;
-  cursor: url("../Resources/cusor/pointer.cur"), pointer;
-  font-weight: bolder;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 3px;
-}
-
-details > p {
-  padding: 4px;
-  margin: 20;
-  font-family: "Roboto", sans-serif;
-}
-
-details::before {
-  content: "";
-  height: 3px;
-  width: 10px;
-  margin: 0;
-  color: black;
-}
-.haa2 {
-  margin-top: 20px;
-}
-
-.moreabout {
-  padding: 70px 80px;
 }
