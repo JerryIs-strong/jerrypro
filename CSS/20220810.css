@@ -785,7 +785,7 @@ button {
     overflow: hidden;
   }
 
-  #Bg001-iframe{
+  #Bg001-iframe {
     color: rgb(119, 119, 119);
     background-color: var(--main-light);
     text-align: center;
@@ -812,7 +812,7 @@ button {
   transition: 0.5s;
   padding-top: 60px;
   background-position: center;
-  background-image: url('../Resources/Bgimg/1258.png');
+  background-image: url("../Resources/Bgimg/1258.png");
 }
 
 .Sidebar-mask {
@@ -872,10 +872,10 @@ button {
 
 .openbtn {
   font-size: 20px;
-  cursor: url("../Resources/cusor/pointer.cur"), pointer;
+  cursor: url(../Resources/cusor/pointer.cur), pointer;
   background-color: Transparent;
   color: white;
-  padding: 6px 15px;
+  padding: 6px 20px;
   border: none;
 }
 
