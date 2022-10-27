@@ -504,12 +504,14 @@ button {
 
 .buttonTop {
   padding: 9px 25px;
-  background-color: var(--main-color);
-  border: none;
+  background-color: white;
+  /* border: none; */
   border-radius: 50px;
-  transform: all 0.3s ese 0s;
-  cursor: url("../Resources/cusor/normal.cur"), default;
+  transition: all 0.3s;
+  cursor: url(../Resources/cusor/normal.cur), default;
   font-weight: bold;
+  color: var(--main-color);
+  border: 3px solid var(--main-color);
 }
 
 .buttonTop:hover {
@@ -873,15 +875,15 @@ button {
 .openbtn {
   font-size: 20px;
   cursor: url(../Resources/cusor/pointer.cur), pointer;
-  background-color: Transparent;
+  background-color: transparent;
   color: white;
-  padding: 6px 20px;
+  padding: 6px 22px;
   border: none;
+  transition: all 0.3s;
 }
 
 .openbtn:hover {
   color: var(--main-color);
-  transition: 0.3s;
 }
 
 #main {
