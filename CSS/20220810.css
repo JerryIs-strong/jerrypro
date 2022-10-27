@@ -876,13 +876,11 @@ button {
   font-size: 20px;
   cursor: url(../Resources/cusor/pointer.cur), pointer;
   background-color: transparent;
-  color: white;
-  padding: 6px;
-  margin-right: 28px;
+  color: rgb(255, 255, 255);
+  padding: 6px 29px;
   border: none;
   transition: all 0.3s ease 0s;
 }
-
 .openbtn:hover {
   color: var(--main-color);
 }
