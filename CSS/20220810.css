@@ -826,7 +826,6 @@ button {
   overflow-x: hidden;
   transition: visibility 0s linear 400ms, opacity 400ms;
   opacity: 0;
-  backdrop-filter: blur(3px);
   visibility: hidden;
 }
 
@@ -842,6 +841,7 @@ button {
   transition: visibility 0s linear 0s, opacity 400ms;
   opacity: 1;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   visibility: visible;
 }
 
