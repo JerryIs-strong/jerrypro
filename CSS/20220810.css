@@ -503,15 +503,14 @@ button {
 }
 
 .buttonTop {
-  padding: 9px 25px;
-  background-color: white;
-  /* border: none; */
+  padding: 9px 20px;
+  background-color: rgb(255, 255, 255);
   border-radius: 50px;
-  transition: all 0.3s;
+  transition: all 0.3s ease 0s;
   cursor: url(../Resources/cusor/normal.cur), default;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--main-color);
-  border: 3px solid var(--main-color);
+  border: 3px solid;
 }
 
 .buttonTop:hover {
@@ -877,10 +876,11 @@ button {
   cursor: url(../Resources/cusor/pointer.cur), pointer;
   background-color: transparent;
   color: rgb(255, 255, 255);
-  padding: 6px 29px;
+  padding: 6px 22px;
   border: none;
   transition: all 0.3s ease 0s;
 }
+
 .openbtn:hover {
   color: var(--main-color);
 }
