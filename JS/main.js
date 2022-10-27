@@ -1,17 +1,14 @@
 function openNav() {
   document.getElementById("Sidebar").style.width = "250px";
-  document.getElementById("Sidebar-mask").style.width = "100%";
+  document.getElementById("Sidebar-mask").className = "Sidebar-mask-active";
   document.body.style.overflowY = "hidden";
-  document.getElementById("topBG").style.filter = "blur(0.33rem)"
-  document.getElementById("topBG").style.transition = "0.3s"
   /*document.getElementById("topBG").style.marginLeft = "250px";*/
 }
 
 function closeNav() {
   document.getElementById("Sidebar").style.width = "0";
-  document.getElementById("Sidebar-mask").style.width = "0";
+  document.getElementById("Sidebar-mask").className = "Sidebar-mask";
   document.body.style.overflowY = "visible";
-  document.getElementById("topBG").style.filter = "";
 }
 
 function MusicOpen() {
@@ -106,3 +103,4 @@ function Themebgloder() {
     console.log("Theme: 3");
   }
 }
+
