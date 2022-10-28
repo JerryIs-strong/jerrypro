@@ -1344,8 +1344,8 @@ section .section-wrapper {
   height: 4px;
   background: linear-gradient(
     to right,
-    var(--main-color) 13.25%,
-    #fbfcfc 13.25%
+    var(--main-color) 35.25%,
+    #fbfcfc 35.25%
   );
   margin-top: 20vh;
   margin-left: 5%;
@@ -1431,10 +1431,10 @@ section .section-wrapper {
   text-align: center;
 }
 
-.mySlides {
+/* .Slides {
   display: none;
   margin-top: 20px;
-}
+} */
 
 img {
   vertical-align: middle;
@@ -1447,6 +1447,7 @@ img {
   height: 400px;
   position: relative;
   margin: auto;
+  text-align: center
 }
 
 /* Next & previous buttons */
