@@ -104,3 +104,17 @@ function Themebgloder() {
   }
 }
 
+
+function bplayer(){
+  var playername = document.getElementById("bilibili-player");
+  var side = document.getElementById("slideshow-container");
+
+  if (playername.className == ("play-ture")){
+    document.title = "JERRY PRO :: 直播開始啦(≧▽≦*)o"
+    side.style.visibility = "hidden";
+    side.style.display = "none";
+  }else{
+    console.log("No event");
+  }
+}
+
