@@ -199,7 +199,7 @@ html {
 
 #topTitle h1::before {
   content: "";
-  background-image: url("../Resources/icon/hello_ween.png");
+  background-image: url("../Resources/icon/github.png");
   background-size: 60px 60px;
   display: inline-block;
   width: 60px;
