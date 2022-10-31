@@ -865,6 +865,7 @@ button {
 .sidebar a:hover {
   color: var(--main-color);
   background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
 }
 
 .sidebar .closebtn {
