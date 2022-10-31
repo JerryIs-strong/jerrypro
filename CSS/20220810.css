@@ -876,6 +876,10 @@ button {
   border-radius: 40px;
 }
 
+.fa{
+  margin-right: 10px;
+}
+
 .openbtn {
   font-size: 20px;
   cursor: url(../Resources/cusor/pointer.cur), pointer;
