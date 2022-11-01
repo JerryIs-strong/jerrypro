@@ -485,6 +485,7 @@ button {
 
 .navLinkBox {
   list-style: none;
+  transition: all 0.5s;
 }
 
 .navLinkBox li {
@@ -500,6 +501,23 @@ button {
 
 .nav li a:hover {
   color: var(--main-color);
+}
+
+.nav li a:hover::before {
+  content: "\f21e";
+}
+
+.navLinkBox li i{
+  margin-right: 6px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
+}
+
+.navLinkBox li a:hover i{
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 300ms;
 }
 
 .buttonTop {
@@ -926,7 +944,7 @@ button {
 
 #navbar .navLink {
   margin: 0 10px;
-  padding: 10px 20px;
+  padding: 10px 12px;
   border-radius: 5px;
   color: #fff;
   font-size: 15px;
