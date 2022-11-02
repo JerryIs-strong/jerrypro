@@ -87,7 +87,7 @@ function changeTheme() {
 
 function Themebgloder() {
   var x = document.getElementById("topBG");
-  var randomNumber = Math.floor(Math.random() * 4);
+  var randomNumber = Math.floor(Math.random() * 5);
 
   if (randomNumber == "1") {
     x.style.backgroundImage =
@@ -97,15 +97,19 @@ function Themebgloder() {
     x.style.backgroundImage =
       "url('https://jerrypro.xyz/Resources/headerBg/small2.jpg')";
     console.log("Theme: 2");
-  } else {
+  } else if (randomNumber == "3") {
     x.style.backgroundImage =
       "url('https://jerrypro.xyz/Resources/headerBg/small3.jpg')";
     console.log("Theme: 3");
-  }
+  } else {
+    x.style.backgroundImage =
+      "url('https://jerrypro.xyz/Resources/headerBg/small4.jpg')";
+    console.log("Theme: 4");
+}
 }
 
 
-function bplayer(){
+function bplayer() {
   var playername = document.getElementById("bilibili-player");
   var side = document.getElementById("slideshow-container");
 
