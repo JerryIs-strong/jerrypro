@@ -1671,6 +1671,10 @@ img {
   color: #b0def4;
 }
 
+.fa-link,.fa-envelope{
+  margin-left: 9px;
+}
+
 .ContactTag {
   font-family: "DynaPuff", cursive;
   text-align: center;
