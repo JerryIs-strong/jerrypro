@@ -138,5 +138,10 @@ function musicPlayerChecker() {
     music.play();
     getButton.innerHTML = "至少還有你";
     document.title = "JERRY PRO :: ?Playing";
+    music.addEventListener("ended", function () {
+      music.currentTime = 0;
+      getButton.innerHTML = "(～￣▽￣)～";
+      document.title = "JERRY PRO :: (～￣▽￣)～";
+    });
   }
 }
