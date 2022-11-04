@@ -54,12 +54,12 @@ function appleBg() {
   }
 }
 
-function error(){
+function error() {
   var xxxy = document.getElementById("Ltree-music");
   var error = document.getElementById("ltreeng2");
   xxxy.innerHTML = "❌ERROR: No Resources";
   error.style.transition = "0.5s";
-  error.style.backgroundColor = "rgb(241 235 237)"
+  error.style.backgroundColor = "rgb(241 235 237)";
 }
 
 // function to set a given theme/color-scheme
@@ -84,7 +84,6 @@ function changeTheme() {
   }
 })();
 
-
 function Themebgloder() {
   var x = document.getElementById("topBG");
   var randomNumber = Math.floor(Math.random() * 5);
@@ -105,19 +104,39 @@ function Themebgloder() {
     x.style.backgroundImage =
       "url('https://jerrypro.xyz/Resources/headerBg/small4.jpg')";
     console.log("Theme: 4");
+  }
 }
-}
-
 
 function bplayer() {
   var playername = document.getElementById("bilibili-player");
   var side = document.getElementById("slideshow-container");
 
-  if (playername.className == ("play-ture")){
-    document.title = "JERRY PRO :: 直播開始啦(≧▽≦*)o"
+  if (playername.className == "play-ture") {
+    document.title = "JERRY PRO :: 直播開始啦(≧▽≦*)o";
     side.style.visibility = "hidden";
     side.style.display = "none";
-  }else{
+  } else {
     console.log("No event");
+  }
+}
+
+function musicPlayerChecker() {
+  var music = document.getElementById("musicPlayer");
+  // var musicName = music.target.files.name;
+  var getButton = document.getElementById("buttonTop");
+
+  if (document.title == "JERRY PRO :: ?Playing") {
+    music.pause();
+    getButton.innerHTML = "(～￣▽￣)～";
+    document.title = "JERRY PRO :: (～￣▽￣)～";
+  } else {
+    getButton.innerHTML = "Getting...";
+    setTimeout(musicPlayert, 4000);
+  }
+
+  function musicPlayert() {
+    music.play();
+    getButton.innerHTML = "至少還有你";
+    document.title = "JERRY PRO :: ?Playing";
   }
 }
