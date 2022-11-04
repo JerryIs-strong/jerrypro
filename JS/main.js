@@ -120,28 +120,28 @@ function bplayer() {
   }
 }
 
-function musicPlayerChecker() {
-  var music = document.getElementById("musicPlayer");
-  // var musicName = music.target.files.name;
-  var getButton = document.getElementById("buttonTop");
+// function musicPlayerChecker() {
+//   var music = document.getElementById("musicPlayer");
+// var musicName = music.target.files.name;
+//   var getButton = document.getElementById("buttonTop");
 
-  if (document.title == "JERRY PRO :: ?Playing") {
-    music.pause();
-    getButton.innerHTML = "(～￣▽￣)～";
-    document.title = "JERRY PRO :: (～￣▽￣)～";
-  } else {
-    getButton.innerHTML = "Getting...";
-    setTimeout(musicPlayert, 4000);
-  }
+//   if (document.title == "JERRY PRO :: ?Playing") {
+//     music.pause();
+//     getButton.innerHTML = "(～￣▽￣)～";
+//     document.title = "JERRY PRO :: (～￣▽￣)～";
+//   } else {
+//     getButton.innerHTML = "Getting...";
+//     setTimeout(musicPlayert, 4000);
+//   }
 
-  function musicPlayert() {
-    music.play();
-    getButton.innerHTML = "至少還有你";
-    document.title = "JERRY PRO :: ?Playing";
-    music.addEventListener("ended", function () {
-      music.currentTime = 0;
-      getButton.innerHTML = "(～￣▽￣)～";
-      document.title = "JERRY PRO :: (～￣▽￣)～";
-    });
-  }
-}
+//   function musicPlayert() {
+//     music.play();
+//     getButton.innerHTML = "至少還有你";
+//     document.title = "JERRY PRO :: ?Playing";
+//     music.addEventListener("ended", function () {
+//       music.currentTime = 0;
+//       getButton.innerHTML = "(～￣▽￣)～";
+//       document.title = "JERRY PRO :: (～￣▽￣)～";
+//     });
+//   }
+// }
