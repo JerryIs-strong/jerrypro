@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <link rel="shortcut icon" type="image/ico" href="./icon.png"> <!--Favicon for Chrome-->
 <link rel="apple-touch-icon" href="./icon.png"> <!--Favicon for Safari-->
-<script type="application/javascript" src="./JS/mJudger.js"></script>
 <script type="application/javascript" src="./JS/console.js"></script>
 <script type="application/javascript" src="./JS/main.js"></script>
 <script src="https://kit.fontawesome.com/9af6347b73.js" crossorigin="anonymous"></script>
@@ -17,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&Roboto:wght@500&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
-<body class="" id="HW" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),bplayer()">
+<body class="" id="HW" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),loader()">
   <script type="text/javascript" src="./JS/main.js">Changebg();</script> 
   <div id="Sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -286,11 +285,19 @@
     <p class="author">- 雷軍（小米）</p>
     </div>
   </div>
+
+  <div class="pre-loder-index" id="pre-loder-index">
+    <div class="pre-loder-main">
+        <img src="./Resources/loader/loading-windows.gif" class="load-img" id="load-img" /><br/>
+        <h1>Almost Ready</h1>
+    </div>
+  </div>
+
   
 <footer>
   <div class="bgimg-2">
     <div class="caption">
-    <span class="border">JERRY PRO :: Powered by JERRY❤️Koala, Copyright © 2022 JERRY 版權所有</span>
+    <span class="border">JERRY PRO :: Powered by JERRY, Copyright © 2022 JERRY 版權所有</span>
     </div>
   </div>
 </footer>
