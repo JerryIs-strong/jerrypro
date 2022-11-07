@@ -188,13 +188,16 @@ html {
 #topTitle h1 {
   font-weight: 400;
   font-size: 80px;
-  color: #fff;
   display: block;
   margin-block-start: 0.67em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
   font-family: "Palanquin Dark", sans-serif;
+  -webkit-background-clip: text;
+  background-image: url('../Resources/headerBg/17545.jpg');
+  color: transparent;
+  background-position: inherit;
 }
 
 #topTitle h1::before {
@@ -507,14 +510,14 @@ button {
   content: "\f21e";
 }
 
-.navLinkBox li i{
+.navLinkBox li i {
   margin-right: 6px;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s linear 300ms, opacity 300ms;
 }
 
-.navLinkBox li a:hover i{
+.navLinkBox li a:hover i {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s linear 0s, opacity 300ms;
@@ -529,11 +532,18 @@ button {
   font-weight: 700;
   color: var(--main-color);
   border: 3px solid;
+  width: 131px;
+  overflow: auto;
+  max-height: 46px;
 }
 
 .buttonTop:hover {
   background-color: #ffffff;
   color: var(--main-color);
+}
+
+.buttonTop::-webkit-scrollbar {
+  display: none;
 }
 
 .author {
@@ -811,7 +821,7 @@ button {
     padding: 50px 30px 0px;
   }
 
-  #slideshow-container{
+  #slideshow-container {
     width: 100%;
     height: auto;
   }
@@ -895,7 +905,7 @@ button {
   border-radius: 40px;
 }
 
-.fa{
+.fa {
   margin-right: 10px;
 }
 
@@ -1470,7 +1480,7 @@ img {
   height: 400px;
   position: relative;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -1671,7 +1681,8 @@ img {
   color: #b0def4;
 }
 
-.icon .fa-link,.icon .fa-envelope{
+.icon .fa-link,
+.icon .fa-envelope {
   margin-left: 9px;
 }
 
