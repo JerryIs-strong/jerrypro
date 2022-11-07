@@ -148,8 +148,5 @@ function bplayer() {
 
 function loader() {
   var loader = document.getElementById("pre-loder-index");
-
-  setTimeout(function () {
-    loader.style.display = "none";
-  }, 1000);
+  loader.style.display = "none";
 }
