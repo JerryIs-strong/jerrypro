@@ -148,5 +148,12 @@ function bplayer() {
 
 function loader() {
   var loader = document.getElementById("pre-loder-index");
-  loader.style.display = "none";
+  var video = document.getElementById("loder-mp4");
+  // loader.style.display = "none";
+  
+  setTimeout(function () {
+    loader.style.display = "none";
+    video.pause(); 
+  }, 1000);
 }
+
