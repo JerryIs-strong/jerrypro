@@ -148,12 +148,9 @@ function bplayer() {
 
 function loader() {
   var loader = document.getElementById("pre-loder-index");
-  var video = document.getElementById("loder-mp4");
-  // loader.style.display = "none";
+  loader.style.display = "none";
   
-  setTimeout(function () {
-    loader.style.display = "none";
-    video.pause(); 
-  }, 1000);
+  // setTimeout(function () {
+  //   loader.style.display = "none";
+  // }, 1000);
 }
-
