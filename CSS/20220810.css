@@ -861,7 +861,8 @@ button {
   #font8::before,
   #font9::before,
   #font10::before,
-  #font11::before {
+  #font11::before,
+  #font12::before {
     content: "//";
     margin-right: 5px;
     color: var(--main-color);
