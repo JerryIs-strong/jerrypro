@@ -1,164 +1,354 @@
-function openNav() {
-  document.getElementById("Sidebar").style.left = "0";
-  document.getElementById("Sidebar-mask").className = "Sidebar-mask-active";
-  document.body.style.overflowY = "hidden";
-  /*document.getElementById("topBG").style.marginLeft = "250px";*/
-}
+<!DOCTYPE html>
+<html lang="zh-TW" class="theme-blue">
 
-function closeNav() {
-  document.getElementById("Sidebar").style.left = "-100%";
-  document.getElementById("Sidebar-mask").className = "Sidebar-mask";
-  document.body.style.overflowY = "visible";
-}
+<head>
+  <title>JERRY PRO :: (～￣▽￣)～</title>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/ico" href="./icon.png">
+  <!--Favicon for Chrome-->
+  <link rel="apple-touch-icon" href="./icon.png">
+  <!--Favicon for Safari-->
+  <script type="application/javascript" src="./JS/console.js"></script>
+  <script type="application/javascript" src="./JS/main.js"></script>
+  <script src="https://kit.fontawesome.com/9af6347b73.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/20220810.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&Roboto:wght@500&family=Silkscreen&display=swap"
+    rel="stylesheet">
+</head>
 
-function MusicOpen() {
-  var x = document.getElementById("ltreeng2");
-  var y = document.getElementById("musicinfo");
+<body class="" id="HW" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),loader()">
+  <script type="text/javascript" src="./JS/main.js">Changebg();</script>
+  <div id="Sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#Goabout" class="navLink" onclick="closeNav()"><i class="fa fa-heartbeat" aria-hidden="true"></i>About</a>
+    <a href="#Goproject" class="navLink" onclick="closeNav()"><i class="fa fa-window-restore"
+        aria-hidden="true"></i>Project</a>
+    <a href="#Golinktree" class="navLink" onclick="closeNav()"><i class="fa fa-link" aria-hidden="true"></i>Link
+      Tree</a>
+    <a href="#Gocontact" class="navLink" onclick="closeNav()"><i class="fa fa-envelope"
+        aria-hidden="true"></i>Contact</a>
+    <a class="navLink" onclick="closeNav(),changeTheme()"><i class="fa fa-flask" aria-hidden="true"></i>Change Theme</a>
+    <img class="Jerry-sound" src="./Resources/icon/tech.png" />
+  </div>
 
-  if (x.style.height === "55px") {
-    x.style.height = "200px";
-    window.setTimeout(show, 1000);
-    function show() {
-      y.style.animation = "fade-in 1s";
-      y.style.visibility = "visible";
-      y.style.display = "block";
-    }
-  } else {
-    x.style.height = "55px";
-    y.style.animation = "fade-out 1s";
-    y.style.visibility = "hidden";
-    y.style.display = "none";
-  }
-}
+  <div id="Sidebar-mask" class="Sidebar-mask" onclick="closeNav()"></div>
 
-/*function Snackbar() {
-    var x = document.getElementById("snackbar");
-    x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }*/
-function appleBg() {
-  if (
-    /AppleWebKit.*mobile/i.test(navigator.userAgent) ||
-    /MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(
-      navigator.userAgent
-    )
-  ) {
-    if (window.location.href.indexOf("?mobile") < 0) {
-      try {
-        if (/iPad|iPhone|iPod|iOS|ipadOS/i.test(navigator.userAgent)) {
-          document.getElementById("topBG").className = "topBGsafari";
-          console.log("Done");
-        }
-      } catch (e) {}
-    }
-  }
-}
+  <div class="topBG" id="topBG">
 
-function error() {
-  var xxxy = document.getElementById("Ltree-music");
-  var error = document.getElementById("ltreeng2");
-  xxxy.innerHTML = "❌ERROR: No Resources";
-  error.style.transition = "0.5s";
-  error.style.backgroundColor = "rgb(241 235 237)";
-}
+    <div class="navbar" id="navbar">
+      <img class="logo" src="icon.png" alt="logo" id="logo" />
+      <nav>
+        <ul class="navLinkBox" id="navLinkBox">
+          <li><a href="#Goabout" class="navLink"><i class="fa-solid fa-heart-pulse"></i>About</a></li>
+          <li><a href="#Goproject" class="navLink" id="navLinkHide"><i
+                class="fa-solid fa-window-restore"></i>Project</a></li>
+          <li><a href="#Golinktree" class="navLink" id="navLinkHide"><i class="fa-solid fa-link"></i>Link Tree</a></li>
+          <li><a href="#Gocontact" class="navLink"><i class="fa-regular fa-comments"></i>Contact</a></li>
+          <li><a onclick="changeTheme()" class="navLink"><i class="fa-sharp fa-solid fa-code"></i>Theme</a></li>
+        </ul>
+      </nav>
+      <button class="openbtn" onclick="openNav()" id="closeNav">☰</button>
+      <a><button onclick="musicPlayerChecker()" class="buttonTop" id="buttonTop">(～￣▽￣)～</button></a>
+      <div id="snackbar">青出於藍，而勝於藍！</div>
+    </div>
 
-// function to set a given theme/color-scheme
-function setTheme(themeName) {
-  localStorage.setItem("theme", themeName);
-  document.documentElement.className = themeName;
-}
-// function to toggle between light and dark theme
-function changeTheme() {
-  if (localStorage.getItem("theme") === "theme-pink") {
-    setTheme("theme-blue");
-  } else {
-    setTheme("theme-pink");
-  }
-}
-// Immediately invoked function to set the theme on initial load
-(function () {
-  if (localStorage.getItem("theme") === "theme-pink") {
-    setTheme("theme-pink");
-  } else {
-    setTheme("theme-blue");
-  }
-})();
+    <!--<div class="image-container">
+          <div class="text">JERRY'S <span class="Typingtext"></span></div>
+      </div>-->
 
-function Themebgloder() {
-  var x = document.getElementById("topBG");
-  var randomNumber = Math.floor(Math.random() * 5);
+    <div id="topTitle" class="topTitle">
+      <h1>JERRY PRO</h1>
+      <span class="underlineTop"></span>
+      <h2><span>/*</span> 這是關於JERRY的個人主頁; Hello World ! <span>*/</span></h2>
+    </div>
 
-  if (randomNumber == "1") {
-    x.style.backgroundImage =
-      "url('https://jerrypro.xyz/Resources/headerBg/small.jpg')";
-    console.log("Theme: 1");
-  } else if (randomNumber == "2") {
-    x.style.backgroundImage =
-      "url('https://jerrypro.xyz/Resources/headerBg/small2.jpg')";
-    console.log("Theme: 2");
-  } else if (randomNumber == "3") {
-    x.style.backgroundImage =
-      "url('https://jerrypro.xyz/Resources/headerBg/small3.jpg')";
-    console.log("Theme: 3");
-  } else {
-    x.style.backgroundImage =
-      "url('https://jerrypro.xyz/Resources/headerBg/small4.jpg')";
-    console.log("Theme: 4");
-  }
-}
+    <div class="container">
+      <a href="#Goabout">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+      </a>
+    </div>
+  </div>
 
-function bplayer() {
-  var playername = document.getElementById("bilibili-player");
-  var side = document.getElementById("slideshow-container");
+  <div id="Goabout">
+    <div class="Bg001" id="Bg01">
+      <a href="#Goabout">
+        <h3 class="PartTitle" id="PT">About</h3>
+      </a>
+      <span class="underline1"></span>
+      <div class="tagBox">
+        <span>科技宅</span>
+        <span>香港</span>
+        <span>二次元</span>
+      </div>
+      <div class="textContent">
+        <div class="aboutTyping" id="aboutTyping">
+          <div class="fixedText"><i class="fa-regular fa-hard-drive"></i> JERRY的<span class="TypingText"></span></div>
+          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <script type="application/javascript" src="./JS/typing.js"></script>
+        </div>
+        <font>我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br />
+        <font>JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App
+          Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習。
+        </font><br />
+        <font>
+          我的夢想是成為軟件工程師，一名小米工程師。「讓每個人都能享受科技的樂趣」這是小米對產品的價值觀，也是我對小米的第一印象。我與小米的“緣分”始於“小米手環2”，憑著對小米的印象和雷軍的經歷，就有了一種說不出來的“好感”，因此我也入坑了小米，成了一個小小的米粉（？😂在二十一世紀，編程不應只是專業領域的知識，而是每個人都掌握的基本能力，在未來，我們要由我們控制AI，而不是AI取代我們。此外，網絡安全也是我感興趣的一個範疇，如今科技發展的成熟，隨之帶來的是重重的安全隱患。
+        </font><br />
+        <font>JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br />
+      </div>
+      <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/01.png" />
+    </div>
+  </div>
+  </div>
+  </div>
 
-  if (playername.className == "play-ture") {
-    document.title = "JERRY PRO :: 直播開始啦(≧▽≦*)o";
-    side.style.visibility = "hidden";
-    side.style.display = "none";
-  } else {
-    console.log("No event");
-  }
-}
+  <div id="Goproject">
+    <div class="Bg002" id="Bg02">
+      <a href="#Goproject">
+        <h3 class="PartTitle">Project</h3>
+      </a>
+      <span class="underline1"></span>
+      <div class="tagBox">
+        <span>JERRY Tool</span>
+        <span>前端</span>
+      </div>
+      <div class="textContent">
+        <h2 class="projecttag">1</h2>
+        <font><a class="highlight">JERRY Tool</a> 是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school
+          Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google
+          Site協作平臺，簡單的寫了一個<a class="highlight">JERRY Tool-State</a>，查看網站的狀態。</font><br />
+        <font>目前，<a class="highlight">JERRY Tool-State</a>以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font><br />
+        <font>不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br />
+        <a href="http://jerrytool.w3spaces.com/" target="_blank"><button class="Check">Check</button></a>
 
-function musicPlayerChecker() {
-  var music = document.getElementById("musicPlayer");
-  // var musicName = music.target.files.name;
-  var getButton = document.getElementById("bmusicinfo");
-  var success = document.getElementById("ltreeng2");
-  var successA = document.getElementById("bmusicinfo");
+        <h2 class="projecttag" id="projecttagse">2</h2>
+        <font><a class="highlightldz">LDZ Music</a>
+          是由我與@matthew.0112合力組成的劉大壯香港粉絲後援會，旨致力於提供高品質音樂的音樂工作室，並創造一個屬於非官方的劉大壯時代。我們相信音樂不應有任何限制，我們的努力是爲了你得到最好的體驗。</font>
+        <br />
+        <font>我們與各大社交媒體均開設了官方賬號，發揮出我們的“愛”與力量，致力宣傳劉大壯的音樂力量。<a class="highlightldz">LDZ
+            Music</a>在Wix與webnode分別設立了官方網站與部落格(Blog)。其中，我們在官方網站中提供了在綫音樂串流的功能，用戶能夠通過我們的官方網站過的“鎖屏聽歌”的功能。我們承諾我們所提供的服務絕對不會包含任何隱藏收費。
+        </font><br />
+        <font><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a class="highlightldzs">“LDZ
+            Music safer”</a>的重重保護。</font><br />
+        <a href="https://ldzmusic.wixsite.com/ldz-music" target="_blank"><button class="Check">Try Now</button></a>
 
-  if (document.title == "JERRY PRO :: ?Playing") {
-    music.pause();
-    getButton.innerHTML = "Music";
-    document.title = "JERRY PRO :: (～￣▽￣)～";
-    success.style.backgroundColor = "rgb(235, 238, 241)";
-    successA.style.color = "rgb(0, 0, 0)"
-  } else {
-    getButton.innerHTML = "Getting...";
-    setTimeout(musicPlayert, 2000);
-  }
+        <h2 class="projecttag" id="projecttagse">3</h2>
+        <font><a class="highlight">JERRY Virus</a> 搜集了新型和各種臭名昭著的電腦病毒提供測試。</font><br />
+        <a href="https://virus.jerrypro.xyz/" target="_blank"><button class="Check">Test</button></a>
 
-  function musicPlayert() {
-    music.play();
-    success.style.backgroundColor = "rgb(239 245 244)";
-    successA.style.color = "rgb(123 182 172)"
-    getButton.innerHTML = "Playing: cici_ - 至少還有你(溫柔版)";
-    document.title = "JERRY PRO :: ?Playing";
-    music.addEventListener("ended", function () {
-      music.currentTime = 0;
-      getButton.innerHTML = "Music";
-      document.title = "JERRY PRO :: (～￣▽￣)～";
-      success.style.backgroundColor = "rgb(235, 238, 241)";
-      successA.style.color = "rgb(0, 0, 0)"
-    });
-  }
-}
+        <h2 class="projecttag" id="projecttagse">4</h2>
+        <font><a class="highlight">JERRY Clock</a> a Simple HTML clock to help you manage your time! Simple and Secure.
+        </font><br />
+        <a href="https://clock.jerrypro.xyz/" target="_blank"><button class="Check">Go</button></a>
+      </div>
+      <img src="./Resources/Bgimg/02.png" class="Bgimgh02" id="Bgimgh02" />
+    </div>
+  </div>
 
-function loader() {
-  var loader = document.getElementById("pre-loder-index");
-  // loader.style.display = "none";
-  
-  setTimeout(function () {
-    loader.style.display = "none";
-  }, 1000);
-}
+  <div id="Golinktree">
+    <div class="Bg001" id="Bg01">
+      <a href="#Golinktree">
+        <h3 class="PartTitle">My Link Tree</h3>
+      </a>
+      <span class="underline1"></span>
+      <div class="LtreeAll">
+        <h6 class="LinkTitle">JERRY://Website | In development</h6>
+        <a href="https://jerrytool.w3spaces.com/"><button class="Ltree">
+            <div class="Link">JERRY://Tool</div>
+          </button></a>
+        <a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0"><button class="Ltree">
+            <div class="Link">Tool://State</div>
+          </button></a>
+        <h6 class="LinkTitle">JERRY://Project | Fact Studio</h6>
+        <a href="https://www.youtube.com/ldzmusic_studio"><button class="Ltree">
+            <div class="Link">LDZ Music</div>
+          </button></a>
+        <h6 class="LinkTitle">JERRY://More</h6>
+        <a href="https://ngl.link/heyajerry23446"><button class="Ltree" id="ltreengl">
+            <div class="Link"><img class="ngl" src="./Resources/icon/ngl.png" /> Link</div>
+          </button></a>
+        <button class="Ltree" id="ltreeng2" onclick="musicPlayerChecker()"><a id="bmusicinfo" class="Link"> Music</a></button>
+        <div class="musicinfo" id="musicinfo" onclick="musicPlayerChecker()">
+          <audio class="musicPlayer" id="musicPlayer"
+          src="https://jerrypro.xyz/Resources/audio/cici_%20-%20%E8%87%B3%E5%B0%91%E9%82%84%E6%9C%89%E4%BD%A0(%E6%BA%AB%E6%9F%94%E7%89%88).mp3"></audio>
+        </div>
+      </div>
+      <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/04.png" />
+    </div>
+  </div>
+
+
+  <div id="Gocontact">
+    <div class="Bg002" id="Bg02">
+      <a href="#Gocontact">
+        <h3 class="PartTitle">Contact</h3>
+      </a>
+      <span class="underline1"></span>
+
+      <div class="wrapper">
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </div>
+          <a href="https://www.facebook.com/heyajerry07" target="_blank">
+            <span>Facebook</span></a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <a href="mailto: info@jerrypro.xyz">
+            <span>Gmail</span></a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </div>
+          <a href="https://www.instagram.com/heyajerry/" target="_blank">
+            <span>Instagram</span></a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </div>
+          <a href="https://github.com/JerryIs-strong" target="_blank">
+            <span>Github</span></a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fab fa-youtube" aria-hidden="true"></i>
+          </div>
+          <a href="https://www.youtube.com/ldzmusic_studio" target="_blank">
+            <span>YouTube</span></a>
+        </div>
+        <div class="button">
+          <div class="icon">
+            <i class="fa fa-link" aria-hidden="true"></i>
+          </div>
+          <a href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/EuZpWHLHwQNLo-tEJewWjBoBT0Y58h-a-6tpFkrp661uag"
+            target="_blank">
+            <span>Tool</span></a>
+        </div>
+      </div>
+      <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
+      <img src="./Resources/Bgimg/03.png" class="Bgimgh02" id="Bgimgh02" />
+    </div>
+  </div>
+
+  <div id="Goxiaomi">
+    <div class="Bg001" id="Bg001-iframe">
+      <a href="#Goxiaomi">
+        <h3 class="PartTitle">(BiliBili)同步直播</h3>
+      </a>
+      <span class="underline1"></span>
+      <!-- <center class="play-ture" id="bilibili-player"><iframe style="width: 100%;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=22822257&quality=0" frameborder="no" framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center> Code form Bilibili -->
+      <div class="slideshow-container" id="slideshow-container">
+        <div class="Slides fade">
+          <img id="m-silde" src="./Resources/J01.png" style="width:100%" alt="JERRY PRO">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="timeline">
+    <div class="section-wrapper">
+      <div class="line">
+        <div data-mobiletext="Quarter 4" data-index="1" class="quarter q4 y2016 dot complete"></div>
+        <div data-mobiletext="August" data-timelinelabel="雷軍年度演講✅" data-index="2" class="year y2017 dot complete"></div>
+
+        <div data-mobiletext="Quarter 2" data-index="3" class="quarter q2 y2017 dot complete"></div>
+        <div data-mobiletext="Quarter 3" data-index="4" class="quarter q3 y2017 dot complete"></div>
+        <div data-mobiletext="Quarter 4" data-index="5" class="quarter q4 y2017 dot complete"></div>
+        <div data-mobiletext="October" data-timelinelabel="影像覺醒 - Redmi Note12 Series✅" data-index="6"
+          class="year y2018 dot complete"></div>
+        <div data-mobiletext="Quarter 1" data-index="6" class="quarter q1 y2018 dot"></div>
+        <div data-mobiletext="Quarter 2" data-index="7" class="quarter q2 y2018 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="8" class="quarter q3 y2018 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="9" class="quarter q4 y2018 dot"></div>
+        <div data-mobiletext="NEXT" data-timelinelabel="NEXT..." data-index="10" class="year y2019 dot"></div>
+        <div data-mobiletext="Quarter 1" data-index="10" class="quarter q1 y2019 dot"></div>
+        <div data-mobiletext="Quarter 2" data-index="11" class="quarter q2 y2019 dot"></div>
+        <div data-mobiletext="Quarter 3" data-index="12" class="quarter q3 y2019 dot"></div>
+        <div data-mobiletext="Quarter 4" data-index="13" class="quarter q4 y2019 dot"></div>
+        <div data-mobiletext="NEXT" data-timelinelabel="NEXT..." data-index="14" class="year y2020 dot"></div>
+        <div data-mobiletext="Quarter 1" data-index="14" class="quarter q1 y2020 dot"></div>
+      </div>
+  </section>
+  <center>
+    <div class="illustrate">
+      <p id="illustrate">✅= 完滿結束&nbsp;</p>
+      <p id="illustrate">🛠️= 即將舉行</p>
+    </div>
+  </center>
+  </div>
+
+
+  <div class="Bg001foot" id="Bg001foot">
+    <div id="log">
+      <center><b>
+          <h3 style="font-size: 30px;">Enjoy every moment
+        </b></h3>
+        <span class="underline1"></span>
+        <p class="tip">Swipe left or right to view more</p>
+      </center>
+      <div class="logBoxOuter" id="logBoxOuter">
+        <div id="logBox">
+          <div>
+            <p class="logText1">2022.08.03</p>
+            <p class="logText2">JERRY PRO 托管至 W3Spaces</p>
+          </div>
+          <div>
+            <p class="logText1">2022.08.14</p>
+            <p class="logText2">JERRY PRO 托管至 Github 並完全開源</p>
+          </div>
+          <div>
+            <p class="logText1">2022.09.16</p>
+            <p class="logText2">網站加入自適應框架</p>
+          </div>
+          <div>
+            <p class="logText1">2022.10.08</p>
+            <p class="logText2">加入<a class="themeby">Theme By Cookies</a></p>
+          </div>
+          <div>
+            <p class="logText1">2022.10.11</p>
+            <p class="logText2">成功注冊域名<a class="themeby">「</a>jerrypro.xyz<a class="themeby">」</a></p>
+          </div>
+          <div>
+            <p class="logText3">TO BE</p>
+            <p class="logText3">CONTINUED...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position:relative;" class="famousCard">
+    <div class="FootCard">
+      <p class="famousText">「當你的前途一片黑暗時，你該意識到是你在發光。」<a style="color:#5d7fa2;font-weight: bolder;">!</a></p>
+      <p class="author">- 雷軍（小米）</p>
+    </div>
+  </div>
+
+  <div class="pre-loder-index" id="pre-loder-index">
+    <div class="pre-loder-main">
+      <img src="./Resources/loader/jerrypro-loading.gif" class="load-img" id="load-img" />
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="bgimg-2">
+      <div class="caption">
+        <span class="border">JERRY PRO :: Powered by JERRY, Copyright © 2022 JERRY 版權所有</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
