@@ -196,7 +196,7 @@ html {
   font-family: "Palanquin Dark", sans-serif;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: url('../Resources/headerBg/17545.jpg');
+  background-image: url("../Resources/headerBg/17545.jpg");
   color: transparent;
   background-position: center;
 }
@@ -1298,50 +1298,7 @@ font::before {
 }
 
 #ltreeng2 {
-  transition: height 1s;
-}
-
-.musicinfo {
-  padding: 20px;
-  position: absolute;
-  top: 86%;
-  visibility: hidden;
-  display: none;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-}
-
-.music-inline {
-  display: inline-block;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-}
-
-.musicinfo img {
-  width: 140px;
-  margin-right: 40px;
-}
-
-.musicinfo audio {
-  vertical-align: middle;
-}
-
-.musictitle {
-  position: absolute;
-  font-size: 90px;
-  bottom: 2;
-  top: 0px;
-  left: 70px;
-  z-index: -2;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--main-color);
-  /* font-size: 40px; */
-  margin: 0;
-  font-family: "PingFang SC", "Microsoft Yahei", "Helvetica Neue", Helvetica,
-    "Segoe UI", Arial, sans-serif;
+  transition: all 0.5s;
 }
 
 @keyframes fade-in {
@@ -1709,7 +1666,7 @@ img {
   text-align: justify;
 }
 
-.pre-loder-index{
+.pre-loder-index {
   background-color: var(--main-light);
   margin: 0;
   padding: 0 5%;
@@ -1727,14 +1684,14 @@ img {
   animation: fade-out 900ms forwards;
 }
 
-.pre-loder-main h1{
-  font-family: 'Microsoft JhengHei', 'Microsoft Yahei', sans-serif;
+.pre-loder-main h1 {
+  font-family: "Microsoft JhengHei", "Microsoft Yahei", sans-serif;
   font-size: 4vh;
   font-weight: 100;
   margin: 20px 0 0;
 }
 
-.pre-loder-main{
+.pre-loder-main {
   display: flex;
   justify-content: center;
   position: relative;
@@ -1750,14 +1707,14 @@ img {
   width: 100%;
 }
 
-.pre-loder-main img{
+.pre-loder-main img {
   height: 30%;
-  float: left; 
+  float: left;
   margin-right: 8px;
   cursor: context-menu;
 }
 
-@keyframes fade-out{
+@keyframes fade-out {
   0% {
     opacity: 1;
   }
