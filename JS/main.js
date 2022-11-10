@@ -120,37 +120,45 @@ function bplayer() {
   }
 }
 
-// function musicPlayerChecker() {
-//   var music = document.getElementById("musicPlayer");
-// var musicName = music.target.files.name;
-//   var getButton = document.getElementById("buttonTop");
+function musicPlayerChecker() {
+  var music = document.getElementById("musicPlayer");
+  // var musicName = music.target.files.name;
+  var getButton = document.getElementById("bmusicinfo");
+  var success = document.getElementById("ltreeng2");
+  var successA = document.getElementById("bmusicinfo");
 
-//   if (document.title == "JERRY PRO :: ?Playing") {
-//     music.pause();
-//     getButton.innerHTML = "(～￣▽￣)～";
-//     document.title = "JERRY PRO :: (～￣▽￣)～";
-//   } else {
-//     getButton.innerHTML = "Getting...";
-//     setTimeout(musicPlayert, 4000);
-//   }
+  if (document.title == "JERRY PRO :: ?Playing") {
+    music.pause();
+    getButton.innerHTML = "Music";
+    document.title = "JERRY PRO :: (～￣▽￣)～";
+    success.style.backgroundColor = "rgb(235, 238, 241)";
+    successA.style.color = "rgb(0, 0, 0)"
+  } else {
+    getButton.innerHTML = "Getting...";
+    setTimeout(musicPlayert, 2000);
+  }
 
-//   function musicPlayert() {
-//     music.play();
-//     getButton.innerHTML = "至少還有你";
-//     document.title = "JERRY PRO :: ?Playing";
-//     music.addEventListener("ended", function () {
-//       music.currentTime = 0;
-//       getButton.innerHTML = "(～￣▽￣)～";
-//       document.title = "JERRY PRO :: (～￣▽￣)～";
-//     });
-//   }
-// }
+  function musicPlayert() {
+    music.play();
+    success.style.backgroundColor = "rgb(239 245 244)";
+    successA.style.color = "rgb(123 182 172)"
+    getButton.innerHTML = "Playing: cici_ - 至少還有你(溫柔版)";
+    document.title = "JERRY PRO :: ?Playing";
+    music.addEventListener("ended", function () {
+      music.currentTime = 0;
+      getButton.innerHTML = "Music";
+      document.title = "JERRY PRO :: (～￣▽￣)～";
+      success.style.backgroundColor = "rgb(235, 238, 241)";
+      successA.style.color = "rgb(0, 0, 0)"
+    });
+  }
+}
 
 function loader() {
   var loader = document.getElementById("pre-loder-index");
-  loader.style.display = "none";
+  // loader.style.display = "none";
   
-  // setTimeout(function () {
-  //   loader.style.display = "none";
-  // }, 1000);
+  setTimeout(function () {
+    loader.style.display = "none";
+  }, 1000);
 }
