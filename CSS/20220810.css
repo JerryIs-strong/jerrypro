@@ -849,6 +849,33 @@ button {
     flex-direction: row;
     width: auto;
   }
+
+  #font::before,
+  #font1::before,
+  #font2::before,
+  #font3::before,
+  #font4::before,
+  #font5::before,
+  #font6::before,
+  #font7::before,
+  #font8::before,
+  #font9::before,
+  #font10::before,
+  #font11::before {
+    content: "//";
+    margin-right: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: "Palanquin Dark", sans-serif;
+  }
+
+  font::after {
+    content: "//";
+    margin-left: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-family: "Palanquin Dark", sans-serif;
+  }
 }
 
 @media screen and (min-width: 1226px) {
@@ -1084,16 +1111,8 @@ font .highlightldzs:hover::after {
 }
 
 font::before {
-  content: "//";
+  content: "👻";
   margin-right: 5px;
-  color: var(--main-color);
-  font-weight: bold;
-  font-family: "Palanquin Dark", sans-serif;
-}
-
-font::after {
-  content: "//";
-  margin-left: 5px;
   color: var(--main-color);
   font-weight: bold;
   font-family: "Palanquin Dark", sans-serif;
