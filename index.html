@@ -21,7 +21,7 @@
     rel="stylesheet">
 </head>
 
-<body class="" id="HW" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),loader()">
+<body class="" id="HW" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),loader(),SlidesReady()">
   <script type="text/javascript" src="./JS/main.js">Changebg();</script>
   <div id="Sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -120,10 +120,12 @@
       </div>
       <div class="textContent" id="textContent1">
         <h2 class="projecttag">1</h2>
-        <font id="font5"><a class="highlight">JERRY Tool</a> 是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school
+        <font id="font5"><a class="highlight">JERRY Tool</a>
+          是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school
           Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google
           Site協作平臺，簡單的寫了一個<a class="highlight">JERRY Tool-State</a>，查看網站的狀態。</font><br />
-        <font id="font6">目前，<a class="highlight">JERRY Tool-State</a>以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font><br />
+        <font id="font6">目前，<a class="highlight">JERRY Tool-State</a>以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font>
+        <br />
         <font id="font12">不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br />
         <a href="http://jerrytool.w3spaces.com/" target="_blank"><button class="Check">Check</button></a>
 
@@ -134,7 +136,8 @@
         <font id="font8">我們與各大社交媒體均開設了官方賬號，發揮出我們的“愛”與力量，致力宣傳劉大壯的音樂力量。<a class="highlightldz">LDZ
             Music</a>在Wix與webnode分別設立了官方網站與部落格(Blog)。其中，我們在官方網站中提供了在綫音樂串流的功能，用戶能夠通過我們的官方網站過的“鎖屏聽歌”的功能。我們承諾我們所提供的服務絕對不會包含任何隱藏收費。
         </font><br />
-        <font id="font9"><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a class="highlightldzs">“LDZ
+        <font id="font9"><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a
+            class="highlightldzs">“LDZ
             Music safer”</a>的重重保護。</font><br />
         <a href="https://ldzmusic.wixsite.com/ldz-music" target="_blank"><button class="Check">Try Now</button></a>
 
@@ -143,7 +146,8 @@
         <a href="https://virus.jerrypro.xyz/" target="_blank"><button class="Check">Test</button></a>
 
         <h2 class="projecttag" id="projecttagse">4</h2>
-        <font id="font11"><a class="highlight">JERRY Clock</a> a Simple HTML clock to help you manage your time! Simple and Secure.
+        <font id="font11"><a class="highlight">JERRY Clock</a> a Simple HTML clock to help you manage your time! Simple
+          and Secure.
         </font><br />
         <a href="https://clock.jerrypro.xyz/" target="_blank"><button class="Check">Go</button></a>
       </div>
@@ -173,10 +177,11 @@
         <a href="https://ngl.link/heyajerry23446"><button class="Ltree" id="ltreengl">
             <div class="Link"><img class="ngl" src="./Resources/icon/ngl.png" /> Link</div>
           </button></a>
-        <button class="Ltree" id="ltreeng2" onclick="musicPlayerChecker()"><a id="bmusicinfo" class="Link"> Music</a></button>
+        <button class="Ltree" id="ltreeng2" onclick="musicPlayerChecker()"><a id="bmusicinfo" class="Link">
+            Music</a></button>
         <div class="musicinfo" id="musicinfo" onclick="musicPlayerChecker()">
           <audio class="musicPlayer" id="musicPlayer"
-          src="https://jerrypro.xyz/Resources/audio/cici_%20-%20%E8%87%B3%E5%B0%91%E9%82%84%E6%9C%89%E4%BD%A0(%E6%BA%AB%E6%9F%94%E7%89%88).mp3"></audio>
+            src="https://jerrypro.xyz/Resources/audio/cici_%20-%20%E8%87%B3%E5%B0%91%E9%82%84%E6%9C%89%E4%BD%A0(%E6%BA%AB%E6%9F%94%E7%89%88).mp3"></audio>
         </div>
       </div>
       <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/04.png" />
@@ -241,51 +246,47 @@
     </div>
   </div>
 
-  <div id="Goxiaomi">
+  <div id="Gomore">
     <div class="Bg001" id="Bg001-iframe">
-      <a href="#Goxiaomi">
-        <h3 class="PartTitle">(BiliBili)同步直播</h3>
+      <a href="#Gomore">
+        <h3 class="PartTitle">More</h3>
       </a>
       <span class="underline1"></span>
       <!-- <center class="play-ture" id="bilibili-player"><iframe style="width: 100%;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=22822257&quality=0" frameborder="no" framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center> Code form Bilibili -->
       <div class="slideshow-container" id="slideshow-container">
         <div class="Slides fade">
-          <img id="m-silde" src="./Resources/Slideshowimg/J01.png" style="width:100%" alt="JERRY PRO">
+          <a target="_blank"
+            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
+            <img id="m-silde" src="./Resources/Slideshowimg/J01.png" style="width:100%" alt="JERRY PRO">
+          </a>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <section id="timeline">
-    <div class="section-wrapper">
-      <div class="line">
-        <div data-mobiletext="Quarter 4" data-index="1" class="quarter q4 y2016 dot complete"></div>
-        <div data-mobiletext="August" data-timelinelabel="雷軍年度演講✅" data-index="2" class="year y2017 dot complete"></div>
+        <div class="Slides fade">
+          <a target="_blank"
+            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
+          <img id="m-silde" src="./Resources/Slideshowimg/Dark_with_windows_SE.PNG" style="width:100%" alt="JERRY PRO">
+          </a>
+        </div>
 
-        <div data-mobiletext="Quarter 2" data-index="3" class="quarter q2 y2017 dot complete"></div>
-        <div data-mobiletext="Quarter 3" data-index="4" class="quarter q3 y2017 dot complete"></div>
-        <div data-mobiletext="Quarter 4" data-index="5" class="quarter q4 y2017 dot complete"></div>
-        <div data-mobiletext="October" data-timelinelabel="影像覺醒 - Redmi Note12 Series✅" data-index="6"
-          class="year y2018 dot complete"></div>
-        <div data-mobiletext="Quarter 1" data-index="6" class="quarter q1 y2018 dot"></div>
-        <div data-mobiletext="Quarter 2" data-index="7" class="quarter q2 y2018 dot"></div>
-        <div data-mobiletext="Quarter 3" data-index="8" class="quarter q3 y2018 dot"></div>
-        <div data-mobiletext="Quarter 4" data-index="9" class="quarter q4 y2018 dot"></div>
-        <div data-mobiletext="NEXT" data-timelinelabel="NEXT..." data-index="10" class="year y2019 dot"></div>
-        <div data-mobiletext="Quarter 1" data-index="10" class="quarter q1 y2019 dot"></div>
-        <div data-mobiletext="Quarter 2" data-index="11" class="quarter q2 y2019 dot"></div>
-        <div data-mobiletext="Quarter 3" data-index="12" class="quarter q3 y2019 dot"></div>
-        <div data-mobiletext="Quarter 4" data-index="13" class="quarter q4 y2019 dot"></div>
-        <div data-mobiletext="NEXT" data-timelinelabel="NEXT..." data-index="14" class="year y2020 dot"></div>
-        <div data-mobiletext="Quarter 1" data-index="14" class="quarter q1 y2020 dot"></div>
+        <div class="Slides fade">
+          <a target="_blank"
+            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
+            <img id="m-silde" src="./Resources/Slideshowimg/Light.PNG" style="width:100%" alt="JERRY PRO">
+          </a>
+        </div>
+
+        <div class="Slides fade">
+          <a target="_blank"
+            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
+            <img id="m-silde" src="./Resources/Slideshowimg/Dark.PNG" style="width:100%" alt="JERRY PRO">
+          </a>
+        </div>
+
+        <a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" id="next" onclick="plusSlides(1)">❯</a>
       </div>
-  </section>
-  <center>
-    <div class="illustrate">
-      <p id="illustrate">✅= 完滿結束&nbsp;</p>
-      <p id="illustrate">🛠️= 即將舉行</p>
+      <script src="./JS/SlidesReady.js"></script>
     </div>
-  </center>
   </div>
 
 
