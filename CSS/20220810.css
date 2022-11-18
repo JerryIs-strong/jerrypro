@@ -883,7 +883,20 @@ button {
     font-family: "Palanquin Dark", sans-serif;
   }
 
-  #prev,
+  #prev {
+    cursor: url("../Resources/cusor/pointer.cur"), pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0px 3px 3px 0px;
+    user-select: none;
+  }
+
   #next {
     cursor: url("../Resources/cusor/pointer.cur"), pointer;
     position: absolute;
