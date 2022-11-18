@@ -925,8 +925,8 @@ button {
     text-align: left;
     display: inline-block;
     position: relative;
-    background-color: #ffffff59;
-    backdrop-filter: blur(2px);
+    background-color: #ffffff1f;
+    backdrop-filter: blur(1px);
     border-radius: 30px;
   }
 }
