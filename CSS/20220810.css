@@ -941,10 +941,10 @@ button {
   position: fixed;
   z-index: 18;
   top: 0;
-  left: -100%;
+  transform: translateX(-100%);
   background-color: #fff;
   overflow-x: hidden;
-  transition: 0.7s;
+  transition: transform 0.5s;
   padding-top: 60px;
   background-position: center;
   background-image: url("../Resources/Bgimg/1258.png");
