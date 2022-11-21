@@ -1,12 +1,12 @@
 function openNav() {
-  document.getElementById("Sidebar").style.left = "0";
+  document.getElementById("Sidebar").style.transform = "translateX(0)";
   document.getElementById("Sidebar-mask").className = "Sidebar-mask-active";
   document.body.style.overflowY = "hidden";
   /*document.getElementById("topBG").style.marginLeft = "250px";*/
 }
 
 function closeNav() {
-  document.getElementById("Sidebar").style.left = "-100%";
+  document.getElementById("Sidebar").style.transform = "translateX(-100%)";
   document.getElementById("Sidebar-mask").className = "Sidebar-mask";
   document.body.style.overflowY = "visible";
 }
@@ -67,7 +67,7 @@ function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
   document.documentElement.className = themeName;
 }
-// function to toggle between theme
+// function to toggle between light and dark theme
 function changeTheme() {
   if (localStorage.getItem("theme") === "theme-pink") {
     setTheme("theme-blue");
@@ -87,6 +87,7 @@ function changeTheme() {
 function Themebgloder() {
   var x = document.getElementById("topBG");
   var randomNumber = Math.floor(Math.random() * 5);
+  document.body.id = "Done"
 
   if (randomNumber == "1") {
     x.style.backgroundImage =
@@ -132,7 +133,7 @@ function musicPlayerChecker() {
     getButton.innerHTML = "Music";
     document.title = "JERRY PRO :: (～￣▽￣)～";
     success.style.backgroundColor = "rgb(235, 238, 241)";
-    successA.style.color = "rgb(0, 0, 0)"
+    successA.style.color = "rgb(0, 0, 0)";
   } else {
     getButton.innerHTML = "Getting...";
     setTimeout(musicPlayert, 2000);
@@ -141,7 +142,7 @@ function musicPlayerChecker() {
   function musicPlayert() {
     music.play();
     success.style.backgroundColor = "rgb(239 245 244)";
-    successA.style.color = "rgb(123 182 172)"
+    successA.style.color = "rgb(123 182 172)";
     getButton.innerHTML = "Playing: cici_ - 至少還有你(溫柔版)";
     document.title = "JERRY PRO :: ?Playing";
     music.addEventListener("ended", function () {
@@ -149,7 +150,7 @@ function musicPlayerChecker() {
       getButton.innerHTML = "Music";
       document.title = "JERRY PRO :: (～￣▽￣)～";
       success.style.backgroundColor = "rgb(235, 238, 241)";
-      successA.style.color = "rgb(0, 0, 0)"
+      successA.style.color = "rgb(0, 0, 0)";
     });
   }
 }
@@ -157,7 +158,7 @@ function musicPlayerChecker() {
 function loader() {
   var loader = document.getElementById("pre-loder-index");
   // loader.style.display = "none";
-  
+
   setTimeout(function () {
     loader.style.display = "none";
   }, 1000);
