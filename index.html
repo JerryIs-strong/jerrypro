@@ -24,7 +24,7 @@
     rel="stylesheet">
 </head>
 
-<body class="" id="Loading" oncontextmenu="return false;" onload="Themebgloder(),appleBg(),loader()">
+<body class="" id="Loading" oncontextmenu="return false;">
   <script type="text/javascript" src="./JS/main.js">Changebg();</script>
   <div id="Sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -65,7 +65,7 @@
       </div>-->
 
     <div id="topTitle" class="topTitle">
-      <h1>JERRY PRO</h1>
+      <h1 id="h1">JERRY PRO</h1>
       <span class="underlineTop"></span>
       <h2><span>/*</span> 這是關於JERRY的個人主頁; Hello World ! <span>*/</span></h2>
     </div>
@@ -383,7 +383,7 @@
 
         <ul class="footUL footULCopy" id="footUL2">
           <h2>© 2022 JERRY 版權所有</h2>
-          <li>JERRY PRO :: Powered by JERRY❤️Koala, All rights reserved</li>
+          <li class="footcopyLI">JERRY PRO :: Powered by JERRY❤️Koala for <a id="dateCount" class="footcopyLI" onload="dateCount()">--</a> day, All rights reserved</li>
         </ul>
       </div>
     </div>
