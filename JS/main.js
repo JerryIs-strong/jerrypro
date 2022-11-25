@@ -163,9 +163,3 @@ function loader() {
     loader.style.display = "none";
   }, 1000);
 }
-
-function gray(){
-  document.body.style.filter = "grayscale(100%)";
-  document.getElementById("h1").innerHTML = "傻瓜 每天都要開心噢"
-  document.getElementById("h1").style.fontSize = "60px"
-}
