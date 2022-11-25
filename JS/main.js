@@ -1,3 +1,10 @@
+window.onload = function(){
+  Themebgloder(),
+  appleBg(),
+  loader(),
+  dateCount()
+}
+
 function openNav() {
   document.getElementById("Sidebar").style.transform = "translateX(0)";
   document.getElementById("Sidebar-mask").className = "Sidebar-mask-active";
@@ -162,4 +169,18 @@ function loader() {
   setTimeout(function () {
     loader.style.display = "none";
   }, 1000);
+}
+
+function dateCount(){
+  let then = new Date('11/04/2022');
+  let now = new Date();
+  
+  const days = (then, now) =>{
+      let difference = then.getTime() - now.getTime();
+      let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+      return TotalDays;
+  }
+
+// 24 hours, 60 minutes, 60 seconds, 1000 milliseconds
+  document.getElementById("dateCount").innerHTML = Math.ceil((days(then, now))* -1);
 }
