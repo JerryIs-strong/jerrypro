@@ -38,6 +38,16 @@
     url("../Resources/font/LXGWWenKaiMono-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "BLACK HORIZON Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BLACK HORIZON Regular"),
+    url("../Resources/font/BlackHorizon-L3j85.woff") format("woff"),
+    url("../Resources/font/BlackHorizon-L3j85.ttf") format("truetype"),
+    url("../Resources/font/BlackHorizon-L3j85.woff2") format("woff2");
+}
+
 .theme-blue {
   --main-color: #5d7fa2;
   --bg-transform: #6e8fb01d;
@@ -197,7 +207,7 @@ html {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: "BLACK HORIZON Regular";
   background-clip: text;
   -webkit-background-clip: text;
   background-image: url("../Resources/headerBg/17545.jpg");
@@ -263,7 +273,7 @@ h3 {
 }
 
 .textContent {
-  border: solid 2px rgb(0,0,0);
+  border: solid 2px rgb(0, 0, 0);
   border-radius: 30px;
   width: 90%;
   padding: 20px;
@@ -1745,7 +1755,8 @@ img {
   font-size: 20px;
 }
 
-.footULCopy li, .footcopyLI {
+.footULCopy li,
+.footcopyLI {
   color: #4d4848;
   font-size: 12px;
 }
