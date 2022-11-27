@@ -263,6 +263,7 @@ h3 {
 .PartTitle {
   text-align: center;
   cursor: url(../Resources/cusor/pointer.cur), pointer;
+  margin-top: 30px;
 }
 
 .PartTitle:hover::after {
@@ -496,6 +497,26 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 5px 2%;
+  transition: all 0.5s;
+}
+
+.navbar-active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 2%;
+  position: fixed;
+  top: 0;
+  width: 96%;
+  background-color: #ffffff6b;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  transition: all 0.5s;
+}
+
+.navbar-active nav ul li a {
+  transition: all 0.5s;
+  color: rgb(118 117 117);
 }
 
 .logo {
@@ -513,6 +534,12 @@ button {
 }
 
 .navLinkBox li a {
+  transform: all 0.3s ease 0s;
+  font-family: "LXGWWenKaiMono", sans-serif;
+  cursor: url("../Resources/cusor/pointer.cur"), pointer;
+}
+
+.navLinkBox-active li a {
   transform: all 0.3s ease 0s;
   font-family: "LXGWWenKaiMono", sans-serif;
   cursor: url("../Resources/cusor/pointer.cur"), pointer;
@@ -708,6 +735,20 @@ button {
     margin: 0;
     position: absolute;
     height: 40px;
+  }
+
+  .navbar-active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 2%;
+    position: fixed;
+    top: 0px;
+    width: 96%;
+    background-color: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    transition: all 0.5s ease 0s;
   }
 }
 
@@ -1063,7 +1104,7 @@ button {
   transition: 0.25s;
 }
 
-#navbar .navLink {
+.navLink {
   margin: 0 10px;
   padding: 10px 12px;
   border-radius: 5px;
