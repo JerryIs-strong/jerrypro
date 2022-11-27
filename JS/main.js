@@ -1,9 +1,6 @@
-window.onload = function(){
-  Themebgloder(),
-  appleBg(),
-  loader(),
-  dateCount()
-}
+window.onload = function () {
+  Themebgloder(), appleBg(), loader(), dateCount(), scroll();
+};
 
 function openNav() {
   document.getElementById("Sidebar").style.transform = "translateX(0)";
@@ -94,7 +91,7 @@ function changeTheme() {
 function Themebgloder() {
   var x = document.getElementById("topBG");
   var randomNumber = Math.floor(Math.random() * 5);
-  document.body.id = "Done"
+  document.body.id = "Done";
 
   if (randomNumber == "1") {
     x.style.backgroundImage =
@@ -171,16 +168,33 @@ function loader() {
   }, 1000);
 }
 
-function dateCount(){
-  let then = new Date('11/04/2022');
+function dateCount() {
+  let then = new Date("11/04/2022");
   let now = new Date();
-  
-  const days = (then, now) =>{
-      let difference = then.getTime() - now.getTime();
-      let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
-      return TotalDays;
-  }
 
-// 24 hours, 60 minutes, 60 seconds, 1000 milliseconds
-  document.getElementById("dateCount").innerHTML = Math.ceil((days(then, now))* -1);
+  const days = (then, now) => {
+    let difference = then.getTime() - now.getTime();
+    let TotalDays = Math.ceil(difference / (1000 * 3600 * 24));
+    return TotalDays;
+  };
+
+  // 24 hours, 60 minutes, 60 seconds, 1000 milliseconds
+  document.getElementById("dateCount").innerHTML = Math.ceil(
+    days(then, now) * -1
+  );
+}
+
+function scroll() {
+  addEventListener("scroll", (event) => {
+    if (
+      document.body.scrollTop > 10 ||
+      document.documentElement.scrollTop > 10
+    ) {
+      document.getElementById("navbar").className = "navbar-active";
+      document.getElementById("closeNav").style.color = "rgb(163 162 162)";
+    } else {
+      document.getElementById("navbar").className = "navbar";
+      document.getElementById("closeNav").style.color = "#fff";
+    }
+  });
 }
