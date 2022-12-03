@@ -1,393 +1,92 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="theme-blue">
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JERRY PRO :: (～￣▽￣)～</title>
+    <link rel="shortcut icon" type="image/ico" href="../icon.png" />
+    <link rel="apple-touch-icon" href="../icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="refresh" content="5; url=https://www.jerrypro.xyz?from=instagram#version=windows">
 
-<head>
-  <title>JERRY PRO :: (～￣▽￣)～</title>
-  <meta charset="UTF-8">
-  <meta name="keywords" content="jerrypro" />
-  <meta name="description" content="A personal website about JERRY" />
-  <meta name="author" content="JERRYPro" />
-  <link rel="shortcut icon" type="image/ico" href="./icon.png">
-  <!--Favicon for Chrome-->
-  <link rel="apple-touch-icon" href="./icon.png">
-  <!--Favicon for Safari-->
-  <script type="application/javascript" src="./JS/console.js"></script>
-  <script type="application/javascript" src="./JS/main.js"></script>
-  <script src="https://kit.fontawesome.com/9af6347b73.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./CSS/20220810.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&Roboto:wght@500&family=Silkscreen&display=swap"
-    rel="stylesheet">
-</head>
+    <style type="text/css">
+      body {
+        transition: all 0.5s;
+      }
 
-<body class="" id="Loading" oncontextmenu="return false;">
-  <script type="text/javascript" src="./JS/main.js">Changebg();</script>
-  <div id="Sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#Goabout" class="navLink" onclick="closeNav()"><i class="fa fa-heartbeat" aria-hidden="true"></i>About</a>
-    <a href="#Goproject" class="navLink" onclick="closeNav()"><i class="fa fa-window-restore"
-        aria-hidden="true"></i>Project</a>
-    <a href="#Golinktree" class="navLink" onclick="closeNav()"><i class="fa fa-link" aria-hidden="true"></i>Link
-      Tree</a>
-    <a href="#Gocontact" class="navLink" onclick="closeNav()"><i class="fa fa-envelope"
-        aria-hidden="true"></i>Contact</a>
-    <a class="navLink" onclick="closeNav(),changeTheme()"><i class="fa fa-flask" aria-hidden="true"></i>Change Theme</a>
-    <img class="Jerry-sound" src="./Resources/icon/tech.png" />
-  </div>
+      img {
+        width: 10vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        transition: all 0.5s;
+        animation: goleft;
+        animation-duration: 5s;
+        z-index: 2;
+        background-color: #fff;
+        padding: 20px;
+      }
 
-  <div id="Sidebar-mask" class="Sidebar-mask" onclick="closeNav()"></div>
+      a {
+        animation: display;
+        animation-duration: 5s;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        opacity: 0;
+        font-family: "Microsoft JhengHei", "Microsoft Yahei", sans-serif;
+        font-size: 3vh;
+        font-weight: bolder;
+        z-index: 1;
+      }
 
-  <div class="topBG" id="topBG">
+      @keyframes goleft {
+        0% {
+          margin-left: 0;
+        }
 
-    <div class="navbar" id="navbar">
-      <img class="logo" src="icon.png" alt="logo" id="logo" />
-      <nav>
-        <ul class="navLinkBox" id="navLinkBox">
-          <li><a href="#Goabout" class="navLink"><i class="fa-solid fa-heart-pulse"></i>About</a></li>
-          <li><a href="#Goproject" class="navLink" id="navLinkHide"><i
-                class="fa-solid fa-window-restore"></i>Project</a></li>
-          <li><a href="#Golinktree" class="navLink" id="navLinkHide"><i class="fa-solid fa-link"></i>Link Tree</a></li>
-          <li><a href="#Gocontact" class="navLink"><i class="fa-regular fa-comments"></i>Contact</a></li>
-          <li><a onclick="changeTheme()" class="navLink"><i class="fa-sharp fa-solid fa-code"></i>Theme</a></li>
-        </ul>
-      </nav>
-      <button class="openbtn" onclick="openNav()" id="closeNav">☰</button>
-      <a><button class="buttonTop" id="buttonTop">(～￣▽￣)～</button></a>
-      <div id="snackbar">青出於藍，而勝於藍！</div>
-    </div>
+        75% {
+          margin-left: -90px;
+        }
 
-    <!--<div class="image-container">
-          <div class="text">JERRY'S <span class="Typingtext"></span></div>
-      </div>-->
+        100% {
+          margin-left: 0;
+        }
+      }
 
-    <div id="topTitle" class="topTitle">
-      <h1 id="h1">JERRY PRO</h1>
-      <span class="underlineTop"></span>
-      <h2><span>/*</span> 這是關於JERRY的個人主頁; Hello World ! <span>*/</span></h2>
-    </div>
+      @keyframes display {
+        0% {
+          opacity: 0;
+          margin-left: 0;
+        }
 
-    <div class="container">
-      <a href="#Goabout">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </a>
-    </div>
-  </div>
+        75% {
+          opacity: 1;
+          margin-left: 40px;
+        }
 
-  <div id="Goabout">
-    <div class="Bg001" id="Bg01">
-      <a href="#Goabout">
-        <h3 class="PartTitle" id="PT">About</h3>
-      </a>
-      <span class="underline1"></span>
-      <div class="tagBox">
-        <span>科技宅</span>
-        <span>香港</span>
-        <span>二次元</span>
-      </div>
-      <div class="textContent" id="textContent">
-        <div class="aboutTyping" id="aboutTyping">
-          <div class="fixedText"><i class="fa-regular fa-hard-drive"></i> JERRY的<span class="TypingText"></span></div>
-          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-          <script type="application/javascript" src="./JS/typing.js"></script>
-        </div>
-        <font id="font">我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br />
-        <font id="font1">JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App
-          Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習。
-        </font><br />
-        <font id="font2">
-          我的夢想是成為軟件工程師，一名小米工程師。「讓每個人都能享受科技的樂趣」這是小米對產品的價值觀，也是我對小米的第一印象。我與小米的“緣分”始於“小米手環2”，憑著對小米的印象和雷軍的經歷，就有了一種說不出來的“好感”，因此我也入坑了小米，成了一個小小的米粉（？😂在二十一世紀，編程不應只是專業領域的知識，而是每個人都掌握的基本能力，在未來，我們要由我們控制AI，而不是AI取代我們。此外，網絡安全也是我感興趣的一個範疇，如今科技發展的成熟，隨之帶來的是重重的安全隱患。
-        </font><br />
-        <font id="font3">JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br />
-      </div>
-      <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/01.png" />
-    </div>
-  </div>
-  </div>
-  </div>
+        100% {
+          opacity: 0;
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
 
-  <div id="Goproject">
-    <div class="Bg002" id="Bg02">
-      <a href="#Goproject">
-        <h3 class="PartTitle">Project</h3>
-      </a>
-      <span class="underline1"></span>
-      <div class="tagBox">
-        <span>JERRY Tool</span>
-        <span>前端</span>
-      </div>
-      <div class="textContent" id="textContent1">
-        <h2 class="projecttag">1</h2>
-        <font id="font5"><a class="highlight">JERRY Tool</a>
-          是由我個人開發的在線工具箱(站)，目標是提高使用者的工作效率，事半功倍。工具箱以.html格式，並托管在W3school
-          Space的伺服器中，采用了https超文本傳輸安全協定，保障了你的安全。<s>由於資金不足</s>...啊，不對(´･ω･`)是經濟考量的問題，我選用了Free(免費)的方案，也因此網站僅限有500個請求值(每月)。我使用了Google
-          Site協作平臺，簡單的寫了一個<a class="highlight">JERRY Tool-State</a>，查看網站的狀態。</font><br />
-        <font id="font6">目前，<a class="highlight">JERRY Tool-State</a>以"手動"方式操作。在未來，我們將引入自動識別的功能，<s>減少我的負擔。</s></font>
-        <br />
-        <font id="font12">不久的將來，我將會選用伺服器(如阿里雲、騰訊雲等)，提升用戶的體驗，以及開發更多的使用功能！還是那句，我正在學習！哈哈哈哈哈哈</font><br />
-        <a href="http://jerrytool.w3spaces.com/" target="_blank"><button class="Check">Check</button></a>
-
-        <h2 class="projecttag" id="projecttagse">2</h2>
-        <font id="font7"><a class="highlightldz">LDZ Music</a>
-          是由我與@matthew.0112合力組成的劉大壯香港粉絲後援會，旨致力於提供高品質音樂的音樂工作室，並創造一個屬於非官方的劉大壯時代。我們相信音樂不應有任何限制，我們的努力是爲了你得到最好的體驗。</font>
-        <br />
-        <font id="font8">我們與各大社交媒體均開設了官方賬號，發揮出我們的“愛”與力量，致力宣傳劉大壯的音樂力量。<a class="highlightldz">LDZ
-            Music</a>在Wix與webnode分別設立了官方網站與部落格(Blog)。其中，我們在官方網站中提供了在綫音樂串流的功能，用戶能夠通過我們的官方網站過的“鎖屏聽歌”的功能。我們承諾我們所提供的服務絕對不會包含任何隱藏收費。
-        </font><br />
-        <font id="font9"><a class="highlightldz">LDZ Music</a>非常重視你的網上安全，因此，你在使用LDZ Music官方網站的旅程中，你將受到<a
-            class="highlightldzs">“LDZ
-            Music safer”</a>的重重保護。</font><br />
-        <a href="https://ldzmusic.wixsite.com/ldz-music" target="_blank"><button class="Check">Try Now</button></a>
-
-        <h2 class="projecttag" id="projecttagse">3</h2>
-        <font id="font10"><a class="highlight">JERRY Virus</a> 搜集了新型和各種臭名昭著的電腦病毒提供測試。</font><br />
-        <a href="https://virus.jerrypro.xyz/" target="_blank"><button class="Check">Test</button></a>
-
-        <h2 class="projecttag" id="projecttagse">4</h2>
-        <font id="font11"><a class="highlight">JERRY Clock</a> a Simple HTML clock to help you manage your time! Simple
-          and Secure.
-        </font><br />
-        <a href="https://clock.jerrypro.xyz/" target="_blank"><button class="Check">Go</button></a>
-      </div>
-      <img src="./Resources/Bgimg/02.png" class="Bgimgh02" id="Bgimgh02" />
-    </div>
-  </div>
-
-  <div id="Golinktree">
-    <div class="Bg001" id="Bg01">
-      <a href="#Golinktree">
-        <h3 class="PartTitle">My Link Tree</h3>
-      </a>
-      <span class="underline1"></span>
-      <div class="LtreeAll">
-        <h6 class="LinkTitle">JERRY://Website | In development</h6>
-        <a href="https://jerrytool.w3spaces.com/"><button class="Ltree">
-            <div class="Link">JERRY://Tool</div>
-          </button></a>
-        <a href="https://sites.google.com/view/jerrrtoolstate/home?authuser=0"><button class="Ltree">
-            <div class="Link">Tool://State</div>
-          </button></a>
-        <h6 class="LinkTitle">JERRY://Project | Fact Studio</h6>
-        <a href="https://www.youtube.com/ldzmusic_studio"><button class="Ltree">
-            <div class="Link">LDZ Music</div>
-          </button></a>
-        <h6 class="LinkTitle">JERRY://More</h6>
-        <a href="https://ngl.link/heyajerry23446"><button class="Ltree" id="ltreengl">
-            <div class="Link"><img class="ngl" src="./Resources/icon/ngl.png" /> Link</div>
-          </button></a>
-        <button class="Ltree" id="ltreeng2" onclick="musicPlayerChecker()"><a id="bmusicinfo" class="Link">
-            Music</a></button>
-        <div class="musicinfo" id="musicinfo" onclick="musicPlayerChecker()">
-          <audio class="musicPlayer" id="musicPlayer"
-            src="https://jerrypro.xyz/Resources/audio/cici_%20-%20%E8%87%B3%E5%B0%91%E9%82%84%E6%9C%89%E4%BD%A0(%E6%BA%AB%E6%9F%94%E7%89%88).mp3"></audio>
-        </div>
-      </div>
-      <img class="Bgimg01" id="Bgimg01" src="./Resources/Bgimg/04.png" />
-    </div>
-  </div>
-
-
-  <div id="Gocontact">
-    <div class="Bg002" id="Bg02">
-      <a href="#Gocontact">
-        <h3 class="PartTitle">Contact</h3>
-      </a>
-      <span class="underline1"></span>
-
-      <div class="wrapper">
-        <div class="button">
-          <div class="icon">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.facebook.com/heyajerry07" target="_blank">
-            <span>Facebook</span></a>
-        </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </div>
-          <a href="mailto: info@jerrypro.xyz">
-            <span>Gmail</span></a>
-        </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.instagram.com/heyajerry/" target="_blank">
-            <span>Instagram</span></a>
-        </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fab fa-github" aria-hidden="true"></i>
-          </div>
-          <a href="https://github.com/JerryIs-strong" target="_blank">
-            <span>Github</span></a>
-        </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fab fa-youtube" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.youtube.com/channel/UCb4AAgayzeNgj01ULpDDzjg" target="_blank">
-            <span>YouTube</span></a>
-        </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fa fa-link" aria-hidden="true"></i>
-          </div>
-          <a href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/EuZpWHLHwQNLo-tEJewWjBoBT0Y58h-a-6tpFkrp661uag"
-            target="_blank">
-            <span>Tool</span></a>
-        </div>
-      </div>
-      <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
-      <img src="./Resources/Bgimg/03.png" class="Bgimgh02" id="Bgimgh02" />
-    </div>
-  </div>
-
-  <div id="Gomore">
-    <div class="Bg001" id="Bg001-iframe">
-      <a href="#Gomore">
-        <h3 class="PartTitle">More</h3>
-      </a>
-      <span class="underline1"></span>
-      <!-- <center class="play-ture" id="bilibili-player"><iframe style="width: 100%;height: 400px;" src="https://www.bilibili.com/blackboard/live/live-activity-player.html?cid=22822257&quality=0" frameborder="no" framespacing="0" scrolling="no" allow="autoplay; encrypted-media; muted" allowfullscreen="true"></iframe></center> Code form Bilibili -->
-      <div class="slideshow-container" id="slideshow-container">
-        <div class="Slides fade">
-          <a target="_blank"
-            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
-            <img id="m-silde" src="./Resources/Slideshowimg/J01.png" style="width:100%" alt="JERRY PRO">
-          </a>
-        </div>
-
-        <div class="Slides fade">
-          <a target="_blank"
-            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
-            <img id="m-silde" src="./Resources/Slideshowimg/Dark_with_windows_SE.PNG" style="width:100%"
-              alt="JERRY PRO">
-          </a>
-        </div>
-
-        <div class="Slides fade">
-          <a target="_blank"
-            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
-            <img id="m-silde" src="./Resources/Slideshowimg/Light.PNG" style="width:100%" alt="JERRY PRO">
-          </a>
-        </div>
-
-        <div class="Slides fade">
-          <a target="_blank"
-            href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/Ej5IS2chKHFFm9VXLzevWmMBRuNwFPK_hg3oFG76NulK1A?e=LNdLxc">
-            <img id="m-silde" src="./Resources/Slideshowimg/Dark.PNG" style="width:100%" alt="JERRY PRO">
-          </a>
-        </div>
-
-        <a class="prev" id="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" id="next" onclick="plusSlides(1)">❯</a>
-      </div>
-      <script src="./JS/SlidesReady.js"></script>
-    </div>
-  </div>
-
-
-  <div class="Bg001foot" id="Bg001foot">
-    <div id="log">
-      <center><b>
-          <h3 style="font-size: 30px;">Enjoy every moment
-        </b></h3>
-        <span class="underline1"></span>
-        <p class="tip">Swipe left or right to view more</p>
-      </center>
-      <div class="logBoxOuter" id="logBoxOuter">
-        <div id="logBox">
-          <div>
-            <p class="logText1">2022.08.03</p>
-            <p class="logText2">JERRY PRO 托管至 W3Spaces</p>
-          </div>
-          <div>
-            <p class="logText1">2022.08.14</p>
-            <p class="logText2">JERRY PRO 托管至 Github 並完全開源</p>
-          </div>
-          <div>
-            <p class="logText1">2022.09.16</p>
-            <p class="logText2">網站加入自適應框架</p>
-          </div>
-          <div>
-            <p class="logText1">2022.10.08</p>
-            <p class="logText2">加入<a class="themeby">Theme For You</a></p>
-          </div>
-          <div>
-            <p class="logText1">2022.10.11</p>
-            <p class="logText2">成功注冊域名<a class="themeby">「</a>jerrypro.xyz<a class="themeby">」</a></p>
-          </div>
-          <div>
-            <p class="logText3">TO BE</p>
-            <p class="logText3">CONTINUED...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div style="position:relative;" class="famousCard">
-    <div class="FootCard">
-      <p class="famousText">「當你的前途一片黑暗時，你該意識到是你在發光。」<a style="color:#5d7fa2;font-weight: bolder;">!</a></p>
-      <p class="author">- 雷軍（小米）</p>
-    </div>
-  </div>
-
-  <div class="pre-loder-index" id="pre-loder-index">
-    <div class="pre-loder-main">
-      <img src="./Resources/loader/jerrypro-loading.gif" class="load-img" id="load-img" />
-    </div>
-  </div>
-
-
-  <footer>
-    <div class="bgimg-2">
-      <div class="footlink" id="footlink">
-        <ul class="footUL" id="footUL1">
-          <h2>友情連結</h2>
-          <a href="https://www.youtube.com/@GawrGura" target="_blank"><li>Gawr Gura</li></a>
-          <a href="https://www.youtube.com/@linzin" target="_blank"><li>Linzin 阿哲</li></a>
-          <a href="https://www.youtube.com/@ThioJoe" target="_blank"><li>ThioJoe</li></a>
-          <a href="https://www.youtube.com/@thepcsecuritychannel" target="_blank"><li>The PC Security Channel</li></a>
-        </ul>
-
-        <ul class="footUL" id="footUL2">
-          <h2>Wikipedia</h2>
-          <a href="https://en.wikipedia.org/wiki/Web3" target="_blank"><li>Web 3.0</li></a>
-          <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank"><li>Non-fungible token</li></a>
-          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank"><li>Blockchain</li></a>
-        </ul>
-
-        <ul class="footUL" id="footUL2">
-          <h2>Web</h2>
-          <a href="https://www.w3schools.com/default.asp" target="_blank"><li>w3schools</li></a>
-          <a href="https://developer.mozilla.org/en-US/" target="_blank"><li>MDN Web Docs</li></a>
-          <a href="https://github.com/" target="_blank"><li>Github</li></a>
-          <a href="https://www.google.com/inputtools/try/" target="_blank"><li>Google Input Tools</li></a>
-        </ul>
-
-        <ul class="footUL" id="footUL2">
-          <h2>Search Engine</h2>
-          <a href="https://www.google.com/" target="_blank"><li>Google</li></a>
-          <a href="https://yandex.com/" target="_blank"><li>Yandex</li></a>
-          <a href="http://saucenao.com/" target="_blank"><li>SauceNAO</li></a>
-          <a href="https://hk.yahoo.com/?p=us" target="_blank"><li>Yahoo!</li></a>
-        </ul>
-
-        <ul class="footUL footULCopy" id="footUL2">
-          <h2>© 2022 JERRY 版權所有</h2>
-          <li class="footcopyLI">JERRY PRO :: Powered by JERRY❤️Koala for <a id="dateCount" class="footcopyLI" onload="dateCount()">--</a> day, All rights reserved</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-</body>
+  <body>
+    <img src="./windows-11-icon-logo-6C39629E45-seeklogo.com.png" />
+    <a>Windows 11</a>
+  </body>
 </html>
