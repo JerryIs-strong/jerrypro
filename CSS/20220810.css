@@ -1760,11 +1760,12 @@ img {
   width: 100%;
 }
 
-.pre-loder-main img {
-  height: 30%;
-  float: left;
-  margin-right: 8px;
-  cursor: context-menu;
+.pre-loder-main h2 {
+  color: #000;
+  transition: all 0.5s;
+  font-size: 10vh;
+  font-family: "Microsoft JhengHei", "Microsoft Yahei", sans-serif;
+  animation: jerryproload 1s linear infinite;
 }
 
 @keyframes fade-out {
@@ -1773,6 +1774,15 @@ img {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes jerryproload{
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #fff;
   }
 }
 
