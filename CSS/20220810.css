@@ -578,6 +578,7 @@ button {
   width: 131px;
   overflow: auto;
   max-height: 46px;
+  font-size: 14px;
 }
 
 .buttonTop:hover {
