@@ -196,7 +196,15 @@ html {
 
 #topTitle {
   text-align: center;
-  padding: 10% 0;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
 }
 
 #topTitle h1 {
@@ -761,13 +769,6 @@ button {
 }
 
 @media screen and (max-width: 590px) {
-  #topTitle {
-    top: 15%;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
-
   #Bg01 {
     color: #777;
     background-color: var(--main-light);
