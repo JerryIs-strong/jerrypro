@@ -194,6 +194,12 @@ html {
   }
 }
 
+.SPhead{
+  position: absolute;
+  width: 60px;
+  top: 67px;
+}
+
 #topTitle {
   text-align: center;
       position: absolute;
