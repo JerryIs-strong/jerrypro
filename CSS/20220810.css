@@ -1845,3 +1845,18 @@ img {
 .footUL h2 {
   color: #797a7a;
 }
+
+.know-text {
+  display: inline-block;
+  color: #0000004a;
+  font-size: 32px;
+  text-align: center;
+}
+
+.doyouknow{
+  padding: 90px 0 40px;
+}
+
+#textKnow{
+  color: rgb(224 129 12 / 44%);
+}
