@@ -1,5 +1,10 @@
 window.onload = function () {
   Themebgloder(), appleBg(), loader(), dateCount(), scroll();
+
+  var things = ['.exe', 'Powershell', 'Hyper-V', 'DDoS', 'Self-XSS', 'DNS hijacking', 'win+r的作用'];
+  var thing = things[Math.floor(Math.random() * things.length)];
+  var text = document.getElementById("textKnow");
+  text.innerHTML = thing;
 };
 
 function openNav() {
@@ -53,7 +58,7 @@ function appleBg() {
           document.getElementById("topBG").className = "topBGsafari";
           console.log("Done");
         }
-      } catch (e) {}
+      } catch (e) { }
     }
   }
 }
