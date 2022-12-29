@@ -97,25 +97,9 @@ function Themebgloder() {
   var x = document.getElementById("topBG");
   var randomNumber = Math.floor(Math.random() * 5);
   document.body.id = "Done";
-  x.style.backgroundImage = "url('http://api.btstu.cn/sjbz/?lx=dongman')"
-
-  // if (randomNumber == "1") {
-  //   x.style.backgroundImage =
-  //     "url('https://jerrypro.xyz/Resources/headerBg/small.jpg')";
-  //   console.log("Theme: 1");
-  // } else if (randomNumber == "2") {
-  //   x.style.backgroundImage =
-  //     "url('https://jerrypro.xyz/Resources/headerBg/small2.jpg')";
-  //   console.log("Theme: 2");
-  // } else if (randomNumber == "3") {
-  //   x.style.backgroundImage =
-  //     "url('https://jerrypro.xyz/Resources/headerBg/small3.jpg')";
-  //   console.log("Theme: 3");
-  // } else {
-  //   x.style.backgroundImage =
-  //     "url('https://jerrypro.xyz/Resources/headerBg/small4.jpg')";
-  //   console.log("Theme: 4");
-  // }
+  x.style.backgroundImage = "url('./Resources/headerBg/a1cadb0911675232054cc13deee6a3221b4dd88e.jpg')"
+  
+  //x.style.backgroundImage = "url('http://api.btstu.cn/sjbz/?lx=dongman')"
 }
 
 function bplayer() {
