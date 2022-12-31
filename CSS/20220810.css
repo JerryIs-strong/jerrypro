@@ -231,7 +231,7 @@ html {
 
 #topTitle h1::before {
   content: "";
-  background-image: url(../Resources/icon/guracode.png);
+  background-image: url(../Resources/icon/rabbit-face_1f430.png);
   background-size: 110px 70px;
   display: inline-block;
   width: 110px;
