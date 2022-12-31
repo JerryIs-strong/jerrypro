@@ -232,9 +232,9 @@ html {
 #topTitle h1::before {
   content: "";
   background-image: url(../Resources/icon/rabbit-face_1f430.png);
-  background-size: 110px 70px;
+  background-size: 70px 70px;
   display: inline-block;
-  width: 110px;
+  width: 70px;
   height: 70px;
   margin-right: 20px;
   background-repeat: no-repeat;
