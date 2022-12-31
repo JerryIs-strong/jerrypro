@@ -221,7 +221,7 @@ html {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  font-family: "BLACK HORIZON Regular";
+  font-family: 'Noto Sans', sans-serif;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: url("../Resources/headerBg/17545.jpg");
