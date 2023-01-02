@@ -98,8 +98,6 @@ function Themebgloder() {
   var randomNumber = Math.floor(Math.random() * 5);
   document.body.id = "Done";
   x.style.backgroundImage = "url('./Resources/headerBg/a1cadb0911675232054cc13deee6a3221b4dd88e.jpg')"
-  
-  //x.style.backgroundImage = "url('http://api.btstu.cn/sjbz/?lx=dongman')"
 }
 
 function bplayer() {
@@ -181,10 +179,8 @@ function scroll() {
       document.documentElement.scrollTop > 10
     ) {
       document.getElementById("navbar").className = "navbar-active";
-      document.getElementById("closeNav").style.color = "rgb(163 162 162)";
     } else {
       document.getElementById("navbar").className = "navbar";
-      document.getElementById("closeNav").style.color = "#fff";
     }
   });
 }
