@@ -2,7 +2,8 @@
   --main-text: #5d7fa2;
   --main-light: rgb(255, 255, 255);
   --main-dark: rgb(0, 0, 0);
-  --b-alpha-5: rgba(0, 0, 0, 0.05); /*Background color : dark*/
+  --b-alpha-5: rgba(0, 0, 0, 0.05);
+  /*Background color : dark*/
   --b-alpha-10: rgba(0, 0, 0, 0.1);
   --b-alpha-15: rgba(0, 0, 0, 0.15);
   --b-alpha-20: rgba(0, 0, 0, 0.2);
@@ -14,7 +15,8 @@
   --b-alpha-70: rgba(0, 0, 0, 0.7);
   --b-alpha-80: rgba(0, 0, 0, 0.8);
   --b-alpha-90: rgba(0, 0, 0, 0.9);
-  --w-alpha-5: rgba(255, 255, 255, 0.05); /*Background color : light*/
+  --w-alpha-5: rgba(255, 255, 255, 0.05);
+  /*Background color : light*/
   --w-alpha-10: rgba(255, 255, 255, 0.1);
   --w-alpha-15: rgba(255, 255, 255, 0.15);
   --w-alpha-20: rgba(255, 255, 255, 0.2);
@@ -48,6 +50,16 @@
     url("../Resources/font/BlackHorizon-L3j85.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "Mi Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("BLACK HORIZON Regular"),
+    url("../Resources/font/MiSans-Regular.woff") format("woff"),
+    url("../Resources/font/MiSans-Regular.ttf") format("truetype"),
+    url("../Resources/font/MiSans-Regular.woff2") format("woff2");
+}
+
 .theme-blue {
   --main-color: #5d7fa2;
   --bg-transform: #6e8fb01d;
@@ -71,7 +83,8 @@ html {
   color: #777;
   scroll-behavior: smooth;
   background-color: white;
-  -webkit-user-select: none; /*Prevent copying text in web-page*/
+  -webkit-user-select: none;
+  /*Prevent copying text in web-page*/
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -127,7 +140,8 @@ html {
   background-attachment: fixed;
   position: relative;
   background-position: center;
-  background-position-x: center; /*position center for safari*/
+  background-position-x: center;
+  /*position center for safari*/
   background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -141,7 +155,8 @@ html {
 .topBGsafari {
   position: relative;
   background-position: center;
-  background-position-x: center; /*position center for safari*/
+  background-position-x: center;
+  /*position center for safari*/
   background-position-y: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -175,18 +190,7 @@ html {
     transform: translateZ(80px);
     opacity: 0;
   }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes fade-in-bck {
-  0% {
-    -webkit-transform: translateZ(80px);
-    transform: translateZ(80px);
-    opacity: 0;
-  }
+
   100% {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -194,7 +198,21 @@ html {
   }
 }
 
-.SPhead{
+@keyframes fade-in-bck {
+  0% {
+    -webkit-transform: translateZ(80px);
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.SPhead {
   position: absolute;
   width: 60px;
   top: 67px;
@@ -202,15 +220,15 @@ html {
 
 #topTitle {
   text-align: center;
-      position: absolute;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      align-content: center;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 #topTitle h1 {
@@ -446,14 +464,17 @@ marquee {
   25% {
     opacity: 1;
   }
+
   33% {
     opacity: 1;
     transform: translateY(30px);
   }
+
   67% {
     opacity: 1;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 0;
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
@@ -493,8 +514,9 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 2%;
+  padding: 6px 2%;
   transition: all 0.5s;
+  width: 96%;
 }
 
 .navbar-active {
@@ -532,7 +554,7 @@ button {
 
 .navLinkBox li a {
   transform: all 0.3s ease 0s;
-  font-family: "LXGWWenKaiMono", sans-serif;
+  font-family: "Mi Sans";
   cursor: url("../Resources/cusor/pointer.cur"), pointer;
 }
 
@@ -667,6 +689,7 @@ button {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -678,6 +701,7 @@ button {
     bottom: 0;
     opacity: 0;
   }
+
   to {
     bottom: 30px;
     opacity: 1;
@@ -689,6 +713,7 @@ button {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -700,6 +725,7 @@ button {
     bottom: 30px;
     opacity: 1;
   }
+
   to {
     bottom: 0;
     opacity: 0;
@@ -723,7 +749,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 2%;
+    padding: 8px 2%;
+    width: 96%;
+    position: relative;
   }
 
   .openbtn {
@@ -739,7 +767,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 2%;
+    padding: 8px 2%;
     position: fixed;
     top: 0px;
     width: 96%;
@@ -1071,6 +1099,7 @@ button {
   .sidebar {
     padding-top: 15px;
   }
+
   .sidebar a {
     font-size: 18px;
   }
@@ -1446,6 +1475,7 @@ font::before {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1455,15 +1485,11 @@ font::before {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
 }
-
-/* .Slides {
-  display: none;
-  margin-top: 20px;
-} */
 
 img {
   vertical-align: middle;
@@ -1532,6 +1558,7 @@ img {
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -1539,6 +1566,7 @@ img {
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -1603,9 +1631,11 @@ img {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
+
 .wrapper .button:hover {
   width: 200px;
 }
+
 .wrapper .button .icon {
   display: inline-block;
   height: 60px;
@@ -1617,39 +1647,48 @@ img {
   transition-property: opacity, right;
   transition-duration: 3s, 5s;
 }
+
 .wrapper .button:nth-child(1):hover .icon {
   background: #4267b2;
   float: left;
 }
+
 .wrapper .button:nth-child(2):hover .icon {
   background: #1da1f2;
   float: left;
 }
+
 .wrapper .button:nth-child(3):hover .icon {
   background: #e1306c;
   float: left;
 }
+
 .wrapper .button:nth-child(4):hover .icon {
   background: #333;
   float: left;
 }
+
 .wrapper .button:nth-child(5):hover .icon {
   background: #ff0000;
   float: left;
 }
+
 .wrapper .button:nth-child(6):hover .icon {
   background: #b0def4;
   float: left;
 }
+
 .wrapper .button .icon i {
   font-size: 25px;
   line-height: 60px;
   transition: all 0.3s ease-out;
 }
+
 .wrapper .button:hover .icon i {
   color: #fff;
   cursor: url("../Resources/cusor/pointer.cur"), pointer;
 }
+
 .wrapper .button span {
   font-size: 20px;
   font-weight: 500;
@@ -1658,22 +1697,28 @@ img {
   transition: all 0.3s ease-in-out;
   font-family: "LXGWWenKaiMono", sans-serif;
 }
+
 .wrapper .button:nth-child(1) span {
   color: #4267b2;
   transition: all 0.3s ease-in-out;
 }
+
 .wrapper .button:nth-child(2) span {
   color: #1da1f2;
 }
+
 .wrapper .button:nth-child(3) span {
   color: #e1306c;
 }
+
 .wrapper .button:nth-child(4) span {
   color: #333;
 }
+
 .wrapper .button:nth-child(5) span {
   color: #ff0000;
 }
+
 .wrapper .button:nth-child(6) span {
   color: #b0def4;
 }
@@ -1758,15 +1803,17 @@ img {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-@keyframes jerryproload{
+@keyframes jerryproload {
   0% {
     color: #000;
   }
+
   100% {
     color: #fff;
   }
@@ -1831,10 +1878,30 @@ img {
   text-align: center;
 }
 
-.doyouknow{
+.doyouknow {
   padding: 90px 0 40px;
 }
 
-#textKnow{
+#textKnow {
   color: rgb(224 129 12 / 44%);
+}
+
+.grayIcon {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 80px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.grayIcon::-webkit-scrollbar {
+  display: none;
+}
+
+.grayMainicon{
+  width: 90px;
+}
+
+.grayMainicon:nth-child(-n + 4){
+  margin-right: 30px;
 }
