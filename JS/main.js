@@ -175,8 +175,8 @@ function dateCount() {
 function scroll() {
   addEventListener("scroll", (event) => {
     if (
-      document.body.scrollTop > 10 ||
-      document.documentElement.scrollTop > 10
+      document.body.scrollTop > 1 ||
+      document.documentElement.scrollTop > 1
     ) {
       document.getElementById("navbar").className = "navbar-active";
     } else {
