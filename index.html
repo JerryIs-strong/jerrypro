@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW" class="theme-blue">
+<html lang="zh-TW" class="theme-blue" id="light">
 
 <head>
   <title>JERRY PRO :: (～￣▽￣)～</title>
@@ -21,10 +21,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff&family=Palanquin+Dark&family=Shippori+Antique+B1&Roboto:wght@500&family=Silkscreen&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="" id="Loading" oncontextmenu="return false;">
-  <script type="text/javascript" src="./JS/main.js">Changebg();</script>
   <div id="Sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <a href="#Goabout" class="navLink" onclick="closeNav()"><i class="fa fa-heartbeat" aria-hidden="true"></i>About</a>
@@ -35,13 +36,13 @@
     <a href="#Gocontact" class="navLink" onclick="closeNav()"><i class="fa fa-envelope"
         aria-hidden="true"></i>Contact</a>
     <a class="navLink" onclick="closeNav(),changeTheme()"><i class="fa fa-flask" aria-hidden="true"></i>Change Theme</a>
+    <a class="navLink" onclick="closeNav(),changeThemeDL()" id="DLtext-2">🌗</a>
     <img class="Jerry-sound" src="./Resources/icon/tech.png" />
   </div>
 
   <div id="Sidebar-mask" class="Sidebar-mask" onclick="closeNav()"></div>
 
   <div class="topBG" id="topBG">
-
     <div class="navbar" id="navbar">
       <img class="logo" src="icon.png" alt="logo" id="logo" />
       <nav>
@@ -52,6 +53,7 @@
           <li><a href="#Golinktree" class="navLink" id="navLinkHide"><i class="fa-solid fa-link"></i>Link Tree</a></li>
           <li><a href="#Gocontact" class="navLink"><i class="fa-regular fa-comments"></i>Contact</a></li>
           <li><a onclick="changeTheme()" class="navLink"><i class="fa-sharp fa-solid fa-code"></i>Theme</a></li>
+          <li><a onclick="changeThemeDL()" class="navLink"><span class="material-symbols-outlined DL-state" id="DLmode">dark_mode</span></a></li>
         </ul>
       </nav>
       <button class="openbtn" onclick="openNav()" id="closeNav">☰</button>
@@ -79,7 +81,7 @@
   </div>
 
   <div id="Goabout">
-    <div class="Bg001" id="Bg01">
+    <div class="Bg001 Bganima" id="Bg01">
       <a href="#Goabout">
         <h3 class="PartTitle" id="PT">About</h3>
       </a>
@@ -97,10 +99,12 @@
         </div>
         <font id="font">我是JERRY：一個强迫症，懶癌晚期，二次元的宅</font><br />
         <font id="font1">JERRY來自香港，目前就讀初中。Information Technology - 一切來自熱愛，在香港的電腦課程，一般只會教授簡單的電腦知識，如Scratch、App
-          Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習。我的興趣範疇：✅Windows(最愛，沒有之一)/Android(root)/Web🔄Artificial intelligence/Python/Linux/Deep learning/Information security
+          Inventor等，以“編程塊”的方式。自小的我，對網站開發十分有興趣，偶然在網上發現了W3school，自此就在“它”身上學到了不少知識。由HTML到CSS和JavaScript的前端開發，到後端開發，我仍在學習。我的興趣範疇：✅Windows(最愛，沒有之一)/Android(root)/Web🔄Artificial
+          intelligence/Python/Linux/Deep learning/Information security
         </font><br />
         <font id="font2">
-          我的夢想是成為軟件工程師，一名小米工程師。「讓每個人都能享受科技的樂趣」這是小米對產品的價值觀，也是我對小米的第一印象。我與小米的“緣分”始於“小米手環2”，憑著對小米的印象和雷軍的經歷，就有了一種說不出來的“好感”，因此我也入坑了小米，成了一個小小的米粉（？😂在二十一世紀，編程不應只是專業領域的知識，而是每個人都掌握的基本能力。問你一個小問題，你知道什麽是AI嗎？AI會取代人類嗎？可以肯定地回答你 -- 不會。其實電腦科並不難，離不開都是if/then，而結果只有true/false,只要靠著自己的興趣多好好利用Google你就懂了！偷偷告訴你哦，一開始我連裝Chrome也不會(XD，不用猶豫是那個瀏覽器😶
+          我的夢想是成為軟件工程師，一名小米工程師。「讓每個人都能享受科技的樂趣」這是小米對產品的價值觀，也是我對小米的第一印象。我與小米的“緣分”始於“小米手環2”，憑著對小米的印象和雷軍的經歷，就有了一種說不出來的“好感”，因此我也入坑了小米，成了一個小小的米粉（？😂在二十一世紀，編程不應只是專業領域的知識，而是每個人都掌握的基本能力。問你一個小問題，你知道什麽是AI嗎？AI會取代人類嗎？可以肯定地回答你
+          -- 不會。其實電腦科並不難，離不開都是if/then，而結果只有true/false,只要靠著自己的興趣多好好利用Google你就懂了！偷偷告訴你哦，一開始我連裝Chrome也不會(XD，不用猶豫是那個瀏覽器😶
         </font><br />
         <font id="font3">JERRY Pro是我的個人網站，介紹了我的日常以及興趣。我也藉此發布和展示我的學習成果，感謝你的一路陪伴！</font><br />
       </div>
@@ -111,7 +115,7 @@
   </div>
 
   <div id="Goproject">
-    <div class="Bg002" id="Bg02">
+    <div class="Bg002 Bganima" id="Bg02">
       <a href="#Goproject">
         <h3 class="PartTitle">Project</h3>
       </a>
@@ -158,7 +162,7 @@
   </div>
 
   <div id="Golinktree">
-    <div class="Bg001" id="Bg01">
+    <div class="Bg001 Bganima" id="Bg01">
       <a href="#Golinktree">
         <h3 class="PartTitle">My Link Tree</h3>
       </a>
@@ -192,64 +196,52 @@
 
 
   <div id="Gocontact">
-    <div class="Bg002" id="Bg02">
+    <div class="Bg002 Bganima" id="Bg02">
       <a href="#Gocontact">
         <h3 class="PartTitle">Contact</h3>
       </a>
       <span class="underline1"></span>
 
       <div class="wrapper">
-        <div class="button">
-          <div class="icon">
+        <div class="button" id="Facebook">
+          <a href="https://www.facebook.com/heyajerry07" target="_blank" class="icon">
             <i class="fab fa-facebook-f" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.facebook.com/heyajerry07" target="_blank">
-            <span>Facebook</span></a>
+          </a>
         </div>
-        <div class="button">
-          <div class="icon">
+        <div class="button" id="Mail">
+          <a href="mailto: info@jerrypro.xyz" class="icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
-          </div>
-          <a href="mailto: info@jerrypro.xyz">
-            <span>Gmail</span></a>
+          </a>
         </div>
-        <div class="button">
-          <div class="icon">
+        <div class="button" id="Instagram">
+          <a href="https://www.instagram.com/heyajerry/" target="_blank" class="icon">
             <i class="fab fa-instagram" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.instagram.com/heyajerry/" target="_blank">
-            <span>Instagram</span></a>
+          </a>
         </div>
-        <div class="button">
-          <div class="icon">
+        <div class="button" id="Github">
+          <a href="https://github.com/JerryIs-strong" target="_blank" class="icon">
             <i class="fab fa-github" aria-hidden="true"></i>
-          </div>
-          <a href="https://github.com/JerryIs-strong" target="_blank">
-            <span>Github</span></a>
+          </a>
         </div>
-        <div class="button">
-          <div class="icon">
+        <div class="button" id="Youtube">
+          <a href="https://www.youtube.com/channel/UCb4AAgayzeNgj01ULpDDzjg" target="_blank" class="icon">
             <i class="fab fa-youtube" aria-hidden="true"></i>
-          </div>
-          <a href="https://www.youtube.com/channel/UCb4AAgayzeNgj01ULpDDzjg" target="_blank">
-            <span>YouTube</span></a>
+          </a>
         </div>
-        <div class="button">
-          <div class="icon">
-            <i class="fa fa-link" aria-hidden="true"></i>
-          </div>
+        <div class="button" id="Tool">
           <a href="https://nr2z-my.sharepoint.com/:f:/g/personal/like_dz_nr2z_onmicrosoft_com/EuZpWHLHwQNLo-tEJewWjBoBT0Y58h-a-6tpFkrp661uag"
-            target="_blank">
-            <span>Tool</span></a>
+            target="_blank" class="icon">
+            <i class="fa fa-link" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
-      <span class="ContactTag"><span class="ContactTagadd">@</span>Heyajerry</span>
+      <span class="ContactTag" id="multipurposeByicon"><span class="ContactTagadd">@</span>Heyajerry</span>
       <img src="./Resources/Bgimg/03.png" class="Bgimgh02" id="Bgimgh02" />
     </div>
   </div>
 
   <div id="Gomore">
-    <div class="Bg001" id="Bg001-iframe">
+    <div class="Bg001 Bganima" id="Bg001-iframe">
       <a href="#Gomore">
         <h3 class="PartTitle">More</h3>
       </a>
@@ -293,7 +285,7 @@
   </div>
 
 
-  <div class="Bg001foot" id="Bg001foot">
+  <div class="Bg001foot Bganima" id="Bg001foot">
     <div id="log">
       <center><b>
           <h3 style="font-size: 30px;">Enjoy every moment
@@ -339,11 +331,11 @@
   </div>
 
   <div class="grayIcon">
-    <img class="grayMainicon" src="./Resources/icon/gray/jp.png"/>
-    <img class="grayMainicon" src="./Resources/icon/gray/clock_j.png"/>
-    <img class="grayMainicon" src="./Resources/icon/gray/windows.png"/>
-    <img class="grayMainicon" src="./Resources/icon/gray/android.png"/>
-    <img class="grayMainicon" src="./Resources/icon/gray/magisk-_managerpng.png"/>
+    <img class="grayMainicon" src="./Resources/icon/gray/jp.png" />
+    <img class="grayMainicon" src="./Resources/icon/gray/clock_j.png" />
+    <img class="grayMainicon" src="./Resources/icon/gray/windows.png" />
+    <img class="grayMainicon" src="./Resources/icon/gray/android.png" />
+    <img class="grayMainicon" src="./Resources/icon/gray/magisk-_managerpng.png" />
   </div>
 
   <div style="position:relative;" class="famousCard">
@@ -366,42 +358,74 @@
       <div class="footlink" id="footlink">
         <ul class="footUL" id="footUL1">
           <h2>友情連結</h2>
-          <a href="https://www.youtube.com/@GawrGura" target="_blank"><li>Gawr Gura</li></a>
-          <a href="https://www.youtube.com/@linzin" target="_blank"><li>Linzin 阿哲</li></a>
-          <a href="https://www.youtube.com/@ThioJoe" target="_blank"><li>ThioJoe</li></a>
-          <a href="https://www.youtube.com/@thepcsecuritychannel" target="_blank"><li>The PC Security Channel</li></a>
+          <a href="https://www.youtube.com/@GawrGura" target="_blank">
+            <li>Gawr Gura</li>
+          </a>
+          <a href="https://www.youtube.com/@linzin" target="_blank">
+            <li>Linzin 阿哲</li>
+          </a>
+          <a href="https://www.youtube.com/@ThioJoe" target="_blank">
+            <li>ThioJoe</li>
+          </a>
+          <a href="https://www.youtube.com/@thepcsecuritychannel" target="_blank">
+            <li>The PC Security Channel</li>
+          </a>
         </ul>
 
         <ul class="footUL" id="footUL2">
           <h2>Wikipedia</h2>
-          <a href="https://en.wikipedia.org/wiki/Web3" target="_blank"><li>Web 3.0</li></a>
-          <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank"><li>Non-fungible token</li></a>
-          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank"><li>Blockchain</li></a>
+          <a href="https://en.wikipedia.org/wiki/Web3" target="_blank">
+            <li>Web 3.0</li>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Non-fungible_token" target="_blank">
+            <li>Non-fungible token</li>
+          </a>
+          <a href="https://en.wikipedia.org/wiki/Blockchain" target="_blank">
+            <li>Blockchain</li>
+          </a>
         </ul>
 
         <ul class="footUL" id="footUL2">
           <h2>Web</h2>
-          <a href="https://www.w3schools.com/default.asp" target="_blank"><li>w3schools</li></a>
-          <a href="https://developer.mozilla.org/en-US/" target="_blank"><li>MDN Web Docs</li></a>
-          <a href="https://github.com/" target="_blank"><li>Github</li></a>
-          <a href="https://www.google.com/inputtools/try/" target="_blank"><li>Google Input Tools</li></a>
+          <a href="https://www.w3schools.com/default.asp" target="_blank">
+            <li>w3schools</li>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/" target="_blank">
+            <li>MDN Web Docs</li>
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <li>Github</li>
+          </a>
+          <a href="https://www.google.com/inputtools/try/" target="_blank">
+            <li>Google Input Tools</li>
+          </a>
         </ul>
 
         <ul class="footUL" id="footUL2">
           <h2>Search Engine</h2>
-          <a href="https://www.google.com/" target="_blank"><li>Google</li></a>
-          <a href="https://yandex.com/" target="_blank"><li>Yandex</li></a>
-          <a href="http://saucenao.com/" target="_blank"><li>SauceNAO</li></a>
-          <a href="https://bing.com" target="_blank"><li>Bing</li></a>
+          <a href="https://www.google.com/" target="_blank">
+            <li>Google</li>
+          </a>
+          <a href="https://yandex.com/" target="_blank">
+            <li>Yandex</li>
+          </a>
+          <a href="http://saucenao.com/" target="_blank">
+            <li>SauceNAO</li>
+          </a>
+          <a href="https://bing.com" target="_blank">
+            <li>Bing</li>
+          </a>
         </ul>
 
         <ul class="footUL footULCopy" id="footUL2">
           <h2>© 2022 JERRY 版權所有</h2>
-          <li class="footcopyLI">JERRY PRO :: Powered by JERRY❤️Koala for <a id="dateCount" class="footcopyLI" onload="dateCount()">--</a> day, All rights reserved</li>
+          <li class="footcopyLI">JERRY PRO :: Powered by JERRY❤️Koala for <a id="dateCount" class="footcopyLI"
+              onload="dateCount()">--</a> day, All rights reserved</li>
         </ul>
       </div>
     </div>
   </footer>
 
 </body>
+
 </html>
