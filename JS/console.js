@@ -9,10 +9,11 @@ const ascii =
 
 console.log('%c'+ ascii,'color: #d6b8c6fa;')          
 console.log(
-    'Powered by %cJERRY_PRO%cV1.3.1\n', 
+    'Powered by %cJERRY_PRO%cV1.4.1', 
     'display: inline—block;background-color:rgba(66,66,66,0.8);color:#fff;margin—bottom:6px;padding:4px;border-radius:4px 0 0 4px',
     'display: inline-block;background-color:rgba(0,180,0,1);color:#fff;padding:4px;border-radius:0 4px 4px 0', 
-    'Latest on 12st October\n',
+    '\n\nLatest on 5st January',
+    '\nAll copyrights reserved',
 ) 
 
 const alert = "//警告！⚠️";
