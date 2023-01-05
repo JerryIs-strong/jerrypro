@@ -1,5 +1,5 @@
 window.onload = function () {
-  Themebgloder(), appleBg(), loader(), dateCount(), scroll();
+  Themebgloder(), appleBg(), loader(), dateCount(), scroll(), iconhover();
 
   var things = ['.exe', 'Powershell', 'Hyper-V', 'DDoS', 'Self-XSS', 'DNS hijacking', 'win+r的作用'];
   var thing = things[Math.floor(Math.random() * things.length)];
@@ -18,26 +18,6 @@ function closeNav() {
   document.getElementById("Sidebar").style.transform = "translateX(-100%)";
   document.getElementById("Sidebar-mask").className = "Sidebar-mask";
   document.body.style.overflowY = "visible";
-}
-
-function MusicOpen() {
-  var x = document.getElementById("ltreeng2");
-  var y = document.getElementById("musicinfo");
-
-  if (x.style.height === "55px") {
-    x.style.height = "200px";
-    window.setTimeout(show, 1000);
-    function show() {
-      y.style.animation = "fade-in 1s";
-      y.style.visibility = "visible";
-      y.style.display = "block";
-    }
-  } else {
-    x.style.height = "55px";
-    y.style.animation = "fade-out 1s";
-    y.style.visibility = "hidden";
-    y.style.display = "none";
-  }
 }
 
 /*function Snackbar() {
@@ -63,12 +43,26 @@ function appleBg() {
   }
 }
 
-function error() {
-  var xxxy = document.getElementById("Ltree-music");
-  var error = document.getElementById("ltreeng2");
-  xxxy.innerHTML = "❌ERROR: No Resources";
-  error.style.transition = "0.5s";
-  error.style.backgroundColor = "rgb(241 235 237)";
+function setThemeDL(themeName) {
+  localStorage.setItem("theme-DL", themeName);
+  if (themeName === "theme-light") {
+    document.documentElement.classList.add("theme-light");
+    document.documentElement.classList.remove("theme-dark");
+  } else {
+    document.documentElement.classList.add("theme-dark");
+    document.documentElement.classList.remove("theme-light");
+  };
+  Themebgloder();
+  DLbuttoncheck();
+}
+
+// function to toggle between light and dark theme
+function changeThemeDL() {
+  if (localStorage.getItem("theme-DL") === "theme-dark") {
+    setThemeDL("theme-light");
+  } else {
+    setThemeDL("theme-dark");
+  }
 }
 
 // function to set a given theme/color-scheme
@@ -91,25 +85,33 @@ function changeTheme() {
   } else {
     setTheme("theme-blue");
   }
+
+  //Dark mode
+  if (localStorage.getItem("theme-DL") === "theme-dark") {
+    setThemeDL("theme-dark");
+  } else {
+    setThemeDL("theme-light");
+  }
 })();
 
 function Themebgloder() {
   var x = document.getElementById("topBG");
-  var randomNumber = Math.floor(Math.random() * 5);
-  document.body.id = "Done";
-  x.style.backgroundImage = "url('./Resources/headerBg/a1cadb0911675232054cc13deee6a3221b4dd88e.jpg')"
+  if (localStorage.getItem("theme-DL") == "theme-dark") {
+    x.style.backgroundImage = "url('./Resources/headerBg/a1cadb0911675232054cc13deee6a3221b4dd88e.jpg')";
+  } else {
+    x.style.backgroundImage = "url('./Resources/headerBg/2bb9062555f5b2bf7e5a5f8d92dfb841ec6919e8.jpg')";
+  }
 }
 
-function bplayer() {
-  var playername = document.getElementById("bilibili-player");
-  var side = document.getElementById("slideshow-container");
-
-  if (playername.className == "play-ture") {
-    document.title = "JERRY PRO :: 直播開始啦(≧▽≦*)o";
-    side.style.visibility = "hidden";
-    side.style.display = "none";
+function DLbuttoncheck() {
+  let state = ["wb_sunny", "dark_mode"];
+  let state2 = ["🌕Light", "🌑Dark"];
+  if (localStorage.getItem("theme-DL") === "theme-dark") {
+    document.getElementById("DLmode").innerHTML = state[0];
+    document.getElementById("DLtext-2").innerHTML = state2[0];
   } else {
-    console.log("No event");
+    document.getElementById("DLmode").innerHTML = state[1];
+    document.getElementById("DLtext-2").innerHTML = state2[1];
   }
 }
 
@@ -171,6 +173,7 @@ function dateCount() {
     days(then, now) * -1
   );
 }
+
 
 function scroll() {
   addEventListener("scroll", (event) => {
