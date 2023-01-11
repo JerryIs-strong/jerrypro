@@ -151,10 +151,13 @@ function musicPlayerChecker() {
 
 function loader() {
   var loader = document.getElementById("pre-loder-index");
+  var gray = document.getElementById("byw81");
   // loader.style.display = "none";
 
   setTimeout(function () {
     loader.style.display = "none";
+    gray.classList.add("gray-active");
+    document.body.id = "Done";
   }, 1000);
 }
 
